@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="static/style.xsl"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+    <responseDate>2023-01-09T12:48:15Z</responseDate>
+    <request verb="ListIdentifiers" metadataPrefix="oai_dc" from="2022-12-26T00:00:00Z" until="2023-01-02T00:00:00Z">http://library.oapen.org/oai/request</request>
+    <ListIdentifiers>
+        <header status="deleted">
+            <identifier>oai:library.oapen.org:20.500.12657/60463</identifier>
+            <datestamp>2023-01-02T15:06:54Z</datestamp>
+            <setSpec>com_20.500.12657_5</setSpec>
+            <setSpec>col_20.500.12657_8</setSpec>
+            </header>
+        <header>
+            <identifier>oai:library.oapen.org:20.500.12657/60464</identifier>
+            <datestamp>2022-12-26T03:22:38Z</datestamp>
+            <setSpec>com_20.500.12657_5</setSpec>
+            <setSpec>col_20.500.12657_8</setSpec>
+        </header>
+        <header>
+            <identifier>oai:library.oapen.org:20.500.12657/60461</identifier>
+            <datestamp>2022-12-26T03:22:22Z</datestamp>
+            <setSpec>com_20.500.12657_5</setSpec>
+            <setSpec>col_20.500.12657_8</setSpec>
+        </header>
+        <header>
+            <identifier>oai:library.oapen.org:20.500.12657/60462</identifier>
+            <datestamp>2022-12-26T03:22:32Z</datestamp>
+            <setSpec>com_20.500.12657_5</setSpec>
+            <setSpec>col_20.500.12657_8</setSpec>
+        </header>
+    </ListIdentifiers>
+</OAI-PMH>

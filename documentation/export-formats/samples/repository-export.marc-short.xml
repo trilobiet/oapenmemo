@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+    
+   <marc:record>
+      <marc:leader>naaaa       uu</marc:leader>
+      <marc:controlfield tag="001">https://library.oapen.org/handle/20.500.12657/42289</marc:controlfield>
+      <marc:controlfield tag="005">20201001</marc:controlfield>
+      <marc:controlfield tag="003">oapen</marc:controlfield>
+      <marc:controlfield tag="006">m     o  d</marc:controlfield>
+      <marc:controlfield tag="007">cr|mn|---annan</marc:controlfield>
+      <marc:controlfield tag="008">20201001s2016    xx |||||o     ||| 0|deu d</marc:controlfield>
+      <marc:datafield tag="020" ind1=" " ind2=" ">
+         <marc:subfield code="a">978-3-653-06465-0</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="040" ind1=" " ind2=" ">
+         <marc:subfield code="a">oapen</marc:subfield>
+         <marc:subfield code="c">oapen</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="024" ind1="7" ind2=" ">
+         <marc:subfield code="a">10.3726/978-3-653-06465-0</marc:subfield>
+         <marc:subfield code="c">doi</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="041" ind1="0" ind2=" ">
+         <marc:subfield code="a">deu</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="042" ind1=" " ind2=" ">
+         <marc:subfield code="a">dc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="072" ind1=" " ind2="7">
+         <marc:subfield code="a">HBTB</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="072" ind1=" " ind2="7">
+         <marc:subfield code="a">HD</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="072" ind1=" " ind2="7">
+         <marc:subfield code="a">JFSJ1</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="072" ind1=" " ind2="7">
+         <marc:subfield code="a">JPA</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="100" ind1="1" ind2=" ">
+         <marc:subfield code="a">Franz, Norbert</marc:subfield>
+         <marc:subfield code="4">edt</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Fuchshuber, Thorsten</marc:subfield>
+         <marc:subfield code="4">edt</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Kmec, Sonja</marc:subfield>
+         <marc:subfield code="4">edt</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Lehners, Jean-Paul</marc:subfield>
+         <marc:subfield code="4">edt</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Wagener, Renée</marc:subfield>
+         <marc:subfield code="4">edt</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Franz, Norbert</marc:subfield>
+         <marc:subfield code="4">oth</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Fuchshuber, Thorsten</marc:subfield>
+         <marc:subfield code="4">oth</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Kmec, Sonja</marc:subfield>
+         <marc:subfield code="4">oth</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Lehners, Jean-Paul</marc:subfield>
+         <marc:subfield code="4">oth</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Wagener, Renée</marc:subfield>
+         <marc:subfield code="4">oth</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="245" ind1="1" ind2="0">
+         <marc:subfield code="a">Identitaetsbildung und Partizipation im 19. und 20. Jahrhundert</marc:subfield>
+         <marc:subfield code="b">Luxemburg im europaeischen Kontext</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="260" ind1=" " ind2=" ">
+         <marc:subfield code="a">Bern</marc:subfield>
+         <marc:subfield code="b">Peter Lang International Academic Publishers</marc:subfield>
+         <marc:subfield code="c">2016</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="300" ind1=" " ind2=" ">
+         <marc:subfield code="a">1 electronic resource (455 p.)</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="336" ind1=" " ind2=" ">
+         <marc:subfield code="a">text</marc:subfield>
+         <marc:subfield code="b">txt</marc:subfield>
+         <marc:subfield code="2">rdacontent</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="337" ind1=" " ind2=" ">
+         <marc:subfield code="a">computer</marc:subfield>
+         <marc:subfield code="b">c</marc:subfield>
+         <marc:subfield code="2">rdamedia</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="338" ind1=" " ind2=" ">
+         <marc:subfield code="a">online resource</marc:subfield>
+         <marc:subfield code="b">cr</marc:subfield>
+         <marc:subfield code="2">rdacarrier</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="490" ind1="1" ind2=" ">
+         <marc:subfield code="a">Études luxembourgeoises / Luxemburg-Studien</marc:subfield>
+         <marc:subfield code="v">12</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="506" ind1="0" ind2=" ">
+         <marc:subfield code="a">Open Access</marc:subfield>
+         <marc:subfield code="2">star</marc:subfield>
+         <marc:subfield code="f">Unrestricted online access</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="520" ind1=" " ind2=" ">
+         <marc:subfield code="a">Gesellschaften mit starker Einwanderung kennzeichnen vielfältige Formen von Identitätsbildung und das Ringen um politische und zivilgesellschaftliche Partizipation. Dies gilt in besonderer Weise für Luxemburg im 19. und 20. Jahrhundert. Hier entstand in einem Kleinstaat eine der jüngeren Nationen Europas und zugleich eine besonders offene, plurikulturelle Einwanderungsgesellschaft. Ziel dieses Bandes ist es, die Entstehung dieser Mehr-Kulturen-Gesellschaft im europäischen Zusammenhang zu verstehen. Die einzelnen Beiträge analysieren mit Hilfe unterschiedlicher sozial- und kulturwissenschaftlicher Annäherungen exemplarische Konfliktlinien der Identitätsbildung und des Kampfes um Partizipation.</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="540" ind1=" " ind2=" ">
+         <marc:subfield code="a">Creative Commons</marc:subfield>
+         <marc:subfield code="f">https://creativecommons.org/licenses/by-nc-nd/4.0</marc:subfield>
+         <marc:subfield code="2">cc</marc:subfield>
+         <marc:subfield code="4">https://creativecommons.org/licenses/by-nc-nd/4.0</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="546" ind1=" " ind2=" ">
+         <marc:subfield code="a">German</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="650" ind1=" " ind2="7">
+         <marc:subfield code="a">Social &amp; cultural history</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="650" ind1=" " ind2="7">
+         <marc:subfield code="a">Archaeology</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="650" ind1=" " ind2="7">
+         <marc:subfield code="a">Gender studies: women</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="650" ind1=" " ind2="7">
+         <marc:subfield code="a">Political science &amp; theory</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">European history</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Biography: general</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Language teaching and learning</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">History</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Social and cultural history</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">General and world history</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Literature: history and criticism</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Literary studies: ancient, classical and medieval</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Literary theory</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Philosophy</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Politics and government</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Civics and citizenship</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Political science and theory</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Political control and freedoms</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Anthropology</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Social and cultural anthropology</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Ethnic studies</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Gender studies: women and girls</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="856" ind1="4" ind2="0">
+         <marc:subfield code="a">www.oapen.org</marc:subfield>
+         <marc:subfield code="u">https://library.oapen.org/bitstream/id/b5962316-50c2-428d-8b0f-d542ce8306ce/9783653064650.pdf</marc:subfield>
+         <marc:subfield code="7">0</marc:subfield>
+         <marc:subfield code="z">OAPEN Library: download the publication</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="856" ind1="4" ind2="0">
+         <marc:subfield code="a">www.oapen.org</marc:subfield>
+         <marc:subfield code="u">https://library.oapen.org/handle/20.500.12657/42289</marc:subfield>
+         <marc:subfield code="7">0</marc:subfield>
+         <marc:subfield code="z">OAPEN Library: description of the publication</marc:subfield>
+      </marc:datafield>
+   </marc:record>
+   
+   <marc:record>
+      <marc:leader>naaaa       uu</marc:leader>
+      <marc:controlfield tag="001">http://library.oapen.org/handle/20.500.12657/39385</marc:controlfield>
+      <marc:controlfield tag="005">20200527</marc:controlfield>
+      <marc:controlfield tag="003">oapen</marc:controlfield>
+      <marc:controlfield tag="006">m     o  d</marc:controlfield>
+      <marc:controlfield tag="007">cr|mn|---annan</marc:controlfield>
+      <marc:controlfield tag="008">20200527s2013    xx |||||o     ||| 0|eng d</marc:controlfield>
+      <marc:datafield tag="020" ind1=" " ind2=" ">
+         <marc:subfield code="a">518.9781912250134</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="040" ind1=" " ind2=" ">
+         <marc:subfield code="a">oapen</marc:subfield>
+         <marc:subfield code="c">oapen</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="024" ind1="7" ind2=" ">
+         <marc:subfield code="a">10.14296/518.9781912250134</marc:subfield>
+         <marc:subfield code="c">doi</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="041" ind1="0" ind2=" ">
+         <marc:subfield code="a">eng</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="042" ind1=" " ind2=" ">
+         <marc:subfield code="a">dc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="072" ind1=" " ind2="7">
+         <marc:subfield code="a">JFSC</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="100" ind1="1" ind2=" ">
+         <marc:subfield code="a">Lennox, Corinne</marc:subfield>
+         <marc:subfield code="4">edt</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Waites, Matthew</marc:subfield>
+         <marc:subfield code="4">edt</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Lennox, Corinne</marc:subfield>
+         <marc:subfield code="4">oth</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Waites, Matthew</marc:subfield>
+         <marc:subfield code="4">oth</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="245" ind1="1" ind2="0">
+         <marc:subfield code="a">Human Rights, Sexual Orientation and Gender Identity in The Commonwealth</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="260" ind1=" " ind2=" ">
+         <marc:subfield code="a">London</marc:subfield>
+         <marc:subfield code="b">University of London Press</marc:subfield>
+         <marc:subfield code="c">2013</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="300" ind1=" " ind2=" ">
+         <marc:subfield code="a">1 electronic resource (572 p.)</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="336" ind1=" " ind2=" ">
+         <marc:subfield code="a">text</marc:subfield>
+         <marc:subfield code="b">txt</marc:subfield>
+         <marc:subfield code="2">rdacontent</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="337" ind1=" " ind2=" ">
+         <marc:subfield code="a">computer</marc:subfield>
+         <marc:subfield code="b">c</marc:subfield>
+         <marc:subfield code="2">rdamedia</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="338" ind1=" " ind2=" ">
+         <marc:subfield code="a">online resource</marc:subfield>
+         <marc:subfield code="b">cr</marc:subfield>
+         <marc:subfield code="2">rdacarrier</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="506" ind1="0" ind2=" ">
+         <marc:subfield code="a">Open Access</marc:subfield>
+         <marc:subfield code="2">star</marc:subfield>
+         <marc:subfield code="f">Unrestricted online access</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="520" ind1=" " ind2=" ">
+         <marc:subfield code="a">Human rights in relation to sexual orientation and gender identity are at last reaching the heart of global debates. Yet 78 states worldwide continue to criminalise same-sex sexual behaviour, and due to the legal legacies of the British Empire, 42 of these - more than half - are in the Commonwealth of Nations. In recent years many states have seen the emergence of new sexual nationalisms, leading to increased enforcement of colonial sodomy laws against men, new criminalisations of sex between women and discrimination against transgender people. Human Rights, Sexual Orientation and Gender Identity in The Commonwealth: Struggles for Decriminalisation and Change challenges these developments as the first book to focus on experiences of lesbian, 
+gay, bisexual, transgender and intersex (LGBTI) and all non-heterosexual people in the Commonwealth. The volume offers the most internationally extensive analysis to date of the global struggle for decriminalisation of same-sex sexual behaviour and relationships. The book includes: The first quantitative analysis of legal change related to sexual orientation and gender identity across all the Commonwealth.</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="540" ind1=" " ind2=" ">
+         <marc:subfield code="a">Creative Commons</marc:subfield>
+         <marc:subfield code="f">https://creativecommons.org/licenses/by-by-nc-nd/4.0/</marc:subfield>
+         <marc:subfield code="2">cc</marc:subfield>
+         <marc:subfield code="4">https://creativecommons.org/licenses/by-by-nc-nd/4.0/</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="546" ind1=" " ind2=" ">
+         <marc:subfield code="a">English</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="650" ind1=" " ind2="7">
+         <marc:subfield code="a">Social classes</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">Social classes</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="856" ind1="4" ind2="0">
+         <marc:subfield code="a">www.oapen.org</marc:subfield>
+         <marc:subfield code="u">https://library.oapen.org/bitstream/id/b57c95e1-ab43-4d98-9f5d-90a984af6c65/9781912250134.pdf</marc:subfield>
+         <marc:subfield code="7">0</marc:subfield>
+         <marc:subfield code="z">OAPEN Library: download the publication</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="856" ind1="4" ind2="0">
+         <marc:subfield code="a">www.oapen.org</marc:subfield>
+         <marc:subfield code="u">http://library.oapen.org/handle/20.500.12657/39385</marc:subfield>
+         <marc:subfield code="7">0</marc:subfield>
+         <marc:subfield code="z">OAPEN Library: description of the publication</marc:subfield>
+      </marc:datafield>
+   </marc:record>
+   
+   <marc:record>
+      <marc:leader>naaaa       uu</marc:leader>
+      <marc:controlfield tag="001">http://library.oapen.org/handle/20.500.12657/38065</marc:controlfield>
+      <marc:controlfield tag="005">20200515</marc:controlfield>
+      <marc:controlfield tag="003">oapen</marc:controlfield>
+      <marc:controlfield tag="006">m     o  d</marc:controlfield>
+      <marc:controlfield tag="007">cr|mn|---annan</marc:controlfield>
+      <marc:controlfield tag="008">20200515s1998    xx |||||o     ||| 0|eng d</marc:controlfield>
+      <marc:datafield tag="020" ind1=" " ind2=" ">
+         <marc:subfield code="a">9789004400658</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="040" ind1=" " ind2=" ">
+         <marc:subfield code="a">oapen</marc:subfield>
+         <marc:subfield code="c">oapen</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="024" ind1="7" ind2=" ">
+         <marc:subfield code="a">10.1163/9789004400658</marc:subfield>
+         <marc:subfield code="c">doi</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="041" ind1="0" ind2=" ">
+         <marc:subfield code="a">eng</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="042" ind1=" " ind2=" ">
+         <marc:subfield code="a">dc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="072" ind1=" " ind2="7">
+         <marc:subfield code="a">LB</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="100" ind1="1" ind2=" ">
+         <marc:subfield code="a">Swan Sik, Ko</marc:subfield>
+         <marc:subfield code="4">edt</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Syatauw, J.J.G.</marc:subfield>
+         <marc:subfield code="4">edt</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Pinto, M.C.W.</marc:subfield>
+         <marc:subfield code="4">edt</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Swan Sik, Ko</marc:subfield>
+         <marc:subfield code="4">oth</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Syatauw, J.J.G.</marc:subfield>
+         <marc:subfield code="4">oth</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="700" ind1="1" ind2=" ">
+         <marc:subfield code="a">Pinto, M.C.W.</marc:subfield>
+         <marc:subfield code="4">oth</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="245" ind1="1" ind2="0">
+         <marc:subfield code="a">Asian Yearbook of International Law, Volume 6 (1996)</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="260" ind1=" " ind2=" ">
+         <marc:subfield code="b">Brill</marc:subfield>
+         <marc:subfield code="c">1998</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="300" ind1=" " ind2=" ">
+         <marc:subfield code="a">1 electronic resource (558 p.)</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="336" ind1=" " ind2=" ">
+         <marc:subfield code="a">text</marc:subfield>
+         <marc:subfield code="b">txt</marc:subfield>
+         <marc:subfield code="2">rdacontent</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="337" ind1=" " ind2=" ">
+         <marc:subfield code="a">computer</marc:subfield>
+         <marc:subfield code="b">c</marc:subfield>
+         <marc:subfield code="2">rdamedia</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="338" ind1=" " ind2=" ">
+         <marc:subfield code="a">online resource</marc:subfield>
+         <marc:subfield code="b">cr</marc:subfield>
+         <marc:subfield code="2">rdacarrier</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="490" ind1="1" ind2=" ">
+         <marc:subfield code="a">Asian Yearbook of International Law</marc:subfield>
+         <marc:subfield code="v">6</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="506" ind1="0" ind2=" ">
+         <marc:subfield code="a">Open Access</marc:subfield>
+         <marc:subfield code="2">star</marc:subfield>
+         <marc:subfield code="f">Unrestricted online access</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="520" ind1=" " ind2=" ">
+         <marc:subfield code="a">The Asian Yearbook of International Law is a major refereed publication dedicated to international law issues as seen primarily from an Asian perspective. Readership: Academics and practitioners who deal with international public law in Asia will appreciate this unique, complete resource. The Asian Yearbook of International Law provides insight into Asian views 
+and practices, especially for non-Asian readers, and also promotes the dissemination of knowledge of international law in Asia.</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="540" ind1=" " ind2=" ">
+         <marc:subfield code="a">Creative Commons</marc:subfield>
+         <marc:subfield code="f">https://creativecommons.org/licenses/by-nc/4.0/</marc:subfield>
+         <marc:subfield code="2">cc</marc:subfield>
+         <marc:subfield code="4">https://creativecommons.org/licenses/by-nc/4.0/</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="546" ind1=" " ind2=" ">
+         <marc:subfield code="a">English</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="650" ind1=" " ind2="7">
+         <marc:subfield code="a">International law</marc:subfield>
+         <marc:subfield code="2">bicssc</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="653" ind1=" " ind2=" ">
+         <marc:subfield code="a">International law</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="856" ind1="4" ind2="0">
+         <marc:subfield code="a">www.oapen.org</marc:subfield>
+         <marc:subfield code="u">https://library.oapen.org/bitstream/id/b99b578d-97b0-4c91-90cb-65b745d919fa/9789004400658_webready_content_text.pdf</marc:subfield>
+         <marc:subfield code="7">0</marc:subfield>
+         <marc:subfield code="z">OAPEN Library: download the publication</marc:subfield>
+      </marc:datafield>
+      <marc:datafield tag="856" ind1="4" ind2="0">
+         <marc:subfield code="a">www.oapen.org</marc:subfield>
+         <marc:subfield code="u">http://library.oapen.org/handle/20.500.12657/38065</marc:subfield>
+         <marc:subfield code="7">0</marc:subfield>
+         <marc:subfield code="z">OAPEN Library: description of the publication</marc:subfield>
+      </marc:datafield>
+   </marc:record>
+   
+</marc:collection>

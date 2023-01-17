@@ -1,0 +1,1 @@
+DROP DATABASE oapen_memo;
