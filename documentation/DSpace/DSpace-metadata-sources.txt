@@ -1,0 +1,59 @@
+
+OAI-PMH
+================
+https://library.oapen.org/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+https://library.oapen.org/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+
+identifiers for a date interval:
+https://library.oapen.org/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc&from=2022-12-26&until=2023-01-02
+-> First data from 2020-04
+
+
+Full data set
+==============
+https://library.oapen.org/download-export?format=csv
+https://library.oapen.org/download-export?format=onix
+https://library.oapen.org/download-export?format=marcxml
+https://library.oapen.org/download-export?format=tsv
+https://library.oapen.org/download-export?format=ris
+
+
+Rest API: 
+==============
+
+Per title:
+----------------------
+https://library.oapen.org/rest/search?query=handle:"20.500.12657/60530"&expand=metadata,bitstreams
+   
+JSON here defines paths to marc.xml, onix, ris, tsv (kbart) files - for a single title:   
+
+marc.xml:
+  https://library.oapen.org/rest/bitstreams/e9ecc8ee-32b2-4961-b522-6138bd434b5f/retrieve
+onix_3.0.xml:
+  https://library.oapen.org/rest/bitstreams/9be2108c-62fb-41ae-8a19-48048d72a83a/retrieve
+ris:
+  https://library.oapen.org/rest/bitstreams/d3bd5b8a-e310-46d9-9b71-ef83d9a4b776/retrieve
+kbart (tsv):
+  https://library.oapen.org/rest/bitstreams/9ce601b9-265f-40e3-92c2-ac9350a41af4/retrieve
+  
+Date accessioned range:
+---------------------------------
+https://library.oapen.org/rest/search?query=dc.date.accessioned_dt:[2018-03-01T00:00:00Z+TO+2018-03-01T23:59:59Z]&expand=metadata,bitstreams
+NB max 100 titles returned - even for a single day this is sometimes not enough!
+SLOW -> Takes about 150 seconds for 100 records
+
+Series of ids:
+---------------------------------
+https://library.oapen.org/rest/search?query=handle:20.500.12657/30484 OR handle:20.500.12657/53113 OR handle:20.500.12657/30469 OR handle:20.500.12657/37979 OR handle:20.500.12657/37801 &expand=metadata,bitstreams
+AVERAGE Takes about 5 seconds for 5 records
+
+more than 1 funders:
+https://library.oapen.org/rest/search?query=handle:%2220.500.12657/33239%22&expand=metadata,bitstreams
+
+more than 1 funders with lots of acronyms:
+https://library.oapen.org/rest/search?query=handle:%2220.500.12657/57293%22&expand=metadata,bitstreams
+
+has chapter:
+https://library.oapen.org/rest/search?query=handle:%2220.500.12657/60611%22&expand=metadata,bitstreams
+chapter refers to another title (which is a chapter) that will be harvested as well - no need to follow the link
+

@@ -1,0 +1,44 @@
+
+FIELDNAME                        OCCURRENCE    TYPE SET
+
+datacite:alternateIdentifier     0..n          DOI | ISBN
+datasite:contributer             0..n          Editor
+datacite:creator                 1..n
+datacite:date                    ?..n          Issued
+datacite:identifier              1             URL
+datacite:rights                  0..n
+datacite:subject                 0..n
+datacite:title                   1
+
+dc:date                          0..n
+dc:description                   0..n
+dc:format                        0..?
+dc:identifier                    ?..n 
+dc:language                      1..?
+dc:publisher                     ?..n 
+dc:relation                      0..? 
+dc:title
+
+grantor:number                   0..? 
+
+oaire:fundingReference           0..? 
+|- oaire:awardTitle              0..1
+|- oaire:funderName              0..?
+oaire:licenseCondition           1
+oaire:resourceType               1
+
+oapen:abstractotherlanguage      0..?
+oapen:chapternumber              0..?
+oapen:collection                 0..n
+oapen:grantnumber                0..n
+oapen:grantprogram               0..1
+oapen:grantproject               0..1
+oapen:identifierdoi              1 
+oapen:imprint                    0..? 
+oapen:pages                      0..1
+oapen:placepublication           0..?
+oapen:relationisbn               1..n
+oapen:relationisFundedBy         0..?
+oapen:relationisPartOfBook       0..?
+oapen:relationisPublishedBy
+oapen:seriesnumber               0..1
