@@ -4054,6 +4054,7 @@
 						"$ref": "AAAAAAGFoPzP8S3FZ8g="
 					},
 					"name": "funder_name",
+					"documentation": "Funder name and acronyms",
 					"columns": [
 						{
 							"_type": "ERDColumn",
