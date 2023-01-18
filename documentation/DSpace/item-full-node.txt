@@ -1,0 +1,809 @@
+
+  {
+    "uuid": "317e3980-7c21-49e3-b8c3-9e63f1e4f579",
+    "name": "Civic Identity and Civic Participation in Late Antiquity and the Early Middle Ages",
+    "handle": "20.500.12657/57293",
+    "type": "item",
+    "expand": [
+      "parentCollection",
+      "parentCollectionList",
+      "parentCommunityList",
+      "all"
+    ],
+    "lastModified": "2022-07-14 02:59:00.005",
+    "parentCollection": null,
+    "parentCollectionList": null,
+    "parentCommunityList": null,
+    "bitstreams": [
+      {
+        "uuid": "e978fd06-a968-4723-a06a-0f2767f5a710",
+        "name": "m.celama-eb.5.120678.pdf",
+        "handle": "burpnulqql",
+        "type": "bitstream",
+        "expand": [
+          "parent",
+          "policies",
+          "all"
+        ],
+        "bundleName": "ORIGINAL",
+        "description": "",
+        "format": "Adobe PDF",
+        "mimeType": "application/pdf",
+        "sizeBytes": 10197056,
+        "parentObject": null,
+        "retrieveLink": "/rest/bitstreams/e978fd06-a968-4723-a06a-0f2767f5a710/retrieve",
+        "checkSum": {
+          "value": "542cc51fca5f47b720892d0922f11b25",
+          "checkSumAlgorithm": "MD5"
+        },
+        "sequenceId": 1,
+        "code": "CC-BY-NC-ND",
+        "policies": null,
+        "link": "/rest/bitstreams/e978fd06-a968-4723-a06a-0f2767f5a710",
+        "metadata": [
+          {
+            "key": "dc.description",
+            "value": "",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "description"
+          },
+          {
+            "key": "dc.rights.uri",
+            "value": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+            "language": null,
+            "qualifier": "uri",
+            "schema": "dc",
+            "element": "rights"
+          },
+          {
+            "key": "dc.source",
+            "value": "m.celama-eb.5.120678.pdf",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "source"
+          },
+          {
+            "key": "dc.title",
+            "value": "m.celama-eb.5.120678.pdf",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "title"
+          },
+          {
+            "key": "oapen.relation.isbn",
+            "value": "97825035900110",
+            "language": null,
+            "qualifier": "isbn",
+            "schema": "oapen",
+            "element": "relation"
+          }
+        ]
+      },
+      {
+        "uuid": "caf2bc47-f204-40a6-9db4-0cd81705478d",
+        "name": "m.celama-eb.5.120678.cover.jpg",
+        "handle": null,
+        "type": "bitstream",
+        "expand": [
+          "parent",
+          "policies",
+          "all"
+        ],
+        "bundleName": "THUMBNAIL",
+        "description": "",
+        "format": "JPEG",
+        "mimeType": "image/jpeg",
+        "sizeBytes": 8130,
+        "parentObject": null,
+        "retrieveLink": "/rest/bitstreams/caf2bc47-f204-40a6-9db4-0cd81705478d/retrieve",
+        "checkSum": {
+          "value": "1172636c0e5437b882968eb848375471",
+          "checkSumAlgorithm": "MD5"
+        },
+        "sequenceId": 2,
+        "code": "All rights reserved",
+        "policies": null,
+        "link": "/rest/bitstreams/caf2bc47-f204-40a6-9db4-0cd81705478d",
+        "metadata": [
+          {
+            "key": "dc.description",
+            "value": "",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "description"
+          },
+          {
+            "key": "dc.rights.uri",
+            "value": "All rights reserved",
+            "language": null,
+            "qualifier": "uri",
+            "schema": "dc",
+            "element": "rights"
+          },
+          {
+            "key": "dc.source",
+            "value": "m.celama-eb.5.120678.cover.jpg",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "source"
+          },
+          {
+            "key": "dc.title",
+            "value": "m.celama-eb.5.120678.cover.jpg",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "title"
+          }
+        ]
+      },
+      {
+        "uuid": "68f9ce24-349d-4742-a850-9c91e76fc6ab",
+        "name": "m.celama-eb.5.120678.pdf.jpg",
+        "handle": null,
+        "type": "bitstream",
+        "expand": [
+          "parent",
+          "policies",
+          "all"
+        ],
+        "bundleName": "THUMBNAIL",
+        "description": "Generated Thumbnail",
+        "format": "JPEG",
+        "mimeType": "image/jpeg",
+        "sizeBytes": 2314,
+        "parentObject": null,
+        "retrieveLink": "/rest/bitstreams/68f9ce24-349d-4742-a850-9c91e76fc6ab/retrieve",
+        "checkSum": {
+          "value": "cebd0709861131eb08bb75eacd0f9a87",
+          "checkSumAlgorithm": "MD5"
+        },
+        "sequenceId": 8,
+        "code": "Other open license",
+        "policies": null,
+        "link": "/rest/bitstreams/68f9ce24-349d-4742-a850-9c91e76fc6ab",
+        "metadata": [
+          {
+            "key": "dc.description",
+            "value": "Generated Thumbnail",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "description"
+          },
+          {
+            "key": "dc.source",
+            "value": "Written by FormatFilter org.dspace.app.mediafilter.PDFBoxThumbnail on 2022-07-14T02:59:00Z (GMT).",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "source"
+          },
+          {
+            "key": "dc.title",
+            "value": "m.celama-eb.5.120678.pdf.jpg",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "title"
+          }
+        ]
+      },
+      {
+        "uuid": "24480261-e199-40f3-bf94-ee876ed6ad8f",
+        "name": "317e3980-7c21-49e3-b8c3-9e63f1e4f579.ris",
+        "handle": null,
+        "type": "bitstream",
+        "expand": [
+          "parent",
+          "policies",
+          "all"
+        ],
+        "bundleName": "EXPORT",
+        "description": null,
+        "format": "Unknown",
+        "mimeType": "application/octet-stream",
+        "sizeBytes": 2233,
+        "parentObject": null,
+        "retrieveLink": "/rest/bitstreams/24480261-e199-40f3-bf94-ee876ed6ad8f/retrieve",
+        "checkSum": {
+          "value": "9b2250beabcd7ef730a17f7cb3b41c50",
+          "checkSumAlgorithm": "MD5"
+        },
+        "sequenceId": 11,
+        "code": "Other open license",
+        "policies": null,
+        "link": "/rest/bitstreams/24480261-e199-40f3-bf94-ee876ed6ad8f",
+        "metadata": [
+          {
+            "key": "dc.title",
+            "value": "317e3980-7c21-49e3-b8c3-9e63f1e4f579.ris",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "title"
+          }
+        ]
+      },
+      {
+        "uuid": "420886c6-45b4-49fa-9457-899e9a74a41f",
+        "name": "317e3980-7c21-49e3-b8c3-9e63f1e4f579.tsv",
+        "handle": null,
+        "type": "bitstream",
+        "expand": [
+          "parent",
+          "policies",
+          "all"
+        ],
+        "bundleName": "EXPORT",
+        "description": null,
+        "format": "Unknown",
+        "mimeType": "application/octet-stream",
+        "sizeBytes": 454,
+        "parentObject": null,
+        "retrieveLink": "/rest/bitstreams/420886c6-45b4-49fa-9457-899e9a74a41f/retrieve",
+        "checkSum": {
+          "value": "b81e45eeadc5aca36bcb56c0f25ec75c",
+          "checkSumAlgorithm": "MD5"
+        },
+        "sequenceId": 12,
+        "code": "Other open license",
+        "policies": null,
+        "link": "/rest/bitstreams/420886c6-45b4-49fa-9457-899e9a74a41f",
+        "metadata": [
+          {
+            "key": "dc.title",
+            "value": "317e3980-7c21-49e3-b8c3-9e63f1e4f579.tsv",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "title"
+          }
+        ]
+      },
+      {
+        "uuid": "65a9e128-f415-4e41-9f34-b5ff071eeca1",
+        "name": "317e3980-7c21-49e3-b8c3-9e63f1e4f579.marc.xml",
+        "handle": null,
+        "type": "bitstream",
+        "expand": [
+          "parent",
+          "policies",
+          "all"
+        ],
+        "bundleName": "EXPORT",
+        "description": null,
+        "format": "Unknown",
+        "mimeType": "application/octet-stream",
+        "sizeBytes": 8040,
+        "parentObject": null,
+        "retrieveLink": "/rest/bitstreams/65a9e128-f415-4e41-9f34-b5ff071eeca1/retrieve",
+        "checkSum": {
+          "value": "a43b228282f3cf525418cb26ca5cc5ff",
+          "checkSumAlgorithm": "MD5"
+        },
+        "sequenceId": 13,
+        "code": "Other open license",
+        "policies": null,
+        "link": "/rest/bitstreams/65a9e128-f415-4e41-9f34-b5ff071eeca1",
+        "metadata": [
+          {
+            "key": "dc.title",
+            "value": "317e3980-7c21-49e3-b8c3-9e63f1e4f579.marc.xml",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "title"
+          }
+        ]
+      },
+      {
+        "uuid": "d9574c13-8c2e-47c2-986d-56c03d27e668",
+        "name": "317e3980-7c21-49e3-b8c3-9e63f1e4f579.onix_3.0.xml",
+        "handle": null,
+        "type": "bitstream",
+        "expand": [
+          "parent",
+          "policies",
+          "all"
+        ],
+        "bundleName": "EXPORT",
+        "description": null,
+        "format": "Unknown",
+        "mimeType": "application/octet-stream",
+        "sizeBytes": 6950,
+        "parentObject": null,
+        "retrieveLink": "/rest/bitstreams/d9574c13-8c2e-47c2-986d-56c03d27e668/retrieve",
+        "checkSum": {
+          "value": "63a0ffbdc254ed950353cb36de4ed4b5",
+          "checkSumAlgorithm": "MD5"
+        },
+        "sequenceId": -1,
+        "code": "Other open license",
+        "policies": null,
+        "link": "/rest/bitstreams/d9574c13-8c2e-47c2-986d-56c03d27e668",
+        "metadata": [
+          {
+            "key": "dc.title",
+            "value": "317e3980-7c21-49e3-b8c3-9e63f1e4f579.onix_3.0.xml",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "title"
+          }
+        ]
+      },
+      {
+        "uuid": "c854f149-3411-40c6-8517-e8bacc7d2df0",
+        "name": "m.celama-eb.5.120678.pdf.txt",
+        "handle": null,
+        "type": "bitstream",
+        "expand": [
+          "parent",
+          "policies",
+          "all"
+        ],
+        "bundleName": "TEXT",
+        "description": "Extracted text",
+        "format": "Text",
+        "mimeType": "text/plain",
+        "sizeBytes": 1313748,
+        "parentObject": null,
+        "retrieveLink": "/rest/bitstreams/c854f149-3411-40c6-8517-e8bacc7d2df0/retrieve",
+        "checkSum": {
+          "value": "2a64fe9573dfa5f320516b9edb8d3a76",
+          "checkSumAlgorithm": "MD5"
+        },
+        "sequenceId": 7,
+        "code": "Other open license",
+        "policies": null,
+        "link": "/rest/bitstreams/c854f149-3411-40c6-8517-e8bacc7d2df0",
+        "metadata": [
+          {
+            "key": "dc.description",
+            "value": "Extracted text",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "description"
+          },
+          {
+            "key": "dc.source",
+            "value": "Written by FormatFilter org.dspace.app.mediafilter.PDFFilter on 2022-07-14T02:58:57Z (GMT).",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "source"
+          },
+          {
+            "key": "dc.title",
+            "value": "m.celama-eb.5.120678.pdf.txt",
+            "language": null,
+            "qualifier": null,
+            "schema": "dc",
+            "element": "title"
+          }
+        ]
+      }
+    ],
+    "archived": "true",
+    "withdrawn": "false",
+    "link": "/rest/items/317e3980-7c21-49e3-b8c3-9e63f1e4f579",
+    "metadata": [
+      {
+        "key": "dc.contributor.editor",
+        "value": "Brélaz, Cédric",
+        "language": "",
+        "qualifier": "editor",
+        "schema": "dc",
+        "element": "contributor"
+      },
+      {
+        "key": "dc.contributor.editor",
+        "value": "Rose, Els",
+        "language": "",
+        "qualifier": "editor",
+        "schema": "dc",
+        "element": "contributor"
+      },
+      {
+        "key": "dc.date.accessioned",
+        "value": "2022-07-13T09:14:06Z",
+        "language": "",
+        "qualifier": "accessioned",
+        "schema": "dc",
+        "element": "date"
+      },
+      {
+        "key": "dc.date.available",
+        "value": "2022-07-13T09:14:06Z",
+        "language": "",
+        "qualifier": "available",
+        "schema": "dc",
+        "element": "date"
+      },
+      {
+        "key": "dc.date.issued",
+        "value": "2021",
+        "language": "",
+        "qualifier": "issued",
+        "schema": "dc",
+        "element": "date"
+      },
+      {
+        "key": "dc.identifier.uri",
+        "value": "https://library.oapen.org/handle/20.500.12657/57293",
+        "language": "",
+        "qualifier": "uri",
+        "schema": "dc",
+        "element": "identifier"
+      },
+      {
+        "key": "dc.description.abstract",
+        "value": "During the Ancient Greek and Roman eras, participation in political communities at the local level, and assertion of belonging to these communities, were among the fundamental principles and values on which societies would rely. For that reason, citizenship and democracy are generally considered as concepts typical of the political experience of Classical Antiquity. These concepts of citizenship and democracy are often seen as inconsistent with the political, social, and ideological context of the late and post-Roman world. As a result, scholarship has largely overlooked participation in local political communities when it comes to the period between the disintegration of the Classical model of local citizenship in the later Roman Empire and the emergence of ‘pre-communal’ entities in Northern Italy from the ninth century onwards.\r\n\r\nBy reassessing the period c. 300-1000 ce through the concepts of civic identity and civic participation, this volume will address both the impact of Classical heritage with regard to civic identities in the political experiences of the late and post-Roman world, and the rephrasing of new forms of social and political partnership according to ethnic or religious criteria in the early Middle Ages. Starting from the earlier imperial background, the fourteen chapters examine the ways in which people shared identity and gave shape to their communal life, as well as the role played by the people in local government in the later Roman Empire, the Germanic kingdoms, Byzantium, the early Islamic world, and the early medieval West. By focusing on the post-Classical, late antique, and early medieval periods, this volume intends to be an innovative contribution to the general history of citizenship and democracy.",
+        "language": "en_US",
+        "qualifier": "abstract",
+        "schema": "dc",
+        "element": "description"
+      },
+      {
+        "key": "dc.language",
+        "value": "English",
+        "language": "en_US",
+        "code": "eng",
+        "qualifier": null,
+        "schema": "dc",
+        "element": "language"
+      },
+      {
+        "key": "dc.relation.ispartofseries",
+        "value": "Cultural Encounters in Late Antiquity and the Middle Ages",
+        "language": "en_US",
+        "qualifier": "ispartofseries",
+        "schema": "dc",
+        "element": "relation"
+      },
+      {
+        "key": "dc.subject.classification",
+        "value": "bic Book Industry Communication::H Humanities::HB History",
+        "language": "en_US",
+        "qualifier": "classification",
+        "schema": "dc",
+        "element": "subject"
+      },
+      {
+        "key": "dc.subject.classification",
+        "value": "bic Book Industry Communication::H Humanities::HB History::HBG General & world history",
+        "language": "en_US",
+        "qualifier": "classification",
+        "schema": "dc",
+        "element": "subject"
+      },
+      {
+        "key": "dc.subject.classification",
+        "value": "bic Book Industry Communication::J Society & social sciences::JP Politics & government::JPH Political structure & processes::JPHV Political structures: democracy",
+        "language": "en_US",
+        "qualifier": "classification",
+        "schema": "dc",
+        "element": "subject"
+      },
+      {
+        "key": "dc.subject.classification",
+        "value": "bic Book Industry Communication::J Society & social sciences::JP Politics & government::JPV Political control & freedoms::JPVH Human rights::JPVH1 Civil rights & citizenship",
+        "language": "en_US",
+        "qualifier": "classification",
+        "schema": "dc",
+        "element": "subject"
+      },
+      {
+        "key": "dc.subject.other",
+        "value": "history; citizenship; democracy",
+        "language": "en_US",
+        "qualifier": "other",
+        "schema": "dc",
+        "element": "subject"
+      },
+      {
+        "key": "dc.title",
+        "value": "Civic Identity and Civic Participation in Late Antiquity and the Early Middle Ages",
+        "language": "en_US",
+        "qualifier": null,
+        "schema": "dc",
+        "element": "title"
+      },
+      {
+        "key": "dc.type",
+        "value": "book",
+        "language": "",
+        "qualifier": null,
+        "schema": "dc",
+        "element": "type"
+      },
+      {
+        "key": "oapen.identifier.doi",
+        "value": "10.1484/M.CELAMA-EB.5.120678",
+        "language": "en_US",
+        "qualifier": "doi",
+        "schema": "oapen",
+        "element": "identifier"
+      },
+      {
+        "key": "oapen.relation.isPublishedBy",
+        "value": "https://library.oapen.org/handle/20.500.12657/29985",
+        "language": "en_US",
+        "qualifier": "isPublishedBy",
+        "schema": "oapen",
+        "element": "relation"
+      },
+      {
+        "key": "publisher.name",
+        "value": "Brepols",
+        "language": null,
+        "qualifier": null,
+        "schema": "publisher",
+        "element": "name"
+      },
+      {
+        "key": "publisher.website",
+        "value": "http://www.brepols.net/Pages/Home.aspx",
+        "language": "",
+        "qualifier": null,
+        "schema": "publisher",
+        "element": "website"
+      },
+      {
+        "key": "oapen.relation.isFundedBy",
+        "value": "https://library.oapen.org/handle/20.500.12657/14222",
+        "language": "en_US",
+        "qualifier": "isFundedBy",
+        "schema": "oapen",
+        "element": "relation"
+      },
+      {
+        "key": "grantor.name",
+        "value": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "name"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "Netherlands Organisation for Scientific Research",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "Dutch National Scientific Foundation",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "Dutch National Science Foundation",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "NWO",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.doi",
+        "value": "10.13039/501100003246",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "doi"
+      },
+      {
+        "key": "oapen.relation.isFundedBy",
+        "value": "https://library.oapen.org/handle/20.500.12657/13266",
+        "language": "en_US",
+        "qualifier": "isFundedBy",
+        "schema": "oapen",
+        "element": "relation"
+      },
+      {
+        "key": "grantor.name",
+        "value": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "name"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "Swiss National Science Foundation",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "Fonds National Suisse de la Recherche Scientifique",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "Fondo Nazionale Svizzero per la Ricerca Scientifica",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "Fonds National Suisse",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "Fondo Nazionale Svizzero",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "Schweizerischer Nationalfonds",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "SNSF",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "FNS",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.acronym",
+        "value": "SNF",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "acronym"
+      },
+      {
+        "key": "grantor.doi",
+        "value": "10.13039/501100001711",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "doi"
+      },
+      {
+        "key": "grantor.jurisdiction",
+        "value": "Switzerland",
+        "language": null,
+        "qualifier": null,
+        "schema": "grantor",
+        "element": "jurisdiction"
+      },
+      {
+        "key": "oapen.collection",
+        "value": "Swiss National Science Foundation (SNF)",
+        "language": "en_US",
+        "qualifier": null,
+        "schema": "oapen",
+        "element": "collection"
+      },
+      {
+        "key": "oapen.collection",
+        "value": "Dutch Research Council (NWO)",
+        "language": "en_US",
+        "qualifier": null,
+        "schema": "oapen",
+        "element": "collection"
+      },
+      {
+        "key": "oapen.series.number",
+        "value": "37",
+        "language": "en_US",
+        "qualifier": "number",
+        "schema": "oapen",
+        "element": "series"
+      },
+      {
+        "key": "oapen.pages",
+        "value": "447",
+        "language": "en_US",
+        "qualifier": null,
+        "schema": "oapen",
+        "element": "pages"
+      },
+      {
+        "key": "oapen.place.publication",
+        "value": "Turnhout",
+        "language": "en_US",
+        "qualifier": "publication",
+        "schema": "oapen",
+        "element": "place"
+      },
+      {
+        "key": "oapen.grant.number",
+        "value": "",
+        "language": null,
+        "qualifier": "number",
+        "schema": "oapen",
+        "element": "grant"
+      },
+      {
+        "key": "oapen.grant.number",
+        "value": "",
+        "language": null,
+        "qualifier": "number",
+        "schema": "oapen",
+        "element": "grant"
+      },
+      {
+        "key": "oapen.grant.program",
+        "value": "",
+        "language": null,
+        "qualifier": "program",
+        "schema": "oapen",
+        "element": "grant"
+      },
+      {
+        "key": "oapen.grant.program",
+        "value": "",
+        "language": null,
+        "qualifier": "program",
+        "schema": "oapen",
+        "element": "grant"
+      },
+      {
+        "key": "oapen.grant.project",
+        "value": "",
+        "language": null,
+        "qualifier": "project",
+        "schema": "oapen",
+        "element": "grant"
+      },
+      {
+        "key": "oapen.grant.project",
+        "value": "",
+        "language": null,
+        "qualifier": "project",
+        "schema": "oapen",
+        "element": "grant"
+      }
+    ]
+  }
