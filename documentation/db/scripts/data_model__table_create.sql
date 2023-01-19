@@ -20,6 +20,8 @@ CREATE TABLE public.title (
     oapen_abstractotherlanguage text,
     oapen_chapternumber VARCHAR(4),
     oapen_description_otherlanguage text,
+    oapen_embargo VARCHAR(255),
+    oapen_identifier VARCHAR(255),
     oapen_identifier_doi VARCHAR(100),
     oapen_identifier_ocn VARCHAR(15),
     oapen_imprint VARCHAR(100),
@@ -27,13 +29,14 @@ CREATE TABLE public.title (
     oapen_placepublication VARCHAR(100),
     oapen_relation_partofbook UUID NOT NULL,
     oapen_relation_ispublishedby VARCHAR(25),
-    oapen_relation_ispublishedby_publishername  NOT NULL,
     oapen_seriesnumber VARCHAR(100),
     PRIMARY KEY (id)
 );
 
 CREATE INDEX part_of_oapen_relation_partofbook ON public.title
     (oapen_relation_partofbook);
+CREATE INDEX part_of_oapen_relation_ispublishedby ON public.title
+    (oapen_relation_ispublishedby);
 
 
 COMMENT ON COLUMN public.title.handle
@@ -51,6 +54,12 @@ Json path:
 ';
 COMMENT ON COLUMN public.title.dc_type
     IS 'book OR chapter';
+COMMENT ON COLUMN public.title.oapen_identifier
+    IS 'A url. Very seldom multiple values. Since it is not likely to be part of complex queries, join the values together in a pipe separated field and search using ''LIKE''.
+ 
+E.g. 
+https://openresearchlibrary.org/viewer/61ee7f71-18ae-4308-b882-78945f0e7492
+';
 COMMENT ON COLUMN public.title.oapen_relation_ispublishedby
     IS 'Json Path:
 
@@ -98,22 +107,34 @@ CREATE TABLE public.dc_contributor (
 );
 
 
-CREATE TABLE public.oapen_identifier (
+CREATE TABLE public.dc_identifier (
     identifier VARCHAR(50) NOT NULL,
     id_title UUID NOT NULL,
     PRIMARY KEY (identifier)
 );
 
-CREATE INDEX part_of_id_title ON public.oapen_identifier
+CREATE INDEX part_of_id_title ON public.dc_identifier
     (id_title);
 
 
 CREATE TABLE public.classification (
-    id VARCHAR(5) NOT NULL,
+    id VARCHAR(7) NOT NULL,
     description VARCHAR(100) NOT NULL,
     PRIMARY KEY (id)
 );
 
+
+COMMENT ON TABLE public.classification
+    IS 'id';
+COMMENT ON COLUMN public.classification.description
+    IS 'Each classification consists of a code like ''AVGC6'' (or shorter) that will serve as id field.
+
+Values are available in dc.subject.classification fields that must be split by ''::''. The ''bic Book Industry'' string must be removed.
+
+bic Book Industry Communication::K Economics, finance, business & management::KN Industry & industrial studies::KND Manufacturing industries::KNDF Food manufacturing & related industries
+
+
+';
 
 CREATE TABLE public.dc_subject_other (
     subject VARCHAR(100) NOT NULL,
@@ -123,10 +144,6 @@ CREATE TABLE public.dc_subject_other (
 
 CREATE INDEX part_of_id_title ON public.dc_subject_other
     (id_title);
-
-
-CREATE TABLE public. (
-);
 
 
 CREATE TABLE public.dc_subject_classification (
@@ -172,6 +189,9 @@ CREATE INDEX part_of_id_funder ON public.funder_name
     (id_funder);
 
 
+COMMENT ON TABLE public.funder_name
+    IS 'Funder name and acronyms';
+
 CREATE TABLE public.publisher (
     id VARCHAR(25) NOT NULL,
     name VARCHAR(100) NOT NULL,
@@ -184,19 +204,15 @@ COMMENT ON COLUMN public.publisher.id
     IS 'a handle, e.g. 20.500.12657/22403
 (https://library.oapen.org/handle/20.500.12657/22403)';
 
-CREATE TABLE public.oapen_relation_ispublishedby (
-    id_publisher VARCHAR(25) NOT NULL,
-    id_title UUID NOT NULL,
-    PRIMARY KEY (id_publisher, id_title)
-);
-
-
 ALTER TABLE public.title ADD CONSTRAINT FK_title__oapen_relation_partofbook FOREIGN KEY (oapen_relation_partofbook) REFERENCES public.title(id);
+ALTER TABLE public.title ADD CONSTRAINT FK_title__oapen_relation_ispublishedby FOREIGN KEY (oapen_relation_ispublishedby) REFERENCES public.publisher(id);
+ALTER TABLE public.dc_language ADD CONSTRAINT FK_dc_language__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.export_chunk ADD CONSTRAINT FK_export_chunk__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.dc_date_accessioned ADD CONSTRAINT FK_dc_date_accessioned__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.identifier_isbn ADD CONSTRAINT FK_identifier_isbn__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.dc_contributor ADD CONSTRAINT FK_dc_contributor__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
-ALTER TABLE public.oapen_identifier ADD CONSTRAINT FK_oapen_identifier__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
+ALTER TABLE public.dc_identifier ADD CONSTRAINT FK_dc_identifier__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
+ALTER TABLE public.dc_subject_other ADD CONSTRAINT FK_dc_subject_other__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.dc_subject_classification ADD CONSTRAINT FK_dc_subject_classification__id_classification FOREIGN KEY (id_classification) REFERENCES public.classification(id);
 ALTER TABLE public.dc_subject_classification ADD CONSTRAINT FK_dc_subject_classification__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.oapen_relation_isfundedby ADD CONSTRAINT FK_oapen_relation_isfundedby__id_funder FOREIGN KEY (id_funder) REFERENCES public.funder(id);
