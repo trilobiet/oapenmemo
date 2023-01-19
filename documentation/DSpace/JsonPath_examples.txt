@@ -16,14 +16,22 @@ $.uuid
 
 $.metadata[?(@.key == 'dc.date.accessioned')].value
 $.metadata[?(@.key == 'dc.description.abstract')].value
-$.metadata[?(@.key == 'dc.subject.classification')].value
 $.metadata[?(@.key == 'dc.language')].value
-$.metadata[?(@.key == 'dc.subject.other')].value   - returns a single value ["history; citizenship; democracy"]
+$.metadata[?(@.key == 'oapen.identifier')].value - url with a UUID, very seldom multiple values -> put them in a single pipe separated field
 
-$.bitstreams[?(@.bundleName == 'THUMBNAIL')].name
+$.bitstreams[?(@.bundleName == 'THUMBNAIL')].name - may return more values -> put them in a single pipe separated field
 
 arrays of metadata objects:
 ----------------------------
+
+classifications (bic):
+$.metadata[?(@.key == 'dc.subject.classification')].value
+
+other subjects:
+$.metadata[?(@.key == 'dc.subject.other')].value
+
+dc identifiers:
+$.metadata[?(@.key == 'dc.identifier')].value
 
 contributors:
 $.metadata[?(@.key == 'dc.contributor.advisor' || @.key == 'dc.contributor.author' || @.key == 'dc.contributor.editor' || @.key == 'dc.contributor.other')]
@@ -46,6 +54,7 @@ metadata node:
     "schema": "oapen",
     "element": "identifier"
   }
+      
       
 After [oapen.relation.isFundedBy] and [grantor.name] an undefined number of [grantor.acronym] nodes can occur that belong to the same grantor.
 So in order to restore the tree structure the whole metadata node must be re-parsed as a tree.

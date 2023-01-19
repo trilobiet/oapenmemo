@@ -385,6 +385,21 @@
 										},
 										{
 											"_type": "ERDColumnView",
+											"_id": "AAAAAAGFyUDwfjhWv0I=",
+											"_parent": {
+												"$ref": "AAAAAAGFoP0Gei3RwLI="
+											},
+											"model": {
+												"$ref": "AAAAAAGFyUDwYDhTo/s="
+											},
+											"font": "Arial;13;0",
+											"left": 309,
+											"top": 526,
+											"width": 421.4130859375,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
 											"_id": "AAAAAAGFoR/G/C8pf54=",
 											"_parent": {
 												"$ref": "AAAAAAGFoP0Gei3RwLI="
@@ -394,7 +409,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 309,
-											"top": 526,
+											"top": 541,
 											"width": 421.4130859375,
 											"height": 13
 										},
@@ -409,7 +424,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 309,
-											"top": 541,
+											"top": 556,
 											"width": 421.4130859375,
 											"height": 13
 										},
@@ -424,7 +439,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 309,
-											"top": 556,
+											"top": 571,
 											"width": 421.4130859375,
 											"height": 13
 										},
@@ -439,7 +454,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 309,
-											"top": 571,
+											"top": 586,
 											"width": 421.4130859375,
 											"height": 13
 										},
@@ -454,7 +469,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 309,
-											"top": 586,
+											"top": 601,
 											"width": 421.4130859375,
 											"height": 13
 										},
@@ -469,7 +484,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 309,
-											"top": 601,
+											"top": 616,
 											"width": 421.4130859375,
 											"height": 13
 										},
@@ -484,7 +499,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 309,
-											"top": 616,
+											"top": 631,
 											"width": 421.4130859375,
 											"height": 13
 										},
@@ -499,7 +514,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 309,
-											"top": 631,
+											"top": 646,
 											"width": 421.4130859375,
 											"height": 13
 										}
@@ -508,7 +523,7 @@
 									"left": 304,
 									"top": 191,
 									"width": 431.4130859375,
-									"height": 458
+									"height": 473
 								}
 							],
 							"font": "Arial;13;0",
@@ -1068,7 +1083,7 @@
 									"top": 405,
 									"width": 190.10693359375,
 									"height": 13,
-									"text": "oapen_identifier"
+									"text": "dc_identifier"
 								},
 								{
 									"_type": "ERDColumnCompartmentView",
@@ -3384,7 +3399,19 @@
 							"_parent": {
 								"$ref": "AAAAAAGFoP0GeC3Nl1w="
 							},
-							"name": "oapen_embargo*",
+							"name": "oapen_embargo",
+							"type": "VARCHAR",
+							"length": "255",
+							"nullable": true
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGFyUDwYDhTo/s=",
+							"_parent": {
+								"$ref": "AAAAAAGFoP0GeC3Nl1w="
+							},
+							"name": "oapen_identifier",
+							"documentation": "A url. Very seldom multiple values. Since it is not likely to be part of complex queries, join the values together in a pipe separated field and search using 'LIKE'.\n \nE.g. \nhttps://openresearchlibrary.org/viewer/61ee7f71-18ae-4308-b882-78945f0e7492\n",
 							"type": "VARCHAR",
 							"length": "255",
 							"nullable": true
@@ -3692,7 +3719,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGFoPzP8S3FZ8g="
 					},
-					"name": "oapen_identifier",
+					"name": "dc_identifier",
 					"columns": [
 						{
 							"_type": "ERDColumn",
@@ -3758,6 +3785,7 @@
 							}
 						}
 					],
+					"documentation": "id",
 					"columns": [
 						{
 							"_type": "ERDColumn",
@@ -3767,7 +3795,7 @@
 							},
 							"name": "id",
 							"type": "VARCHAR",
-							"length": "5",
+							"length": "7",
 							"primaryKey": true
 						},
 						{
@@ -3777,6 +3805,7 @@
 								"$ref": "AAAAAAGFutsPXlTUbNs="
 							},
 							"name": "description",
+							"documentation": "Each classification consists of a code like 'AVGC6' (or shorter) that will serve as id field.\n\nValues are available in dc.subject.classification fields that must be split by '::'. The 'bic Book Industry' string must be removed.\n\nbic Book Industry Communication::K Economics, finance, business & management::KN Industry & industrial studies::KND Manufacturing industries::KNDF Food manufacturing & related industries\n\n\n",
 							"type": "VARCHAR",
 							"length": "100"
 						}
@@ -4157,6 +4186,28 @@
 					]
 				}
 			]
+		}
+	],
+	"tags": [
+		{
+			"_type": "Tag",
+			"_id": "AAAAAAGFyWMx+Dhr+r4=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "database",
+			"kind": "string",
+			"value": "oapen_memo"
+		},
+		{
+			"_type": "Tag",
+			"_id": "AAAAAAGFyWMyJThuc1s=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "database",
+			"kind": "string",
+			"value": "oapen_memo"
 		}
 	],
 	"author": "acdhirr",
