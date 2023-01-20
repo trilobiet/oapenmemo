@@ -1,0 +1,330 @@
+<metadata xsi:schemaLocation="http://www.lyncode.com/xoai http://www.lyncode.com/xsd/xoai.xsd">
+	<element name="dc">
+		<element name="contributor">
+			<element name="editor">
+				<element name="none">
+					<field name="value">Brélaz, Cédric</field>
+					<field name="authority">4f6dd137-0db8-4125-b993-6be7aa3b1016</field>
+					<field name="value">Rose, Els</field>
+					<field name="authority">f62edffc-c97d-47f6-a111-2e82c7561413</field>
+					<field name="confidence">600</field>
+				</element>
+			</element>
+		</element>
+		<element name="date">
+			<element name="accessioned">
+				<element name="none">
+					<field name="value">2022-07-13T09:14:06Z</field>
+				</element>
+			</element>
+			<element name="available">
+				<element name="none">
+					<field name="value">2022-07-13T09:14:06Z</field>
+				</element>
+			</element>
+			<element name="issued">
+				<element name="none">
+					<field name="value">2021</field>
+				</element>
+			</element>
+		</element>
+		<element name="identifier">
+			<element name="uri">
+				<element name="none">
+					<field name="value">https://library.oapen.org/handle/20.500.12657/57293</field>
+				</element>
+			</element>
+		</element>
+		<element name="description">
+			<element name="abstract">
+				<element name="en_US">
+					<field name="value">During the Ancient Greek and Roman eras, participation in political communities at the local level, and assertion of belonging to these communities, were among the fundamental principles and values on which societies would rely. For that reason, citizenship and democracy are generally considered as concepts typical of the political experience of Classical Antiquity. These concepts of citizenship and democracy are often seen as inconsistent with the political, social, and ideological context of the late and post-Roman world. As a result, scholarship has largely overlooked participation in local political communities when it comes to the period between the disintegration of the Classical model of local citizenship in the later Roman Empire and the emergence of ‘pre-communal’ entities in Northern Italy from the ninth century onwards.
+
+By reassessing the period c. 300-1000 ce through the concepts of civic identity and civic participation, this volume will address both the impact of Classical heritage with regard to civic identities in the political experiences of the late and post-Roman world, and the rephrasing of new forms of social and political partnership according to ethnic or religious criteria in the early Middle Ages. Starting from the earlier imperial background, the fourteen chapters examine the ways in which people shared identity and gave shape to their communal life, as well as the role played by the people in local government in the later Roman Empire, the Germanic kingdoms, Byzantium, the early Islamic world, and the early medieval West. By focusing on the post-Classical, late antique, and early medieval periods, this volume intends to be an innovative contribution to the general history of citizenship and democracy.</field>
+				</element>
+			</element>
+		</element>
+		<element name="language">
+			<element name="en_US">
+				<field name="originalValue">English</field>
+				<field name="value">eng</field>
+			</element>
+		</element>
+		<element name="relation">
+			<element name="ispartofseries">
+				<element name="en_US">
+					<field name="value">Cultural Encounters in Late Antiquity and the Middle Ages</field>
+				</element>
+			</element>
+		</element>
+		<element name="subject">
+			<element name="classification">
+				<element name="en_US">
+					<field name="value">bic Book Industry Communication::H Humanities::HB History</field>
+					<field name="value">bic Book Industry Communication::H Humanities::HB History::HBG General &amp; world history</field>
+					<field name="value">bic Book Industry Communication::J Society &amp; social sciences::JP Politics &amp; government::JPH Political structure &amp; processes::JPHV Political structures: democracy</field>
+					<field name="value">bic Book Industry Communication::J Society &amp; social sciences::JP Politics &amp; government::JPV Political control &amp; freedoms::JPVH Human rights::JPVH1 Civil rights &amp; citizenship</field>
+				</element>
+			</element>
+			<element name="other">
+				<element name="en_US">
+					<field name="value">history; citizenship; democracy</field>
+				</element>
+			</element>
+		</element>
+		<element name="title">
+			<element name="en_US">
+				<field name="value">Civic Identity and Civic Participation in Late Antiquity and the Early Middle Ages</field>
+			</element>
+		</element>
+		<element name="type">
+			<element name="none">
+				<field name="value">book</field>
+			</element>
+		</element>
+	</element>
+	<element name="oapen">
+		<element name="identifier">
+			<element name="doi">
+				<element name="en_US">
+					<field name="value">10.1484/M.CELAMA-EB.5.120678</field>
+				</element>
+			</element>
+		</element>
+		<element name="relation">
+			<element name="isPublishedBy">
+				<element name="en_US">
+					<field name="value">921d3788-38a8-4c25-b98d-1550c80a40c6</field>
+					<field name="authority">921d3788-38a8-4c25-b98d-1550c80a40c6</field>
+					<field name="confidence">600</field>
+				</element>
+			</element>
+			<element name="isFundedBy">
+				<element name="en_US">
+					<field name="value">da087c60-8432-4f58-b2dd-747fc1a60025</field>
+					<field name="authority">da087c60-8432-4f58-b2dd-747fc1a60025</field>
+					<field name="confidence">600</field>
+					<field name="value">Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung</field>
+					<field name="authority">07f61e34-5b96-49f0-9860-c87dd8228f26</field>
+					<field name="confidence">600</field>
+				</element>
+			</element>
+			<element name="isbn">
+				<element name="en_US">
+					<field name="value">9782503590103</field>
+				</element>
+			</element>
+		</element>
+		<element name="collection">
+			<element name="en_US">
+				<field name="value">Swiss National Science Foundation (SNF)</field>
+				<field name="value">Dutch Research Council (NWO)</field>
+			</element>
+		</element>
+		<element name="series">
+			<element name="number">
+				<element name="en_US">
+					<field name="value">37</field>
+				</element>
+			</element>
+		</element>
+		<element name="pages">
+			<element name="en_US">
+				<field name="value">447</field>
+			</element>
+		</element>
+		<element name="place">
+			<element name="publication">
+				<element name="en_US">
+					<field name="value">Turnhout</field>
+				</element>
+			</element>
+		</element>
+		<element name="grant">
+			<element name="number">
+				<element name="none">
+					<field name="value" />
+					<field name="value" />
+				</element>
+			</element>
+			<element name="program">
+				<element name="none">
+					<field name="value" />
+					<field name="value" />
+				</element>
+			</element>
+			<element name="project">
+				<element name="none">
+					<field name="value" />
+					<field name="value" />
+				</element>
+			</element>
+		</element>
+	</element>
+	<element name="bundles">
+		<element name="bundle">
+			<field name="name">ORIGINAL</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">m.celama-eb.5.120678.pdf</field>
+					<field name="originalName">m.celama-eb.5.120678.pdf</field>
+					<field name="description" />
+					<field name="format">application/pdf</field>
+					<field name="size">10197056</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/57293/1/m.celama-eb.5.120678.pdf</field>
+					<field name="checksum">542cc51fca5f47b720892d0922f11b25</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">1</field>
+					<field name="dctitle">m.celama-eb.5.120678.pdf</field>
+					<field name="oapenrelationisbn">97825035900110</field>
+					<field name="rightsuri">https://creativecommons.org/licenses/by-nc-nd/4.0/</field>
+					<field name="rights">CC-BY-NC-ND</field>
+				</element>
+			</element>
+		</element>
+		<element name="bundle">
+			<field name="name">THUMBNAIL</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">m.celama-eb.5.120678.cover.jpg</field>
+					<field name="originalName">m.celama-eb.5.120678.cover.jpg</field>
+					<field name="description" />
+					<field name="format">image/jpeg</field>
+					<field name="size">8130</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/57293/2/m.celama-eb.5.120678.cover.jpg</field>
+					<field name="checksum">1172636c0e5437b882968eb848375471</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">2</field>
+					<field name="dctitle">m.celama-eb.5.120678.cover.jpg</field>
+					<field name="rightsuri">All rights reserved</field>
+					<field name="rights">All rights reserved</field>
+				</element>
+				<element name="bitstream">
+					<field name="name">m.celama-eb.5.120678.pdf.jpg</field>
+					<field name="originalName">m.celama-eb.5.120678.pdf.jpg</field>
+					<field name="description">Generated Thumbnail</field>
+					<field name="format">image/jpeg</field>
+					<field name="size">2314</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/57293/8/m.celama-eb.5.120678.pdf.jpg</field>
+					<field name="checksum">cebd0709861131eb08bb75eacd0f9a87</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">8</field>
+					<field name="dctitle">m.celama-eb.5.120678.pdf.jpg</field>
+				</element>
+			</element>
+		</element>
+		<element name="bundle">
+			<field name="name">EXPORT</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">317e3980-7c21-49e3-b8c3-9e63f1e4f579.marc.xml</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">6814</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/57293/3/317e3980-7c21-49e3-b8c3-9e63f1e4f579.marc.xml</field>
+					<field name="checksum">a892010170e21e6a50754b493f98aa37</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">3</field>
+					<field name="dctitle">317e3980-7c21-49e3-b8c3-9e63f1e4f579.marc.xml</field>
+				</element>
+				<element name="bitstream">
+					<field name="name">317e3980-7c21-49e3-b8c3-9e63f1e4f579.onix_3.0.xml</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">7493</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/57293/4/317e3980-7c21-49e3-b8c3-9e63f1e4f579.onix_3.0.xml</field>
+					<field name="checksum">a8182de14be09c532c3b6c1d266eacb5</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">4</field>
+					<field name="dctitle">317e3980-7c21-49e3-b8c3-9e63f1e4f579.onix_3.0.xml</field>
+				</element>
+				<element name="bitstream">
+					<field name="name">317e3980-7c21-49e3-b8c3-9e63f1e4f579.ris</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">2233</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/57293/5/317e3980-7c21-49e3-b8c3-9e63f1e4f579.ris</field>
+					<field name="checksum">9b2250beabcd7ef730a17f7cb3b41c50</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">5</field>
+					<field name="dctitle">317e3980-7c21-49e3-b8c3-9e63f1e4f579.ris</field>
+				</element>
+				<element name="bitstream">
+					<field name="name">317e3980-7c21-49e3-b8c3-9e63f1e4f579.tsv</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">454</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/57293/6/317e3980-7c21-49e3-b8c3-9e63f1e4f579.tsv</field>
+					<field name="checksum">b81e45eeadc5aca36bcb56c0f25ec75c</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">6</field>
+					<field name="dctitle">317e3980-7c21-49e3-b8c3-9e63f1e4f579.tsv</field>
+				</element>
+			</element>
+		</element>
+		<element name="bundle">
+			<field name="name">TEXT</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">m.celama-eb.5.120678.pdf.txt</field>
+					<field name="originalName">m.celama-eb.5.120678.pdf.txt</field>
+					<field name="description">Extracted text</field>
+					<field name="format">text/plain</field>
+					<field name="size">1313748</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/57293/7/m.celama-eb.5.120678.pdf.txt</field>
+					<field name="checksum">2a64fe9573dfa5f320516b9edb8d3a76</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">7</field>
+					<field name="dctitle">m.celama-eb.5.120678.pdf.txt</field>
+				</element>
+			</element>
+		</element>
+	</element>
+	<element name="others">
+		<field name="handle">20.500.12657/57293</field>
+		<field name="identifier">oai:library.oapen.org:20.500.12657/57293</field>
+		<field name="lastModifyDate">2022-07-14 02:59:00.005</field>
+	</element>
+	<element name="repository">
+		<field name="name">OAPEN Library</field>
+		<field name="mail">info@oapen.org</field>
+	</element>
+	<element name="linkedItemsMetadata">
+		<element name="oapen.relation.isFundedBy">
+			<field name="uuid">da087c60-8432-4f58-b2dd-747fc1a60025</field>
+			<field name="handle">20.500.12657/14222</field>
+			<element name="grantor.name">
+				<field name="value">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</field>
+			</element>
+			<element name="grantor.program" />
+			<element name="grantor.number" />
+			<element name="grantor.acronym">
+				<field name="value">Netherlands Organisation for Scientific Research</field>
+				<field name="value">Dutch National Scientific Foundation</field>
+				<field name="value">Dutch National Science Foundation</field>
+				<field name="value">NWO</field>
+			</element>
+			<element name="grantor.project" />
+			<element name="grantor.identifier.fundref" /></element>
+		<element name="oapen.relation.isPublishedBy">
+			<field name="uuid">921d3788-38a8-4c25-b98d-1550c80a40c6</field>
+			<field name="handle">20.500.12657/29985</field>
+			<element name="publisher.name">
+				<field name="value">Brepols</field>
+			</element>
+		</element>
+	</element>
+	<element name="fieldsWithParentData">
+		<element name="oapen.grant.number">
+			<element name="parentInfo">
+				<field name="parentField">oapen.relation.isFundedBy</field>
+				<field name="parentValue">da087c60-8432-4f58-b2dd-747fc1a60025</field>
+				<field name="originalValue" />
+			</element>
+		</element>
+		<element name="oapen.grant.number" />
+		<element name="oapen.grant.program">
+			<element name="parentInfo">
+				<field name="parentField">oapen.relation.isFundedBy</field>
+				<field name="parentValue">da087c60-8432-4f58-b2dd-747fc1a60025</field>
+				<field name="originalValue" />
+			</element>
+		</element>
+		<element name="oapen.grant.program" /></element>
+</metadata>
