@@ -25,7 +25,7 @@ CREATE TABLE public.title (
     oapen_identifier_doi VARCHAR(100),
     oapen_identifier_ocn VARCHAR(15),
     oapen_imprint VARCHAR(100),
-    oapen_pages INTEGER,
+    oapen_pages VARCHAR(10),
     oapen_placepublication VARCHAR(100),
     oapen_relation_partofbook UUID NOT NULL,
     oapen_relation_ispublishedby VARCHAR(25),
@@ -99,7 +99,7 @@ CREATE INDEX part_of_id_title ON public.identifier_isbn
     (id_title);
 
 
-CREATE TABLE public.dc_contributor (
+CREATE TABLE public.dc_contributor_role (
     name VARCHAR(100) NOT NULL,
     id_title UUID NOT NULL,
     type VARCHAR(10) NOT NULL,
@@ -210,7 +210,7 @@ ALTER TABLE public.dc_language ADD CONSTRAINT FK_dc_language__id_title FOREIGN K
 ALTER TABLE public.export_chunk ADD CONSTRAINT FK_export_chunk__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.dc_date_accessioned ADD CONSTRAINT FK_dc_date_accessioned__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.identifier_isbn ADD CONSTRAINT FK_identifier_isbn__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
-ALTER TABLE public.dc_contributor ADD CONSTRAINT FK_dc_contributor__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
+ALTER TABLE public.dc_contributor_role ADD CONSTRAINT FK_dc_contributor_role__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.dc_identifier ADD CONSTRAINT FK_dc_identifier__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.dc_subject_other ADD CONSTRAINT FK_dc_subject_other__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.dc_subject_classification ADD CONSTRAINT FK_dc_subject_classification__id_classification FOREIGN KEY (id_classification) REFERENCES public.classification(id);

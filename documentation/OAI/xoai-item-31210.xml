@@ -1,0 +1,338 @@
+<metadata xsi:schemaLocation="http://www.lyncode.com/xoai http://www.lyncode.com/xsd/xoai.xsd">
+	<element name="dc">
+		<element name="contributor">
+			<element name="author">
+				<element name="none">
+					<field name="value">Holzer, Daniela</field>
+					<field name="authority">10ce483e-ff70-481b-8423-1ae8ba6eee64</field>
+					<field name="confidence">600</field>
+				</element>
+			</element>
+		</element>
+		<element name="date">
+			<element name="accessioned">
+				<element name="none">
+					<field name="value">2017-08-01 23:55:55</field>
+					<field name="value">2020-01-07 15:51:13</field>
+					<field name="value">2020-04-01T13:27:22Z</field>
+				</element>
+			</element>
+			<element name="available">
+				<element name="none">
+					<field name="value">2020-04-01T13:27:22Z</field>
+				</element>
+			</element>
+			<element name="issued">
+				<element name="none">
+					<field name="value">2017</field>
+				</element>
+			</element>
+		</element>
+		<element name="identifier">
+			<element name="none">
+				<field name="value">634742</field>
+			</element>
+			<element name="en_US">
+				<field name="value">OCN: 1013957447</field>
+			</element>
+			<element name="uri">
+				<element name="none">
+					<field name="value">http://library.oapen.org/handle/20.500.12657/31210</field>
+				</element>
+			</element>
+		</element>
+		<element name="description">
+			<element name="abstract">
+				<element name="none">
+					<field name="value">Recent years have shown an increase in learning and advanced education obligations. Yet it meets with open or covert resistance: Resisting adults question the participation in »the fetish of (further) education«.</field>
+				</element>
+			</element>
+		</element>
+		<element name="language">
+			<element name="none">
+				<field name="originalValue">German</field>
+				<field name="value">ger</field>
+			</element>
+		</element>
+		<element name="relation">
+			<element name="ispartofseries">
+				<element name="none">
+					<field name="value">Pädagogik</field>
+				</element>
+			</element>
+		</element>
+		<element name="subject">
+			<element name="classification">
+				<element name="none">
+					<field name="value">bic Book Industry Communication::J Society &amp; social sciences::JN Education::JNA Philosophy &amp; theory of education</field>
+					<field name="authority">JNA</field>
+					<field name="confidence">600</field>
+				</element>
+			</element>
+			<element name="other">
+				<element name="none">
+					<field name="value">weiterbildung</field>
+					<field name="value">theodor w. adorno</field>
+					<field name="value">pedagogy</field>
+					<field name="value">bildung</field>
+					<field name="value">adult education</field>
+					<field name="value">critical theory</field>
+					<field name="value">bildungsforschung</field>
+					<field name="value">nichtteilnahme</field>
+					<field name="value">bildungstheorie</field>
+					<field name="value">widerstand</field>
+					<field name="value">society</field>
+					<field name="value">theory of education</field>
+					<field name="value">weiterbildungswiderstand</field>
+					<field name="value">pädagogik</field>
+					<field name="value">negative dialektik</field>
+					<field name="value">erwachsenenbildung</field>
+					<field name="value">resistance to continuing education</field>
+					<field name="value">educational research</field>
+					<field name="value">further education</field>
+					<field name="value">bildungssoziologie</field>
+					<field name="value">sociology of education</field>
+					<field name="value">nonparticipation</field>
+					<field name="value">education</field>
+					<field name="value">gesellschaft</field>
+					<field name="value">kritische theorie</field>
+					<field name="value">resistance</field>
+					<field name="value">negative dialectic</field>
+					<field name="value">Axmacher</field>
+					<field name="value">Michel Foucault</field>
+				</element>
+			</element>
+		</element>
+		<element name="title">
+			<element name="none">
+				<field name="value">Weiterbildungswiderstand</field>
+			</element>
+			<element name="alternative">
+				<element name="none">
+					<field name="value">Eine kritische Theorie der Verweigerung</field>
+				</element>
+			</element>
+		</element>
+		<element name="type">
+			<element name="none">
+				<field name="value">book</field>
+			</element>
+		</element>
+	</element>
+	<element name="oapen">
+		<element name="abstract">
+			<element name="otherlanguage">
+				<element name="none">
+					<field name="value">Nicht alle Erwachsenen wollen der Doktrin des »Lebenslangen Lernens« folgen. Im Gegenteil: Manche Menschen verweigern sich Weiterbildungsaufforderungen –  in vielfältigen Formen und aus unterschiedlichen Gründen.   Daniela Holzer leistet mit ihrer kritischen Theorie vom  Weiterbildungswiderstand einen Beitrag zu einem erst ansatzweise  bearbeiteten Forschungs- und Handlungsfeld. Sie erschließt die negative  Dialektik als denkleitendes Prinzip für die Theorieentwicklung. In einer  solchen – an Adorno angelehnten – Lesart werden Widerstandsforschungen aus  unterschiedlichen Fachgebieten zu einer negativ-dialektischen,  gesellschaftskritischen Theorie vom Weiterbildungswiderstand verwoben.</field>
+				</element>
+			</element>
+		</element>
+		<element name="identifier">
+			<element name="doi">
+				<element name="none">
+					<field name="value">10.14361/9783839439586_978-3-8394-3958-6_Weiterbildungswiderstand_Eine kritische Theorie der Verweig</field>
+				</element>
+			</element>
+			<element name="ocn">
+				<element name="none">
+					<field name="value">1013957447</field>
+				</element>
+			</element>
+		</element>
+		<element name="relation">
+			<element name="isPublishedBy">
+				<element name="none">
+					<field name="value">b30a6210-768f-42e6-bb84-0e6306590b5c</field>
+					<field name="authority">b30a6210-768f-42e6-bb84-0e6306590b5c</field>
+					<field name="confidence">600</field>
+				</element>
+			</element>
+			<element name="isFundedBy">
+				<element name="none">
+					<field name="value">07f61e34-5b96-49f0-9860-c87dd8228f26</field>
+					<field name="authority">07f61e34-5b96-49f0-9860-c87dd8228f26</field>
+					<field name="confidence">600</field>
+				</element>
+			</element>
+			<element name="isbn">
+				<element name="none">
+					<field name="value">9783837639582</field>
+				</element>
+			</element>
+		</element>
+		<element name="collection">
+			<element name="none">
+				<field name="value">Austrian Science Fund (FWF)</field>
+				<field name="value">Swiss National Science Foundation (SNF)</field>
+			</element>
+		</element>
+		<element name="pages">
+			<element name="none">
+				<field name="value">578</field>
+			</element>
+		</element>
+		<element name="place">
+			<element name="publication">
+				<element name="none">
+					<field name="value">Bielefeld</field>
+				</element>
+			</element>
+		</element>
+		<element name="redirect">
+			<element name="none">
+				<field name="value">630991</field>
+			</element>
+		</element>
+		<element name="notes">
+			<element name="none">
+				<field name="value">2020-01-07 15:46:12, Grantor: Austrian Science Fund/ Number: PUB 418</field>
+			</element>
+		</element>
+		<element name="remark">
+			<element name="public">
+				<element name="none">
+					<field name="value">Relevant Wikipedia pages: Axmacher - https://de.wikipedia.org/wiki/Axmacher; Dialektik - https://de.wikipedia.org/wiki/Dialektik; Erwachsenen- und Weiterbildung - https://de.wikipedia.org/wiki/Erwachsenen-_und_Weiterbildung; Kritische Theorie - https://de.wikipedia.org/wiki/Kritische_Theorie; Michel Foucault - https://de.wikipedia.org/wiki/Michel_Foucault; Negation - https://de.wikipedia.org/wiki/Negation; Theodor W. Adorno - https://de.wikipedia.org/wiki/Theodor_W._Adorno</field>
+				</element>
+			</element>
+		</element>
+	</element>
+	<element name="bundles">
+		<element name="bundle">
+			<field name="name">ORIGINAL</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">634742.pdf</field>
+					<field name="format">application/pdf</field>
+					<field name="size">3606986</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/31210/1/634742.pdf</field>
+					<field name="checksum">8798f92141454ba1fbd8761f1f913696</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">1</field>
+					<field name="dctitle">634742.pdf</field>
+					<field name="dcidentifierurlwebshop">http://www.transcript-verlag.de/978-3-8376-3958-2/</field>
+					<field name="rightsuri">http://creativecommons.org/licenses/by-4.0/</field>
+					<field name="rights">Other open license</field>
+				</element>
+			</element>
+		</element>
+		<element name="bundle">
+			<field name="name">THUMBNAIL</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">634742.pdf.jpg</field>
+					<field name="originalName">634742.pdf.jpg</field>
+					<field name="description">IM Thumbnail</field>
+					<field name="format">image/jpeg</field>
+					<field name="size">10801</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/31210/2/634742.pdf.jpg</field>
+					<field name="checksum">6619fd7756563af5a116ab7d985c23df</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">2</field>
+					<field name="dctitle">634742.pdf.jpg</field>
+				</element>
+			</element>
+		</element>
+		<element name="bundle">
+			<field name="name">TEXT</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">634742.pdf.txt</field>
+					<field name="originalName">634742.pdf.txt</field>
+					<field name="description">Extracted text</field>
+					<field name="format">text/plain</field>
+					<field name="size">1679982</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/31210/3/634742.pdf.txt</field>
+					<field name="checksum">451c944dbe62d82c60a08f733ca0e3b9</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">3</field>
+					<field name="dctitle">634742.pdf.txt</field>
+				</element>
+			</element>
+		</element>
+		<element name="bundle">
+			<field name="name">EXPORT</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.marc.xml</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">7978</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/31210/4/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.marc.xml</field>
+					<field name="checksum">15179aa0fba6cacf6a6028af07cf65c3</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">4</field>
+					<field name="dctitle">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.marc.xml</field>
+				</element>
+				<element name="bitstream">
+					<field name="name">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.onix_3.0.xml</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">8502</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/31210/5/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.onix_3.0.xml</field>
+					<field name="checksum">ccff7b1ae4cba926b138eb4c0c30dc70</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">5</field>
+					<field name="dctitle">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.onix_3.0.xml</field>
+				</element>
+				<element name="bitstream">
+					<field name="name">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.ris</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">2090</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/31210/6/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.ris</field>
+					<field name="checksum">ae4efe45a7e6aed9b55b356af6a2bef2</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">6</field>
+					<field name="dctitle">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.ris</field>
+				</element>
+				<element name="bitstream">
+					<field name="name">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.tsv</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">505</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/31210/-1/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.tsv</field>
+					<field name="checksum">4b2982739d39fabde71d95c9af061573</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">-1</field>
+					<field name="dctitle">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.tsv</field>
+				</element>
+			</element>
+		</element>
+	</element>
+	<element name="others">
+		<field name="handle">20.500.12657/31210</field>
+		<field name="identifier">oai:library.oapen.org:20.500.12657/31210</field>
+		<field name="lastModifyDate">2021-11-15 08:21:45.797</field>
+	</element>
+	<element name="repository">
+		<field name="name">OAPEN Library</field>
+		<field name="mail">info@oapen.org</field>
+	</element>
+	<element name="linkedItemsMetadata">
+		<element name="oapen.relation.isFundedBy">
+			<field name="uuid">07f61e34-5b96-49f0-9860-c87dd8228f26</field>
+			<field name="handle">20.500.12657/13266</field>
+			<element name="grantor.name">
+				<field name="value">Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung</field>
+			</element>
+			<element name="grantor.program" />
+			<element name="grantor.number" />
+			<element name="grantor.acronym">
+				<field name="value">Swiss National Science Foundation</field>
+				<field name="value">Fonds National Suisse de la Recherche Scientifique</field>
+				<field name="value">Fondo Nazionale Svizzero per la Ricerca Scientifica</field>
+				<field name="value">Fonds National Suisse</field>
+				<field name="value">Fondo Nazionale Svizzero</field>
+				<field name="value">Schweizerischer Nationalfonds</field>
+				<field name="value">SNSF</field>
+				<field name="value">FNS</field>
+				<field name="value">SNF</field>
+			</element>
+			<element name="grantor.project" />
+			<element name="grantor.identifier.fundref" /></element>
+		<element name="oapen.relation.isPublishedBy">
+			<field name="uuid">b30a6210-768f-42e6-bb84-0e6306590b5c</field>
+			<field name="handle">20.500.12657/22403</field>
+			<element name="publisher.name">
+				<field name="value">transcript Verlag</field>
+			</element>
+		</element>
+	</element>
+	<element name="fieldsWithParentData" />
+</metadata>

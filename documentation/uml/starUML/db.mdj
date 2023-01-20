@@ -985,7 +985,7 @@
 									"top": 173,
 									"width": 205.27783203125,
 									"height": 13,
-									"text": "dc_contributor"
+									"text": "dc_contributor_role"
 								},
 								{
 									"_type": "ERDColumnCompartmentView",
@@ -3062,7 +3062,8 @@
 								},
 								"reference": {
 									"$ref": "AAAAAAGFoP0GeC3Nl1w="
-								}
+								},
+								"cardinality": "0..*"
 							},
 							"end2": {
 								"_type": "ERDRelationshipEnd",
@@ -3456,8 +3457,8 @@
 								"$ref": "AAAAAAGFoP0GeC3Nl1w="
 							},
 							"name": "oapen_pages",
-							"type": "INTEGER",
-							"length": 0,
+							"type": "VARCHAR",
+							"length": "10",
 							"nullable": true
 						},
 						{
@@ -3673,7 +3674,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGFoPzP8S3FZ8g="
 					},
-					"name": "dc_contributor",
+					"name": "dc_contributor_role",
 					"columns": [
 						{
 							"_type": "ERDColumn",

@@ -10,25 +10,24 @@ Online testing:
 arrays of values:
 -------------------
 
-$.handle
-$.type
-$.uuid
+handle                  //element[@name="others"]/field[@name="handle"]/text()
+type                    //element[@name="dc"]/element[@name="type"]//field[@name="value"]/text()
+$.uuid                  NOT AVAILABLE
 
-$.metadata[?(@.key == 'dc.date.accessioned')].value
-$.metadata[?(@.key == 'dc.description.abstract')].value
-$.metadata[?(@.key == 'dc.language')].value
-$.metadata[?(@.key == 'oapen.identifier')].value - url with a UUID, very seldom multiple values -> put them in a single pipe separated field
+dc.date.accessioned     //element[@name="dc"]/element[@name="date"]/element[@name="accessioned"]//field[@name="value"]/text()
+dc.description.abstract //element[@name="dc"]/element[@name="description"]/element[@name="abstract"]//field[@name="value"]/text()
+dc.language             //element[@name="dc"]/element[@name="language"]//field[@name="value"]/text()    (or "originalValue" for spelled out language)
+oapen.identifier        NOT AVAILABLE
+                        partOfBook uses the UUID however, so where does it refer to?
 
-$.bitstreams[?(@.bundleName == 'THUMBNAIL')].name - may return more values -> put them in a single pipe separated field
-
-arrays of metadata objects:
-----------------------------
+thumbnail - may return more values -> put them in a single pipe separated field
+//*[.='THUMBNAIL']/..//element[@name="bitstream"]/field[@name="name"]/text() 
 
 classifications (bic):
-$.metadata[?(@.key == 'dc.subject.classification')].value
+//element[@name="dc"]/element[@name="subject"]/element[@name="classification"]//field[@name="value"]/text()
 
 other subjects:
-$.metadata[?(@.key == 'dc.subject.other')].value
+//element[@name="dc"]/element[@name="subject"]/element[@name="other"]//field[@name="value"]/text()
 
 dc identifiers:
 $.metadata[?(@.key == 'dc.identifier')].value

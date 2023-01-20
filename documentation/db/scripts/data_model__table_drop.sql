@@ -3,7 +3,7 @@ DROP TABLE public.dc_language CASCADE;
 DROP TABLE public.export_chunk CASCADE;
 DROP TABLE public.dc_date_accessioned CASCADE;
 DROP TABLE public.identifier_isbn CASCADE;
-DROP TABLE public.dc_contributor CASCADE;
+DROP TABLE public.dc_contributor_role CASCADE;
 DROP TABLE public.dc_identifier CASCADE;
 DROP TABLE public.classification CASCADE;
 DROP TABLE public.dc_subject_other CASCADE;
