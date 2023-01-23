@@ -197,11 +197,13 @@
           <tr>
             <td><a href="74d27c358d14caf5c80a7a0c37e677e8.html">name</a></td>
             <td>VARCHAR(100)</td>
-            <td><span class='label label-info'>true</span></td>
             <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
             <td>
               
-              <span class='label label-info'>null</span>
+                <a href='2bcee78ed1aa53c1dcf9b9d785cc5e29.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>contributor</a> ::
+              
+              <a href='a670f4519faaf1f37777e10da0545349.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>name</a>
             </td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
@@ -210,7 +212,7 @@
           <tr>
             <td><a href="fa38d2232a43885ac13c98a7dce70cfc.html">id_title</a></td>
             <td>UUID</td>
-            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>true</span></td>
             <td>
               
@@ -232,6 +234,21 @@
               <span class='label label-info'>null</span>
             </td>
             <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="96f7f4f1f13aa691b51f87c314b232d5.html">id_institution</a></td>
+            <td>UUID</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+                <a href='ec6ab13dc0421b0a508ffe649a1e5c32.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>institution</a> ::
+              
+              <a href='d8eab74252166aeeb0ccd7a92347fcd0.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+            </td>
+            <td><span class='label label-info'>true</span></td>
             <td><span class='label label-info'>false</span></td>
           </tr>
           
@@ -267,6 +284,22 @@
             <td>1</td>
             <td></td>
             <td><a href='3c2479fe9070ab9b38d6bf548d5f7929.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—dc_contributor_role)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='2bcee78ed1aa53c1dcf9b9d785cc5e29.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>contributor</a></td>
+            <td>1</td>
+            <td></td>
+            <td><a href='a4bbc2d1a239a42d76a02a77138bc522.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(contributor—dc_contributor_role)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='ec6ab13dc0421b0a508ffe649a1e5c32.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>institution</a></td>
+            <td>1</td>
+            <td></td>
+            <td><a href='1daa5f656796ed2e6af84c85b11af1e4.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(institution—dc_contributor_role)</a></td>
           </tr>
           
         </table>                
@@ -336,6 +369,10 @@
         <li><a href='6c2faf83ff7ecf462491ee0658d68521.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—dc_contributor_role)</a></li>
         
         <li><a href='3c2479fe9070ab9b38d6bf548d5f7929.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—dc_contributor_role)</a></li>
+        
+        <li><a href='a4bbc2d1a239a42d76a02a77138bc522.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(contributor—dc_contributor_role)</a></li>
+        
+        <li><a href='1daa5f656796ed2e6af84c85b11af1e4.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(institution—dc_contributor_role)</a></li>
         
     </ul>
 </section>

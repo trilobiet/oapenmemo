@@ -22,7 +22,7 @@ CREATE TABLE public.title (
     oapen_description_otherlanguage text,
     oapen_embargo VARCHAR(255),
     oapen_identifier VARCHAR(255),
-    oapen_identifier_doi VARCHAR(100),
+    oapen_identifier_doi VARCHAR(255),
     oapen_identifier_ocn VARCHAR(15),
     oapen_imprint VARCHAR(100),
     oapen_pages VARCHAR(10),
@@ -103,9 +103,17 @@ CREATE TABLE public.dc_contributor_role (
     name VARCHAR(100) NOT NULL,
     id_title UUID NOT NULL,
     type VARCHAR(10) NOT NULL,
-    PRIMARY KEY (name, id_title)
+    id_institution UUID
 );
 
+CREATE INDEX part_of_name ON public.dc_contributor_role
+    (name);
+CREATE INDEX part_of_id_title ON public.dc_contributor_role
+    (id_title);
+
+
+COMMENT ON COLUMN public.dc_contributor_role.type
+    IS 'Advisor || Author || Editor || Other';
 
 CREATE TABLE public.dc_identifier (
     identifier VARCHAR(50) NOT NULL,
@@ -204,13 +212,29 @@ COMMENT ON COLUMN public.publisher.id
     IS 'a handle, e.g. 20.500.12657/22403
 (https://library.oapen.org/handle/20.500.12657/22403)';
 
+CREATE TABLE public.contributor (
+    name VARCHAR(100) NOT NULL,
+    orcid char(19) NOT NULL,
+    PRIMARY KEY (name)
+);
+
+
+CREATE TABLE public.institution (
+    id UUID NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
 ALTER TABLE public.title ADD CONSTRAINT FK_title__oapen_relation_partofbook FOREIGN KEY (oapen_relation_partofbook) REFERENCES public.title(id);
 ALTER TABLE public.title ADD CONSTRAINT FK_title__oapen_relation_ispublishedby FOREIGN KEY (oapen_relation_ispublishedby) REFERENCES public.publisher(id);
 ALTER TABLE public.dc_language ADD CONSTRAINT FK_dc_language__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.export_chunk ADD CONSTRAINT FK_export_chunk__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.dc_date_accessioned ADD CONSTRAINT FK_dc_date_accessioned__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.identifier_isbn ADD CONSTRAINT FK_identifier_isbn__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
+ALTER TABLE public.dc_contributor_role ADD CONSTRAINT FK_dc_contributor_role__name FOREIGN KEY (name) REFERENCES public.contributor(name);
 ALTER TABLE public.dc_contributor_role ADD CONSTRAINT FK_dc_contributor_role__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
+ALTER TABLE public.dc_contributor_role ADD CONSTRAINT FK_dc_contributor_role__id_institution FOREIGN KEY (id_institution) REFERENCES public.institution(id);
 ALTER TABLE public.dc_identifier ADD CONSTRAINT FK_dc_identifier__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.dc_subject_other ADD CONSTRAINT FK_dc_subject_other__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.dc_subject_classification ADD CONSTRAINT FK_dc_subject_classification__id_classification FOREIGN KEY (id_classification) REFERENCES public.classification(id);
