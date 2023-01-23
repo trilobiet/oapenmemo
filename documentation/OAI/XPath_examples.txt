@@ -1,0 +1,47 @@
+
+XOAI XPath Examples
+===================
+
+Online testing:
+    https://extendsclass.com/xpath-tester.html
+    https://www.freeformatter.com/xpath-tester.html
+
+
+arrays of values:
+-------------------
+
+handle                  //element[@name="others"]/field[@name="handle"]/text()
+type                    //element[@name="dc"]/element[@name="type"]//field[@name="value"]/text()
+$.uuid                  NOT AVAILABLE
+
+dc.date.accessioned     //element[@name="dc"]/element[@name="date"]/element[@name="accessioned"]//field[@name="value"]/text()
+dc.description.abstract //element[@name="dc"]/element[@name="description"]/element[@name="abstract"]//field[@name="value"]/text()
+dc.language             //element[@name="dc"]/element[@name="language"]//field[@name="value"]/text()    (or "originalValue" for spelled out language)
+oapen.identifier        NOT AVAILABLE
+                        partOfBook uses the UUID however, so where does it refer to?
+
+thumbnail - may return more values -> put them in a single pipe separated field
+//*[.='THUMBNAIL']/..//element[@name="bitstream"]/field[@name="name"]/text() 
+
+classifications (bic):
+//element[@name="dc"]/element[@name="subject"]/element[@name="classification"]//field[@name="value"]/text()
+
+other subjects:
+//element[@name="dc"]/element[@name="subject"]/element[@name="other"]//field[@name="value"]/text()
+
+dc identifiers:
+
+contributors:
+
+isbn numbers: 
+
+
+Exports
+------------
+export names and retrieve links:
+
+
+Metadata
+------------
+Metadata order of nodes matters! 
+
