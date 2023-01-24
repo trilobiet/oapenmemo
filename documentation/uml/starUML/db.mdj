@@ -3600,6 +3600,7 @@
 								"$ref": "AAAAAAGFoP0GeC3Nl1w="
 							},
 							"name": "dc_date_issued",
+							"documentation": "Most of the time only a year, sometimes a full date.",
 							"type": "DATE",
 							"length": 0,
 							"nullable": true
@@ -4412,6 +4413,7 @@
 								"$ref": "AAAAAAGFu0h3DFaz930="
 							},
 							"name": "id_funder",
+							"documentation": "A handle, e.g. 20.500.12657/14222",
 							"type": "VARCHAR",
 							"length": "25",
 							"foreignKey": true,

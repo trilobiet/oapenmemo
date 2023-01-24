@@ -1,0 +1,898 @@
+ <OAI-PMH>
+	<responseDate>2023-01-23T13:49:34Z</responseDate>
+	<request verb="ListRecords" metadataPrefix="xoai" from="2023-01-21T00:00:00Z">http://library.oapen.org/oai/request</request>
+	<ListRecords>
+		<record>
+			<header>
+				<identifier>oai:library.oapen.org:20.500.12657/60744</identifier>
+				<datestamp>2023-01-21T04:26:17Z</datestamp>
+				<setSpec>com_20.500.12657_5</setSpec>
+				<setSpec>col_20.500.12657_6</setSpec>
+			</header>
+			<metadata>
+				<metadata
+					xmlns="http://www.lyncode.com/xoai"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.lyncode.com/xoai http://www.lyncode.com/xsd/xoai.xsd">
+					<element name="dc">
+						<element name="contributor">
+							<element name="author">
+								<element name="none">
+									<field name="value">Balzar, Christoph</field>
+									<field name="authority">19380db3-36e6-41d5-a660-14ddb9cda0cc</field>
+									<field name="confidence">300</field>
+								</element>
+							</element>
+						</element>
+						<element name="date">
+							<element name="accessioned">
+								<element name="none">
+									<field name="value">2023-01-19T22:17:58Z</field>
+								</element>
+							</element>
+							<element name="available">
+								<element name="none">
+									<field name="value">2023-01-19T22:17:58Z</field>
+								</element>
+							</element>
+							<element name="issued">
+								<element name="none">
+									<field name="value">2022</field>
+								</element>
+							</element>
+						</element>
+						<element name="identifier">
+							<element name="none">
+								<field name="value">ONIX_20230119_9783839465257_8</field>
+							</element>
+							<element name="uri">
+								<element name="none">
+									<field name="value">https://library.oapen.org/handle/20.500.12657/60744</field>
+								</element>
+							</element>
+						</element>
+						<element name="language">
+							<element name="none">
+								<field name="originalValue">German</field>
+								<field name="value">ger</field>
+							</element>
+						</element>
+						<element name="relation">
+							<element name="ispartofseries">
+								<element name="none">
+									<field name="value">Cultural Heritage Studies</field>
+								</element>
+							</element>
+						</element>
+						<element name="subject">
+							<element name="classification">
+								<element name="none">
+									<field name="value">bic Book Industry Communication::G Reference, information &amp; interdisciplinary subjects::GM Museology &amp; heritage studies</field>
+									<field name="value">bic Book Industry Communication::K Economics, finance, business &amp; management::KJ Business &amp; management::KJM Management &amp; management techniques</field>
+									<field name="value">bic Book Industry Communication::J Society &amp; social sciences::JF Society &amp; culture: general::JFC Cultural studies</field>
+								</element>
+							</element>
+							<element name="other">
+								<element name="none">
+									<field name="value">Museum</field>
+									<field name="value">Kolonialismus</field>
+									<field name="value">Ethnologie</field>
+									<field name="value">Kunstgeschichte</field>
+									<field name="value">Dekolonisation</field>
+									<field name="value">Erinnerungskultur</field>
+									<field name="value">Kulturmanagement</field>
+									<field name="value">Museumswissenschaft</field>
+									<field name="value">Colonialism</field>
+									<field name="value">Ethnology</field>
+									<field name="value">Art History</field>
+									<field name="value">Decolonization</field>
+									<field name="value">Memory Culture</field>
+									<field name="value">Cultural Management</field>
+									<field name="value">Museology</field>
+								</element>
+							</element>
+						</element>
+						<element name="title">
+							<element name="none">
+								<field name="value">Das kolonisierte Heiligtum</field>
+							</element>
+							<element name="alternative">
+								<element name="none">
+									<field name="value">Diskriminierungskritische Perspektiven auf das Verfahren der Musealisierung</field>
+								</element>
+							</element>
+						</element>
+						<element name="type">
+							<element name="none">
+								<field name="value">book</field>
+							</element>
+						</element>
+					</element>
+					<element name="oapen">
+						<element name="abstract">
+							<element name="otherlanguage">
+								<element name="none">
+									<field name="value">Während der Zeit des historischen Kolonialismus wurden in Völkerkundemuseen komplexe Formen rassistischer und religiöser Diskriminierung institutionalisiert, z.B. in den dort gültigen Ästhetik- und Kunstbegriffen. Viele der heutigen Museumsangestellten erklären sich deswegen zu Reformen bereit. Doch können sie sich tatsächlich vom Kolonialismus trennen? Ist eine Dekolonisation ethnologischer Museen mit kolonialer Beute je abschließend möglich? Am Beispiel umstrittener Heiligtümer lebender Kulturen untersucht Christoph Balzar das Verfahren der Musealisierung durch die Linse der Diskriminierungskritik. Im Fokus stehen dabei die Sammlungen der »Staatlichen Museen zu Berlin«.</field>
+								</element>
+							</element>
+						</element>
+						<element name="identifier">
+							<element name="doi">
+								<element name="none">
+									<field name="value">10.1515/9783839465257</field>
+								</element>
+							</element>
+						</element>
+						<element name="relation">
+							<element name="isPublishedBy">
+								<element name="none">
+									<field name="value">b30a6210-768f-42e6-bb84-0e6306590b5c</field>
+									<field name="authority">b30a6210-768f-42e6-bb84-0e6306590b5c</field>
+									<field name="confidence">600</field>
+								</element>
+							</element>
+							<element name="isFundedBy">
+								<element name="none">
+									<field name="value">172f9570-eee3-42d8-ae2c-f6bd3406030c</field>
+									<field name="authority">172f9570-eee3-42d8-ae2c-f6bd3406030c</field>
+									<field name="confidence">600</field>
+								</element>
+							</element>
+							<element name="isbn">
+								<element name="none">
+									<field name="value">9783839465257</field>
+									<field name="value">9783837665253</field>
+								</element>
+							</element>
+						</element>
+						<element name="imprint">
+							<element name="none">
+								<field name="value">transcript Verlag</field>
+							</element>
+						</element>
+						<element name="series">
+							<element name="number">
+								<element name="none">
+									<field name="value">4</field>
+								</element>
+							</element>
+						</element>
+						<element name="pages">
+							<element name="none">
+								<field name="value">232</field>
+							</element>
+						</element>
+						<element name="place">
+							<element name="publication">
+								<element name="none">
+									<field name="value">Bielefeld</field>
+								</element>
+							</element>
+						</element>
+						<element name="grant">
+							<element name="number">
+								<element name="none">
+									<field name="value">[...]</field>
+								</element>
+							</element>
+						</element>
+					</element>
+					<element name="bundles">
+						<element name="bundle">
+							<field name="name">ORIGINAL</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">9783839465257.pdf</field>
+									<field name="originalName">9783839465257.pdf</field>
+									<field name="format">application/pdf</field>
+									<field name="size">29420625</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60744/1/9783839465257.pdf</field>
+									<field name="checksum">f66b055ee803ea3f03599aa2e5dccb38-6</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">1</field>
+									<field name="dctitle">9783839465257.pdf</field>
+									<field name="oapenrelationisbn">9783839465257</field>
+									<field name="rightsuri">https://creativecommons.org/licenses/by-sa/4.0/</field>
+									<field name="rights">CC-BY-SA</field>
+								</element>
+							</element>
+						</element>
+						<element name="bundle">
+							<field name="name">EXPORT</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">0609b6d3-bbd4-4e13-972a-916feebaa6bd.marc.xml</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">7735</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60744/8/0609b6d3-bbd4-4e13-972a-916feebaa6bd.marc.xml</field>
+									<field name="checksum">0b77c0cf71e826004ed8ec32696f55cd</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">8</field>
+									<field name="dctitle">0609b6d3-bbd4-4e13-972a-916feebaa6bd.marc.xml</field>
+								</element>
+								<element name="bitstream">
+									<field name="name">0609b6d3-bbd4-4e13-972a-916feebaa6bd.onix_3.0.xml</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">7202</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60744/9/0609b6d3-bbd4-4e13-972a-916feebaa6bd.onix_3.0.xml</field>
+									<field name="checksum">1e9861446bc5d145bb2bc9f11d8591c8</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">9</field>
+									<field name="dctitle">0609b6d3-bbd4-4e13-972a-916feebaa6bd.onix_3.0.xml</field>
+								</element>
+								<element name="bitstream">
+									<field name="name">0609b6d3-bbd4-4e13-972a-916feebaa6bd.ris</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">1491</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60744/10/0609b6d3-bbd4-4e13-972a-916feebaa6bd.ris</field>
+									<field name="checksum">223903b4db05c34e4610ae08dda0a3e5</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">10</field>
+									<field name="dctitle">0609b6d3-bbd4-4e13-972a-916feebaa6bd.ris</field>
+								</element>
+								<element name="bitstream">
+									<field name="name">0609b6d3-bbd4-4e13-972a-916feebaa6bd.tsv</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">483</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60744/11/0609b6d3-bbd4-4e13-972a-916feebaa6bd.tsv</field>
+									<field name="checksum">f867c4266a5c3f53be6c7e23287d0612</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">11</field>
+									<field name="dctitle">0609b6d3-bbd4-4e13-972a-916feebaa6bd.tsv</field>
+								</element>
+							</element>
+						</element>
+						<element name="bundle">
+							<field name="name">TEXT</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">9783839465257.pdf.txt</field>
+									<field name="originalName">9783839465257.pdf.txt</field>
+									<field name="description">Extracted text</field>
+									<field name="format">text/plain</field>
+									<field name="size">586484</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60744/6/9783839465257.pdf.txt</field>
+									<field name="checksum">77a3aafedfd341933eef1eef96addd5e</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">6</field>
+									<field name="dctitle">9783839465257.pdf.txt</field>
+								</element>
+							</element>
+						</element>
+						<element name="bundle">
+							<field name="name">THUMBNAIL</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">Naamloos.jpg</field>
+									<field name="originalName">Naamloos.jpg</field>
+									<field name="description"/>
+									<field name="format">image/jpeg</field>
+									<field name="size">7423</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60744/7/Naamloos.jpg</field>
+									<field name="checksum">54171e81e09b2c0c61d2380a6675c993</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">7</field>
+									<field name="dctitle">Naamloos.jpg</field>
+									<field name="rightsuri">All rights reserved</field>
+									<field name="rights">All rights reserved</field>
+								</element>
+								<element name="bitstream">
+									<field name="name">9783839465257.pdf.jpg</field>
+									<field name="originalName">9783839465257.pdf.jpg</field>
+									<field name="description">Generated Thumbnail</field>
+									<field name="format">image/jpeg</field>
+									<field name="size">1852</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60744/12/9783839465257.pdf.jpg</field>
+									<field name="checksum">520dfe0bb03abdf18db2ea460218481c</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">12</field>
+									<field name="dctitle">9783839465257.pdf.jpg</field>
+								</element>
+							</element>
+						</element>
+					</element>
+					<element name="others">
+						<field name="handle">20.500.12657/60744</field>
+						<field name="identifier">oai:library.oapen.org:20.500.12657/60744</field>
+						<field name="lastModifyDate">2023-01-21 04:26:17.482</field>
+					</element>
+					<element name="repository">
+						<field name="name">OAPEN Library</field>
+						<field name="mail">info@oapen.org</field>
+					</element>
+					<element name="linkedItemsMetadata">
+						<element name="oapen.relation.isFundedBy">
+							<field name="uuid">172f9570-eee3-42d8-ae2c-f6bd3406030c</field>
+							<field name="handle">20.500.12657/60743</field>
+							<element name="grantor.name"/>
+							<element name="grantor.program"/>
+							<element name="grantor.number"/>
+							<element name="grantor.acronym"/>
+							<element name="grantor.project"/>
+							<element name="grantor.identifier.fundref"/></element>
+						<element name="oapen.relation.isPublishedBy">
+							<field name="uuid">b30a6210-768f-42e6-bb84-0e6306590b5c</field>
+							<field name="handle">20.500.12657/22403</field>
+							<element name="publisher.name">
+								<field name="value">transcript Verlag</field>
+							</element>
+						</element>
+					</element>
+					<element name="fieldsWithParentData">
+						<element name="oapen.grant.number">
+							<element name="parentInfo">
+								<field name="parentField">oapen.relation.isFundedBy</field>
+								<field name="parentValue">172f9570-eee3-42d8-ae2c-f6bd3406030c</field>
+								<field name="originalValue">[...]</field>
+							</element>
+						</element>
+					</element>
+				</metadata>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:library.oapen.org:20.500.12657/60840</identifier>
+				<datestamp>2023-01-21T04:29:41Z</datestamp>
+				<setSpec>com_20.500.12657_5</setSpec>
+				<setSpec>col_20.500.12657_6</setSpec>
+			</header>
+			<metadata>
+				<metadata
+					xmlns="http://www.lyncode.com/xoai"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.lyncode.com/xoai http://www.lyncode.com/xsd/xoai.xsd">
+					<element name="dc">
+						<element name="contributor">
+							<element name="editor">
+								<element name="none">
+									<field name="value">Bartz, Eva</field>
+									<field name="authority">533df1e9-441b-4750-9392-692b6e311b59</field>
+									<field name="confidence">300</field>
+									<field name="value">Bartz-Beielstein, Thomas</field>
+									<field name="authority">3202ec22-3d2a-4191-bddf-1bc133f71209</field>
+									<field name="confidence">300</field>
+									<field name="value">Zaefferer, Martin</field>
+									<field name="authority">2bd53f1d-81f2-4a32-880d-decd73ecd84f</field>
+									<field name="confidence">300</field>
+									<field name="value">Mersmann, Olaf</field>
+									<field name="authority">47c47812-f4cd-480d-857d-39090c6b8974</field>
+									<field name="confidence">300</field>
+								</element>
+							</element>
+						</element>
+						<element name="date">
+							<element name="accessioned">
+								<element name="none">
+									<field name="value">2023-01-20T16:54:39Z</field>
+								</element>
+							</element>
+							<element name="available">
+								<element name="none">
+									<field name="value">2023-01-20T16:54:39Z</field>
+								</element>
+							</element>
+							<element name="issued">
+								<element name="none">
+									<field name="value">2023</field>
+								</element>
+							</element>
+						</element>
+						<element name="identifier">
+							<element name="none">
+								<field name="value">ONIX_20230120_9789811951701_42</field>
+							</element>
+							<element name="uri">
+								<element name="none">
+									<field name="value">https://library.oapen.org/handle/20.500.12657/60840</field>
+								</element>
+							</element>
+						</element>
+						<element name="description">
+							<element name="abstract">
+								<element name="none">
+									<field name="value">This open access book provides a wealth of hands-on examples that illustrate how hyperparameter tuning can be applied in practice and gives deep insights into the working mechanisms of machine learning (ML) and deep learning (DL) methods. The aim of the book is to equip readers with the ability to achieve better results with significantly less time, costs, effort and resources using the methods described here. The case studies presented in this book can be run on a regular desktop or notebook computer. No high-performance computing facilities are required. The idea for the book originated in a study conducted by Bartz &amp; Bartz GmbH for the Federal Statistical Office of Germany (Destatis). Building on that study, the book is addressed to practitioners in industry as well as researchers, teachers and students in academia. The content focuses on the hyperparameter tuning of ML and DL algorithms, and is divided into two main parts: theory (Part I) and application (Part II). Essential topics covered include: a survey of important model parameters; four parameter tuning studies and one extensive global parameter tuning study; statistical analysis of the performance of ML and DL methods based on severity; and a new, consensus-ranking-based way to aggregate and analyze results from multiple algorithms. The book presents analyses of more than 30 hyperparameters from six relevant ML and DL methods, and provides source code so that users can reproduce the results. Accordingly, it serves as a handbook and textbook alike.</field>
+								</element>
+							</element>
+						</element>
+						<element name="language">
+							<element name="none">
+								<field name="originalValue">English</field>
+								<field name="value">eng</field>
+							</element>
+						</element>
+						<element name="subject">
+							<element name="classification">
+								<element name="none">
+									<field name="value">bic Book Industry Communication::U Computing &amp; information technology::UY Computer science::UYQ Artificial intelligence</field>
+									<field name="value">bic Book Industry Communication::U Computing &amp; information technology::UY Computer science::UYQ Artificial intelligence::UYQM Machine learning</field>
+									<field name="value">bic Book Industry Communication::U Computing &amp; information technology::UF Business applications::UFM Mathematical &amp; statistical software</field>
+									<field name="value">bic Book Industry Communication::P Mathematics &amp; science::PH Physics::PHU Mathematical physics</field>
+								</element>
+							</element>
+							<element name="other">
+								<element name="none">
+									<field name="value">Hyperparameter Tuning</field>
+									<field name="value">Hyperparameters</field>
+									<field name="value">Tuning</field>
+									<field name="value">Deep Neural Networks</field>
+									<field name="value">Reinforcement Learning</field>
+									<field name="value">Machine Learning</field>
+								</element>
+							</element>
+						</element>
+						<element name="title">
+							<element name="none">
+								<field name="value">Hyperparameter Tuning for Machine and Deep Learning with R</field>
+							</element>
+							<element name="alternative">
+								<element name="none">
+									<field name="value">A Practical Guide</field>
+								</element>
+							</element>
+						</element>
+						<element name="type">
+							<element name="none">
+								<field name="value">book</field>
+							</element>
+						</element>
+					</element>
+					<element name="oapen">
+						<element name="identifier">
+							<element name="doi">
+								<element name="none">
+									<field name="value">10.1007/978-981-19-5170-1</field>
+								</element>
+							</element>
+						</element>
+						<element name="relation">
+							<element name="isPublishedBy">
+								<element name="none">
+									<field name="value">6c6992af-b843-4f46-859c-f6e9998e40d5</field>
+									<field name="authority">6c6992af-b843-4f46-859c-f6e9998e40d5</field>
+									<field name="confidence">600</field>
+								</element>
+							</element>
+							<element name="isFundedBy">
+								<element name="none">
+									<field name="value">1b71b6aa-ef3b-4897-864f-0f1da4cd2438</field>
+									<field name="authority">1b71b6aa-ef3b-4897-864f-0f1da4cd2438</field>
+									<field name="confidence">600</field>
+								</element>
+							</element>
+							<element name="isbn">
+								<element name="none">
+									<field name="value">9789811951701</field>
+								</element>
+							</element>
+						</element>
+						<element name="imprint">
+							<element name="none">
+								<field name="value">Springer Nature Singapore</field>
+							</element>
+						</element>
+						<element name="pages">
+							<element name="none">
+								<field name="value">323</field>
+							</element>
+						</element>
+						<element name="place">
+							<element name="publication">
+								<element name="none">
+									<field name="value">Singapore</field>
+								</element>
+							</element>
+						</element>
+						<element name="grant">
+							<element name="number">
+								<element name="none">
+									<field name="value">[...]</field>
+								</element>
+							</element>
+						</element>
+					</element>
+					<element name="bundles">
+						<element name="bundle">
+							<field name="name">ORIGINAL</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">978-981-19-5170-1.pdf</field>
+									<field name="originalName">978-981-19-5170-1.pdf</field>
+									<field name="format">application/pdf</field>
+									<field name="size">4568524</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60840/1/978-981-19-5170-1.pdf</field>
+									<field name="checksum">dfd9b3f9739a1ea8d6305af956d1fb86</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">1</field>
+									<field name="dctitle">978-981-19-5170-1.pdf</field>
+									<field name="oapenrelationisbn">9789811951701</field>
+									<field name="dcidentifierurlwebshop">https://link.springer.com/978-981-19-5170-1</field>
+									<field name="rightsuri">http://creativecommons.org/licenses/by/4.0/</field>
+									<field name="rights">CC-BY</field>
+								</element>
+							</element>
+						</element>
+						<element name="bundle">
+							<field name="name">EXPORT</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">0b38dea2-8c42-451d-9744-20358c03f57b.marc.xml</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">8664</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60840/2/0b38dea2-8c42-451d-9744-20358c03f57b.marc.xml</field>
+									<field name="checksum">d9ee5c650e93f77a23fd5181e2edbf05</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">2</field>
+									<field name="dctitle">0b38dea2-8c42-451d-9744-20358c03f57b.marc.xml</field>
+								</element>
+								<element name="bitstream">
+									<field name="name">0b38dea2-8c42-451d-9744-20358c03f57b.onix_3.0.xml</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">7353</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60840/3/0b38dea2-8c42-451d-9744-20358c03f57b.onix_3.0.xml</field>
+									<field name="checksum">1052fc1ba184f5edaa3e7c481af434fb</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">3</field>
+									<field name="dctitle">0b38dea2-8c42-451d-9744-20358c03f57b.onix_3.0.xml</field>
+								</element>
+								<element name="bitstream">
+									<field name="name">0b38dea2-8c42-451d-9744-20358c03f57b.ris</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">2202</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60840/4/0b38dea2-8c42-451d-9744-20358c03f57b.ris</field>
+									<field name="checksum">62749fad73f54c626ef449573b5aa7e9</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">4</field>
+									<field name="dctitle">0b38dea2-8c42-451d-9744-20358c03f57b.ris</field>
+								</element>
+								<element name="bitstream">
+									<field name="name">0b38dea2-8c42-451d-9744-20358c03f57b.tsv</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">436</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60840/5/0b38dea2-8c42-451d-9744-20358c03f57b.tsv</field>
+									<field name="checksum">ab6335f207c126fc7f71bb6266634312</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">5</field>
+									<field name="dctitle">0b38dea2-8c42-451d-9744-20358c03f57b.tsv</field>
+								</element>
+							</element>
+						</element>
+						<element name="bundle">
+							<field name="name">TEXT</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">978-981-19-5170-1.pdf.txt</field>
+									<field name="originalName">978-981-19-5170-1.pdf.txt</field>
+									<field name="description">Extracted text</field>
+									<field name="format">text/plain</field>
+									<field name="size">620614</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60840/6/978-981-19-5170-1.pdf.txt</field>
+									<field name="checksum">159dc9de7d16dbbc385a42d86c955474</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">6</field>
+									<field name="dctitle">978-981-19-5170-1.pdf.txt</field>
+								</element>
+							</element>
+						</element>
+						<element name="bundle">
+							<field name="name">THUMBNAIL</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">978-981-19-5170-1.pdf.jpg</field>
+									<field name="originalName">978-981-19-5170-1.pdf.jpg</field>
+									<field name="description">Generated Thumbnail</field>
+									<field name="format">image/jpeg</field>
+									<field name="size">6731</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60840/7/978-981-19-5170-1.pdf.jpg</field>
+									<field name="checksum">5e25471fdf5e516a7b750e6b1eea92f8</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">7</field>
+									<field name="dctitle">978-981-19-5170-1.pdf.jpg</field>
+								</element>
+							</element>
+						</element>
+					</element>
+					<element name="others">
+						<field name="handle">20.500.12657/60840</field>
+						<field name="identifier">oai:library.oapen.org:20.500.12657/60840</field>
+						<field name="lastModifyDate">2023-01-21 04:29:41.338</field>
+					</element>
+					<element name="repository">
+						<field name="name">OAPEN Library</field>
+						<field name="mail">info@oapen.org</field>
+					</element>
+					<element name="linkedItemsMetadata">
+						<element name="oapen.relation.isFundedBy">
+							<field name="uuid">1b71b6aa-ef3b-4897-864f-0f1da4cd2438</field>
+							<field name="handle">20.500.12657/60839</field>
+							<element name="grantor.name"/>
+							<element name="grantor.program"/>
+							<element name="grantor.number"/>
+							<element name="grantor.acronym"/>
+							<element name="grantor.project"/>
+							<element name="grantor.identifier.fundref"/></element>
+						<element name="oapen.relation.isPublishedBy">
+							<field name="uuid">6c6992af-b843-4f46-859c-f6e9998e40d5</field>
+							<field name="handle">20.500.12657/22488</field>
+							<element name="publisher.name">
+								<field name="value">Springer Nature</field>
+							</element>
+						</element>
+					</element>
+					<element name="fieldsWithParentData">
+						<element name="oapen.grant.number">
+							<element name="parentInfo">
+								<field name="parentField">oapen.relation.isFundedBy</field>
+								<field name="parentValue">1b71b6aa-ef3b-4897-864f-0f1da4cd2438</field>
+								<field name="originalValue">[...]</field>
+							</element>
+						</element>
+					</element>
+				</metadata>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:library.oapen.org:20.500.12657/60780</identifier>
+				<datestamp>2023-01-21T04:27:30Z</datestamp>
+				<setSpec>com_20.500.12657_5</setSpec>
+				<setSpec>col_20.500.12657_6</setSpec>
+			</header>
+			<metadata>
+				<metadata
+					xmlns="http://www.lyncode.com/xoai"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.lyncode.com/xoai http://www.lyncode.com/xsd/xoai.xsd">
+					<element name="dc">
+						<element name="contributor">
+							<element name="author">
+								<element name="none">
+									<field name="value">Bakir, Vian</field>
+									<field name="authority">4d4295c4-4ffa-4595-8e4c-ae7e2c988fdf</field>
+									<field name="confidence">300</field>
+									<field name="value">McStay, Andrew</field>
+									<field name="authority">abfd37a3-8961-4881-912b-2277e00cb6b5</field>
+									<field name="confidence">300</field>
+								</element>
+							</element>
+						</element>
+						<element name="date">
+							<element name="accessioned">
+								<element name="none">
+									<field name="value">2023-01-20T16:53:17Z</field>
+								</element>
+							</element>
+							<element name="available">
+								<element name="none">
+									<field name="value">2023-01-20T16:53:17Z</field>
+								</element>
+							</element>
+							<element name="issued">
+								<element name="none">
+									<field name="value">2022</field>
+								</element>
+							</element>
+						</element>
+						<element name="identifier">
+							<element name="none">
+								<field name="value">ONIX_20230120_9783031135514_8</field>
+							</element>
+							<element name="uri">
+								<element name="none">
+									<field name="value">https://library.oapen.org/handle/20.500.12657/60780</field>
+								</element>
+							</element>
+						</element>
+						<element name="description">
+							<element name="abstract">
+								<element name="none">
+									<field name="value">This open access book deconstructs the core features of online misinformation and disinformation. It finds that the optimisation of emotions for commercial and political gain is a primary cause of false information online. The chapters distil societal harms, evaluate solutions, and consider what must be done to strengthen societies as new biometric forms of emotion profiling emerge. Based on a rich, empirical, and interdisciplinary literature that examines multiple countries, the book will be of interest to scholars and students of Communications, Journalism, Politics, Sociology, Science and Technology Studies, and Information Science, as well as global and local policymakers and ordinary citizens interested in how to prevent the spread of false information worldwide, both now and in the future.</field>
+								</element>
+							</element>
+						</element>
+						<element name="language">
+							<element name="none">
+								<field name="originalValue">English</field>
+								<field name="value">eng</field>
+							</element>
+						</element>
+						<element name="subject">
+							<element name="classification">
+								<element name="none">
+									<field name="value">bic Book Industry Communication::J Society &amp; social sciences::JP Politics &amp; government::JPA Political science &amp; theory</field>
+									<field name="value">bic Book Industry Communication::J Society &amp; social sciences::JF Society &amp; culture: general::JFD Media studies</field>
+									<field name="value">bic Book Industry Communication::J Society &amp; social sciences::JH Sociology &amp; anthropology::JHB Sociology</field>
+									<field name="value">bic Book Industry Communication::U Computing &amp; information technology::UY Computer science::UYQ Artificial intelligence</field>
+								</element>
+							</element>
+							<element name="other">
+								<element name="none">
+									<field name="value">media ecology</field>
+									<field name="value">emotional AI</field>
+									<field name="value">disinformation</field>
+									<field name="value">politics of emotion</field>
+									<field name="value">economies of emotion</field>
+									<field name="value">digital activism</field>
+									<field name="value">fake news</field>
+									<field name="value">political communication</field>
+								</element>
+							</element>
+						</element>
+						<element name="title">
+							<element name="none">
+								<field name="value">Optimising Emotions, Incubating Falsehoods</field>
+							</element>
+							<element name="alternative">
+								<element name="none">
+									<field name="value">How to Protect the Global Civic Body from Disinformation and Misinformation</field>
+								</element>
+							</element>
+						</element>
+						<element name="type">
+							<element name="none">
+								<field name="value">book</field>
+							</element>
+						</element>
+					</element>
+					<element name="oapen">
+						<element name="identifier">
+							<element name="doi">
+								<element name="none">
+									<field name="value">10.1007/978-3-031-13551-4</field>
+								</element>
+							</element>
+						</element>
+						<element name="relation">
+							<element name="isPublishedBy">
+								<element name="none">
+									<field name="value">6c6992af-b843-4f46-859c-f6e9998e40d5</field>
+									<field name="authority">6c6992af-b843-4f46-859c-f6e9998e40d5</field>
+									<field name="confidence">600</field>
+								</element>
+							</element>
+							<element name="isbn">
+								<element name="none">
+									<field name="value">9783031135514</field>
+								</element>
+							</element>
+						</element>
+						<element name="imprint">
+							<element name="none">
+								<field name="value">Palgrave Macmillan</field>
+							</element>
+						</element>
+						<element name="pages">
+							<element name="none">
+								<field name="value">280</field>
+							</element>
+						</element>
+						<element name="place">
+							<element name="publication">
+								<element name="none">
+									<field name="value">Cham</field>
+								</element>
+							</element>
+						</element>
+					</element>
+					<element name="bundles">
+						<element name="bundle">
+							<field name="name">ORIGINAL</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">978-3-031-13551-4.pdf</field>
+									<field name="originalName">978-3-031-13551-4.pdf</field>
+									<field name="format">application/pdf</field>
+									<field name="size">6998878</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60780/1/978-3-031-13551-4.pdf</field>
+									<field name="checksum">ca58cdddc4e53637aaf094483ee86712</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">1</field>
+									<field name="dctitle">978-3-031-13551-4.pdf</field>
+									<field name="oapenrelationisbn">9783031135514</field>
+									<field name="dcidentifierurlwebshop">https://link.springer.com/978-3-031-13551-4</field>
+									<field name="rightsuri">http://creativecommons.org/licenses/by/4.0/</field>
+									<field name="rights">CC-BY</field>
+								</element>
+							</element>
+						</element>
+						<element name="bundle">
+							<field name="name">EXPORT</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.marc.xml</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">7207</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60780/2/0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.marc.xml</field>
+									<field name="checksum">3f30c13c2db0ea39d874844e8434da26</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">2</field>
+									<field name="dctitle">0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.marc.xml</field>
+								</element>
+								<element name="bitstream">
+									<field name="name">0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.onix_3.0.xml</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">6528</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60780/3/0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.onix_3.0.xml</field>
+									<field name="checksum">61c870a399c60a8887ee24fcbaf87cfa</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">3</field>
+									<field name="dctitle">0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.onix_3.0.xml</field>
+								</element>
+								<element name="bitstream">
+									<field name="name">0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.ris</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">1497</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60780/4/0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.ris</field>
+									<field name="checksum">5e4423e3d3132b2f24210cd85478df47</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">4</field>
+									<field name="dctitle">0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.ris</field>
+								</element>
+								<element name="bitstream">
+									<field name="name">0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.tsv</field>
+									<field name="format">application/octet-stream</field>
+									<field name="size">479</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60780/5/0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.tsv</field>
+									<field name="checksum">cebb8c9fc86f3109040019a918671477</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">5</field>
+									<field name="dctitle">0d9a8816-fcad-47a6-9bd3-6b4ebdb8f76c.tsv</field>
+								</element>
+							</element>
+						</element>
+						<element name="bundle">
+							<field name="name">TEXT</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">978-3-031-13551-4.pdf.txt</field>
+									<field name="originalName">978-3-031-13551-4.pdf.txt</field>
+									<field name="description">Extracted text</field>
+									<field name="format">text/plain</field>
+									<field name="size">733907</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60780/6/978-3-031-13551-4.pdf.txt</field>
+									<field name="checksum">bb706b4a474b91cb93a9d953c223adec</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">6</field>
+									<field name="dctitle">978-3-031-13551-4.pdf.txt</field>
+								</element>
+							</element>
+						</element>
+						<element name="bundle">
+							<field name="name">THUMBNAIL</field>
+							<element name="bitstreams">
+								<element name="bitstream">
+									<field name="name">978-3-031-13551-4.pdf.jpg</field>
+									<field name="originalName">978-3-031-13551-4.pdf.jpg</field>
+									<field name="description">Generated Thumbnail</field>
+									<field name="format">image/jpeg</field>
+									<field name="size">6786</field>
+									<field name="url">https://library.oapen.org/bitstream/20.500.12657/60780/7/978-3-031-13551-4.pdf.jpg</field>
+									<field name="checksum">9bc8d8b87b3a83714439083b3fa35d8b</field>
+									<field name="checksumAlgorithm">MD5</field>
+									<field name="sid">7</field>
+									<field name="dctitle">978-3-031-13551-4.pdf.jpg</field>
+								</element>
+							</element>
+						</element>
+					</element>
+					<element name="others">
+						<field name="handle">20.500.12657/60780</field>
+						<field name="identifier">oai:library.oapen.org:20.500.12657/60780</field>
+						<field name="lastModifyDate">2023-01-21 04:27:30.465</field>
+					</element>
+					<element name="repository">
+						<field name="name">OAPEN Library</field>
+						<field name="mail">info@oapen.org</field>
+					</element>
+					<element name="linkedItemsMetadata">
+						<element name="oapen.relation.isPublishedBy">
+							<field name="uuid">6c6992af-b843-4f46-859c-f6e9998e40d5</field>
+							<field name="handle">20.500.12657/22488</field>
+							<element name="publisher.name">
+								<field name="value">Springer Nature</field>
+							</element>
+						</element>
+					</element>
+					<element name="fieldsWithParentData"/>
+				</metadata>
+			</metadata>
+		</record>
+	</ListRecords>
+</OAI-PMH>
