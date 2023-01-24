@@ -1,0 +1,263 @@
+<metadata>
+	<element name="dc">
+		<element name="contributor">
+			<element name="editor">
+				<element name="none">
+					<field name="value">Robinson, Sarah</field>
+					<field name="authority">ffbb6fbc-52ca-446f-b623-994518307aec</field>
+					<field name="confidence">300</field>
+					<field name="value">Pallasmaa, Juhani</field>
+					<field name="authority">239b8a48-6c8f-4381-8152-326965d67273</field>
+					<field name="confidence">300</field>
+					<field name="value">Zambelli, Matteo</field>
+					<field name="authority">bc2bc750-4958-4632-85b0-8c2860cc919e</field>
+					<field name="confidence">600</field>
+				</element>
+			</element>
+		</element>
+		<element name="date">
+			<element name="accessioned">
+				<element name="none">
+					<field name="value">2022-05-31T10:38:11Z</field>
+				</element>
+			</element>
+			<element name="available">
+				<element name="none">
+					<field name="value">2022-05-31T10:38:11Z</field>
+				</element>
+			</element>
+			<element name="issued">
+				<element name="none">
+					<field name="value">2021</field>
+				</element>
+			</element>
+		</element>
+		<element name="identifier">
+			<element name="none">
+				<field name="value">ONIX_20220531_9788855182867_997</field>
+			</element>
+			<element name="uri">
+				<element name="none">
+					<field name="value">https://library.oapen.org/handle/20.500.12657/55713</field>
+				</element>
+			</element>
+		</element>
+		<element name="language">
+			<element name="none">
+				<field name="originalValue">Italian</field>
+				<field name="value">ita</field>
+			</element>
+		</element>
+		<element name="relation">
+			<element name="ispartofseries">
+				<element name="none">
+					<field name="value">Ricerche. Architettura, Pianificazione, Paesaggio, Design</field>
+				</element>
+			</element>
+		</element>
+		<element name="subject">
+			<element name="classification">
+				<element name="none">
+					<field name="value">bic Book Industry Communication::K Economics, finance, business &amp; management::KN Industry &amp; industrial studies::KNJ Construction &amp; heavy industry</field>
+					<field name="value">bic Book Industry Communication::T Technology, engineering, agriculture::TN Civil engineering, surveying &amp; building::TNK Building construction &amp; materials</field>
+				</element>
+			</element>
+			<element name="other">
+				<element name="none">
+					<field name="value">senses</field>
+					<field name="value">apticity</field>
+					<field name="value">psychology of perception</field>
+					<field name="value">mirror neurons</field>
+					<field name="value">meaning in architecture</field>
+					<field name="value">embodied simulation</field>
+				</element>
+			</element>
+		</element>
+		<element name="title">
+			<element name="none">
+				<field name="value">La mente in architettura</field>
+			</element>
+			<element name="alternative">
+				<element name="none">
+					<field name="value">Neuroscienze, incarnazione e il futuro del design</field>
+				</element>
+			</element>
+		</element>
+		<element name="type">
+			<element name="none">
+				<field name="value">book</field>
+			</element>
+		</element>
+	</element>
+	<element name="oapen">
+		<element name="abstract">
+			<element name="otherlanguage">
+				<element name="none">
+					<field name="value">Although we spend more than ninety percent of our lives inside buildings, we understand very little about how the built environment affects our behavior, thoughts, emotions, and well-being. We are biological beings whose senses and neural systems have developed over millions of years; it stands to reason that research in the life sciences, particularly neuroscience, can offer compelling insights into the ways our buildings shape our interactions with the world. In Mind in Architecture, leading thinkers from architecture and other disciplines, including neuroscience, cognitive science, psychiatry, and philosophy, explore what architecture and neuroscience can learn from each other.</field>
+				</element>
+			</element>
+		</element>
+		<element name="identifier">
+			<element name="doi">
+				<element name="none">
+					<field name="value">10.36253/978-88-5518-286-7</field>
+				</element>
+			</element>
+		</element>
+		<element name="relation">
+			<element name="isPublishedBy">
+				<element name="none">
+					<field name="value">bf65d21a-78e5-4ba2-983a-dbfa90962870</field>
+					<field name="authority">bf65d21a-78e5-4ba2-983a-dbfa90962870</field>
+					<field name="confidence">600</field>
+				</element>
+			</element>
+			<element name="isbn">
+				<element name="none">
+					<field name="value">9788855182867</field>
+					<field name="value">9788855182850</field>
+					<field name="value">9788855182874</field>
+				</element>
+			</element>
+		</element>
+		<element name="series">
+			<element name="number">
+				<element name="none">
+					<field name="value">6</field>
+				</element>
+			</element>
+		</element>
+		<element name="pages">
+			<element name="none">
+				<field name="value">240</field>
+			</element>
+		</element>
+		<element name="place">
+			<element name="publication">
+				<element name="none">
+					<field name="value">Florence</field>
+				</element>
+			</element>
+		</element>
+	</element>
+	<element name="bundles">
+		<element name="bundle">
+			<field name="name">ORIGINAL</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">9788855182867.pdf</field>
+					<field name="originalName">9788855182867.pdf</field>
+					<field name="format">application/pdf</field>
+					<field name="size">12795873</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/55713/1/9788855182867.pdf</field>
+					<field name="checksum">42476376e827a4650372608a46398498</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">1</field>
+					<field name="dctitle">9788855182867.pdf</field>
+					<field name="oapenrelationisbn">9788855182867</field>
+					<field name="dcidentifierurlwebshop">https://books.fupress.com/isbn/9788855182867</field>
+					<field name="rightsuri">https://creativecommons.org/licenses/by-nc-sa/4.0/</field>
+					<field name="rights">CC-BY-NC-SA</field>
+				</element>
+			</element>
+		</element>
+		<element name="bundle">
+			<field name="name">EXPORT</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">001ab77c-206b-4583-b7f2-72250f144138.marc.xml</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">6083</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/55713/2/001ab77c-206b-4583-b7f2-72250f144138.marc.xml</field>
+					<field name="checksum">1c0f073289d6fe52b0f1be5b4ca1d1dc</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">2</field>
+					<field name="dctitle">001ab77c-206b-4583-b7f2-72250f144138.marc.xml</field>
+				</element>
+				<element name="bitstream">
+					<field name="name">001ab77c-206b-4583-b7f2-72250f144138.onix_3.0.xml</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">5763</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/55713/3/001ab77c-206b-4583-b7f2-72250f144138.onix_3.0.xml</field>
+					<field name="checksum">d1e2a4c87efd5bc02a52bf2f2f6f769b</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">3</field>
+					<field name="dctitle">001ab77c-206b-4583-b7f2-72250f144138.onix_3.0.xml</field>
+				</element>
+				<element name="bitstream">
+					<field name="name">001ab77c-206b-4583-b7f2-72250f144138.ris</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">1372</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/55713/4/001ab77c-206b-4583-b7f2-72250f144138.ris</field>
+					<field name="checksum">fc1b4a164b34a18ec2aefe0602102a47</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">4</field>
+					<field name="dctitle">001ab77c-206b-4583-b7f2-72250f144138.ris</field>
+				</element>
+				<element name="bitstream">
+					<field name="name">001ab77c-206b-4583-b7f2-72250f144138.tsv</field>
+					<field name="format">application/octet-stream</field>
+					<field name="size">483</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/55713/5/001ab77c-206b-4583-b7f2-72250f144138.tsv</field>
+					<field name="checksum">39123132574415bc73a9ce3c934dc900</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">5</field>
+					<field name="dctitle">001ab77c-206b-4583-b7f2-72250f144138.tsv</field>
+				</element>
+			</element>
+		</element>
+		<element name="bundle">
+			<field name="name">TEXT</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">9788855182867.pdf.txt</field>
+					<field name="originalName">9788855182867.pdf.txt</field>
+					<field name="description">Extracted text</field>
+					<field name="format">text/plain</field>
+					<field name="size">1284105</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/55713/6/9788855182867.pdf.txt</field>
+					<field name="checksum">cd5f0c818347910be90a3fc62cd4bab5</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">6</field>
+					<field name="dctitle">9788855182867.pdf.txt</field>
+				</element>
+			</element>
+		</element>
+		<element name="bundle">
+			<field name="name">THUMBNAIL</field>
+			<element name="bitstreams">
+				<element name="bitstream">
+					<field name="name">9788855182867.pdf.jpg</field>
+					<field name="originalName">9788855182867.pdf.jpg</field>
+					<field name="description">Generated Thumbnail</field>
+					<field name="format">image/jpeg</field>
+					<field name="size">6064</field>
+					<field name="url">https://library.oapen.org/bitstream/20.500.12657/55713/7/9788855182867.pdf.jpg</field>
+					<field name="checksum">67eca4a6ec3ddcffd635a735ad810029</field>
+					<field name="checksumAlgorithm">MD5</field>
+					<field name="sid">7</field>
+					<field name="dctitle">9788855182867.pdf.jpg</field>
+				</element>
+			</element>
+		</element>
+	</element>
+	<element name="others">
+		<field name="handle">20.500.12657/55713</field>
+		<field name="identifier">oai:library.oapen.org:20.500.12657/55713</field>
+		<field name="lastModifyDate">2022-06-01 03:51:07.724</field>
+	</element>
+	<element name="repository">
+		<field name="name">OAPEN Library</field>
+		<field name="mail">info@oapen.org</field>
+	</element>
+	<element name="linkedItemsMetadata">
+		<element name="oapen.relation.isPublishedBy">
+			<field name="uuid">bf65d21a-78e5-4ba2-983a-dbfa90962870</field>
+			<field name="handle">20.500.12657/29646</field>
+			<element name="publisher.name">
+				<field name="value">Firenze University Press</field>
+			</element>
+		</element>
+	</element>
+	<element name="fieldsWithParentData" />
+</metadata>

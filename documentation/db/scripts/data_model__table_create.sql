@@ -52,6 +52,8 @@ COMMENT ON COLUMN public.title.thumbnail
 Json path: 
 (List) $.[{row}].bitstreams[?(@.bundleName == ''THUMBNAIL'')].name
 ';
+COMMENT ON COLUMN public.title.dc_date_issued
+    IS 'Most of the time only a year, sometimes a full date.';
 COMMENT ON COLUMN public.title.dc_type
     IS 'book OR chapter';
 COMMENT ON COLUMN public.title.oapen_identifier
@@ -186,6 +188,9 @@ CREATE INDEX part_of_id_funder ON public.oapen_relation_isfundedby
 CREATE INDEX part_of_id_title ON public.oapen_relation_isfundedby
     (id_title);
 
+
+COMMENT ON COLUMN public.oapen_relation_isfundedby.id_funder
+    IS 'A handle, e.g. 20.500.12657/14222';
 
 CREATE TABLE public.funder_name (
     name VARCHAR(255) NOT NULL,

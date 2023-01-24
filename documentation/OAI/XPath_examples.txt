@@ -12,13 +12,17 @@ arrays of values:
 
 handle                  //element[@name="others"]/field[@name="handle"]/text()
 type                    //element[@name="dc"]/element[@name="type"]//field[@name="value"]/text()
-$.uuid                  NOT AVAILABLE
+uuid                    NOT AVAILABLE
+collection_no           NOT AVAILABLE
 
 dc.date.accessioned     //element[@name="dc"]/element[@name="date"]/element[@name="accessioned"]//field[@name="value"]/text()
 dc.description.abstract //element[@name="dc"]/element[@name="description"]/element[@name="abstract"]//field[@name="value"]/text()
 dc.language             //element[@name="dc"]/element[@name="language"]//field[@name="value"]/text()    (or "originalValue" for spelled out language)
+oapen.pages             //element[@name="oapen"]/element[@name="pages"]//field[@name="value"]//text()
 oapen.identifier        NOT AVAILABLE
                         partOfBook uses the UUID however, so where does it refer to?
+                        
+                        
 
 thumbnail - may return more values -> put them in a single pipe separated field
 //*[.='THUMBNAIL']/..//element[@name="bitstream"]/field[@name="name"]/text() 
@@ -30,18 +34,128 @@ other subjects:
 //element[@name="dc"]/element[@name="subject"]/element[@name="other"]//field[@name="value"]/text()
 
 dc identifiers:
+//element[@name="dc"]/element[@name="identifier"]//field[@name="value"]/text()
 
-contributors:
+output:
+
+    634742
+    OCN: 1013957447
+    http://library.oapen.org/handle/20.500.12657/31210
+
+all contributors:
+//element[@name="dc"]/element[@name="contributor"]
+
+output:
+
+    <element name="contributor">
+        <element name="author">
+            <element name="none">
+                <field name="value">Richards, Jennifer</field>
+                <field name="authority">131591c1-6292-44e5-8b21-a70036f65596</field>
+                <field name="confidence">600</field>
+                <field name="value">Atkinson, Sarah</field>
+                <field name="authority">79ef9eff-b693-4306-9d3c-55c70ee57f2a</field>
+                <field name="confidence">600</field>
+                <field name="value">Macnaughton, Jane</field>
+                <field name="authority">70a25c42-e0e5-41be-b1ad-b76a099017f4</field>
+                <field name="confidence">600</field>
+            </element>
+        </element>
+        <element name="editor">
+            <element name="none">
+                <field name="value">Woods, Angela</field>
+                <field name="authority">028c1d20-e19f-47d7-aeb6-f394256488c8</field>
+                <field name="confidence">600</field>
+                <field name="value">Whitehead, Anne</field>
+                <field name="authority">0a74001a-eb5e-45e5-9c65-cfead42fe86d</field>
+                <field name="confidence">600</field>
+            </element>
+        </element>
+    </element>
+
+
+or advisors, authors, editors and others as lists:
+//element[@name="dc"]/element[@name="contributor"]/element[@name="author"]//field[@name="value"]/text()
+//element[@name="dc"]/element[@name="contributor"]/element[@name="advisor"]//field[@name="value"]/text()
+//element[@name="dc"]/element[@name="contributor"]/element[@name="editor"]//field[@name="value"]/text()
+//element[@name="dc"]/element[@name="contributor"]/element[@name="other"]//field[@name="value"]/text()
+
+output:
+
+    Richards, Jennifer
+    Atkinson, Sarah
+    Macnaughton, Jane
+
 
 isbn numbers: 
+
+//*[@name="isbn"]//field[@name="value"]/text()
+
+output:
+
+    9788855182867
+    9788855182850
+    9788855182874
+
 
 
 Exports
 ------------
-export names and retrieve links:
+export retrieve links:
+//*[.='EXPORT']/..//element[@name="bitstream"]/field[@name="url"]/text()
+
+output:
+
+    https://library.oapen.org/bitstream/20.500.12657/31210/4/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.marc.xml
+    https://library.oapen.org/bitstream/20.500.12657/31210/5/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.onix_3.0.xml
+    https://library.oapen.org/bitstream/20.500.12657/31210/6/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.ris
+    https://library.oapen.org/bitstream/20.500.12657/31210/-1/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.tsv
 
 
-Metadata
-------------
-Metadata order of nodes matters! 
+export bitstream elements:
+//*[.='EXPORT']/..//element[@name="bitstream"]
+
+output:
+
+    <element name="bitstream">
+        <field name="name">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.marc.xml</field>
+        <field name="format">application/octet-stream</field>
+        <field name="size">7978</field>
+        <field name="url">https://library.oapen.org/bitstream/20.500.12657/31210/4/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.marc.xml</field>
+        <field name="checksum">15179aa0fba6cacf6a6028af07cf65c3</field>
+        <field name="checksumAlgorithm">MD5</field>
+        <field name="sid">4</field>
+        <field name="dctitle">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.marc.xml</field>
+    </element>
+    <element name="bitstream">
+        <field name="name">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.onix_3.0.xml</field>
+        <field name="format">application/octet-stream</field>
+        <field name="size">8502</field>
+        <field name="url">https://library.oapen.org/bitstream/20.500.12657/31210/5/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.onix_3.0.xml</field>
+        <field name="checksum">ccff7b1ae4cba926b138eb4c0c30dc70</field>
+        <field name="checksumAlgorithm">MD5</field>
+        <field name="sid">5</field>
+        <field name="dctitle">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.onix_3.0.xml</field>
+    </element>
+    <element name="bitstream">
+        <field name="name">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.ris</field>
+        <field name="format">application/octet-stream</field>
+        <field name="size">2090</field>
+        <field name="url">https://library.oapen.org/bitstream/20.500.12657/31210/6/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.ris</field>
+        <field name="checksum">ae4efe45a7e6aed9b55b356af6a2bef2</field>
+        <field name="checksumAlgorithm">MD5</field>
+        <field name="sid">6</field>
+        <field name="dctitle">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.ris</field>
+    </element>
+    <element name="bitstream">
+        <field name="name">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.tsv</field>
+        <field name="format">application/octet-stream</field>
+        <field name="size">505</field>
+        <field name="url">https://library.oapen.org/bitstream/20.500.12657/31210/-1/29de03cf-d1aa-4dd5-90a5-d94d74b9188e.tsv</field>
+        <field name="checksum">4b2982739d39fabde71d95c9af061573</field>
+        <field name="checksumAlgorithm">MD5</field>
+        <field name="sid">-1</field>
+        <field name="dctitle">29de03cf-d1aa-4dd5-90a5-d94d74b9188e.tsv</field>
+    </element>
+
 
