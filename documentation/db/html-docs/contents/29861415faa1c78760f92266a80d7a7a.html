@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>identifier_type</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -18,14 +18,14 @@
 
       <!-- Name Title -->
 
-      <h1>(unnamed)</h1>
+      <h1>identifier_type</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-ERDRelationshipEnd"></span>
-          ERDRelationshipEnd
+          <span class="node-icon staruml-icon icon-ERDColumn"></span>
+          ERDColumn
         </span>
         
       </section>
@@ -43,13 +43,10 @@
           <span class="label label-info"><a href='1445357fbec7a4dd22df8d46a95e4070.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Data Model </a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='679e5bdc1068b644664082d025bc4e43.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>title</a></span>
+          <span class="label label-info"><a href='169aca2c015ea35d9b8fda098fed9325.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>identifier</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='38d371f9ae0cc319e0da6aa679fe4556.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—language)</a></span>
-        
-          <span>::</span>
-          <span class="label label-info"><a href='40cdf8f6179dfde9b502c4d31ff58f78.html'><span class='node-icon staruml-icon icon-ERDRelationshipEnd'></span>(ERDRelationshipEnd)</a></span>
+          <span class="label label-info"><a href='29861415faa1c78760f92266a80d7a7a.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>identifier_type</a></span>
         
       </section>
 
@@ -64,7 +61,7 @@
         <h3>Description</h3>
         <div>
           
-            <span class="label label-info">none</span>
+            <p>ISBN, ISSN, OCN, DOI</p>
           
         </div>
       </section>
@@ -218,7 +215,7 @@
     
     <tr>
         <td>name</td>
-        <td></td>
+        <td>identifier_type</td>
     </tr>
     
     
@@ -232,8 +229,8 @@
     
     
     <tr>
-        <td>reference</td>
-        <td><a href='985709ea7a03084ad2f29ec2042f6b0b.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>language</a></td>
+        <td>type</td>
+        <td>VARCHAR</td>
     </tr>
     
     
@@ -241,8 +238,53 @@
     
     
     <tr>
-        <td>cardinality</td>
-        <td>0..*</td>
+        <td>length</td>
+        <td>10</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>primaryKey</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>foreignKey</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>referenceTo</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>nullable</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>unique</td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>oapen_relation_isFundedBy</title>
+    <title>funding</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -18,7 +18,7 @@
 
       <!-- Name Title -->
 
-      <h1>oapen_relation_isFundedBy</h1>
+      <h1>funding</h1>
 
       <!-- Type and Stereotype -->
 
@@ -43,7 +43,7 @@
           <span class="label label-info"><a href='1445357fbec7a4dd22df8d46a95e4070.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Data Model </a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='d9f36a447b5ccd2a0584971a215ba9e9.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>oapen_relation_isFundedBy</a></span>
+          <span class="label label-info"><a href='d9f36a447b5ccd2a0584971a215ba9e9.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>funding</a></span>
         
       </section>
 
@@ -197,7 +197,7 @@
           <tr>
             <td><a href="8b3eaf6f677dd228832951ed842a0df3.html">grant_number</a></td>
             <td>VARCHAR(100)</td>
-            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
             <td>
               
@@ -247,15 +247,15 @@
           </tr>
           
           <tr>
-            <td><a href="5f4d91cb3699b9a66abac6b4038860d0.html">id_funder</a></td>
+            <td><a href="5f4d91cb3699b9a66abac6b4038860d0.html">handle_funder</a></td>
             <td>VARCHAR(25)</td>
-            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
             <td><span class='label label-info'>true</span></td>
             <td>
               
                 <a href='31b4b73658813b70568f3b8748d5586b.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>funder</a> ::
               
-              <a href='416084cf097b1ef0902e7bc9b7d74167.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+              <a href='416084cf097b1ef0902e7bc9b7d74167.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>handle</a>
             </td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
@@ -264,7 +264,7 @@
           <tr>
             <td><a href="b1a947107164c21f80f8a3020476bf57.html">id_title</a></td>
             <td>UUID</td>
-            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
             <td><span class='label label-info'>true</span></td>
             <td>
               
@@ -299,7 +299,7 @@
             <td><a href='679e5bdc1068b644664082d025bc4e43.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>title</a></td>
             <td>1</td>
             <td></td>
-            <td><a href='08e6581e9e22f862f17aa3334304531c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—oapen_relation_isFundedBy)</a></td>
+            <td><a href='08e6581e9e22f862f17aa3334304531c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—funding)</a></td>
           </tr>
           
           
@@ -307,7 +307,7 @@
             <td><a href='31b4b73658813b70568f3b8748d5586b.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>funder</a></td>
             <td>1</td>
             <td></td>
-            <td><a href='973b56a02aa4d11d840bbf3bb04cb659.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(funder—oapen_relation_isFundedBy)</a></td>
+            <td><a href='973b56a02aa4d11d840bbf3bb04cb659.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(funder—funding)</a></td>
           </tr>
           
           
@@ -315,7 +315,7 @@
             <td><a href='31b4b73658813b70568f3b8748d5586b.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>funder</a></td>
             <td>1</td>
             <td></td>
-            <td><a href='b883c3ff2ddff2948cb69527ff05ff3e.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(funder—oapen_relation_isFundedBy)</a></td>
+            <td><a href='b883c3ff2ddff2948cb69527ff05ff3e.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(funder—funding)</a></td>
           </tr>
           
         </table>                
@@ -349,7 +349,7 @@
     
     <tr>
         <td>name</td>
-        <td>oapen_relation_isFundedBy</td>
+        <td>funding</td>
     </tr>
     
     
@@ -382,11 +382,11 @@
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
-        <li><a href='08e6581e9e22f862f17aa3334304531c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—oapen_relation_isFundedBy)</a></li>
+        <li><a href='08e6581e9e22f862f17aa3334304531c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—funding)</a></li>
         
-        <li><a href='973b56a02aa4d11d840bbf3bb04cb659.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(funder—oapen_relation_isFundedBy)</a></li>
+        <li><a href='973b56a02aa4d11d840bbf3bb04cb659.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(funder—funding)</a></li>
         
-        <li><a href='b883c3ff2ddff2948cb69527ff05ff3e.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(funder—oapen_relation_isFundedBy)</a></li>
+        <li><a href='b883c3ff2ddff2948cb69527ff05ff3e.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(funder—funding)</a></li>
         
     </ul>
 </section>
