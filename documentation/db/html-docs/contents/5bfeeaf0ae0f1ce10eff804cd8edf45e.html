@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>part_of_book</title>
+    <title>acronyms</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -18,7 +18,7 @@
 
       <!-- Name Title -->
 
-      <h1>part_of_book</h1>
+      <h1>acronyms</h1>
 
       <!-- Type and Stereotype -->
 
@@ -43,10 +43,10 @@
           <span class="label label-info"><a href='1445357fbec7a4dd22df8d46a95e4070.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Data Model </a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='679e5bdc1068b644664082d025bc4e43.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>title</a></span>
+          <span class="label label-info"><a href='31b4b73658813b70568f3b8748d5586b.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>funder</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='574ebcfd6ae8fbf91dfb9f59874a15c5.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>part_of_book</a></span>
+          <span class="label label-info"><a href='5bfeeaf0ae0f1ce10eff804cd8edf45e.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>acronyms</a></span>
         
       </section>
 
@@ -61,7 +61,7 @@
         <h3>Description</h3>
         <div>
           
-            <p>References an optional parent title (for chapters). Attn: Do not enforce or CASCADE NULL. Titles may be deleted prior to updates and after re-insertion the relation must still be present. </p>
+            <p>Pipe separated list of funder acronyms (alternative names)</p>
           
         </div>
       </section>
@@ -215,7 +215,7 @@
     
     <tr>
         <td>name</td>
-        <td>part_of_book</td>
+        <td>acronyms</td>
     </tr>
     
     
@@ -230,7 +230,7 @@
     
     <tr>
         <td>type</td>
-        <td>UUID</td>
+        <td>TEXT</td>
     </tr>
     
     
@@ -257,7 +257,7 @@
     
     <tr>
         <td>foreignKey</td>
-        <td><span class='label label-info'>true</span></td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     
@@ -266,7 +266,7 @@
     
     <tr>
         <td>referenceTo</td>
-        <td><a href='819cbef8dd469a655de72752664f7013.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a></td>
+        <td><span class='label label-info'>null</span></td>
     </tr>
     
     
@@ -275,7 +275,7 @@
     
     <tr>
         <td>nullable</td>
-        <td><span class='label label-info'>true</span></td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     

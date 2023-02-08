@@ -6,15 +6,15 @@ CREATE TABLE public.title (
     thumbnail VARCHAR(100),
     license VARCHAR(255),
     webshop_url VARCHAR(255),
-    date_available DATETIME NOT NULL,
+    date_available DATETIME,
     date_issued date,
     description text,
     description_abstract text,
     description_provenance text,
     is_part_of_series VARCHAR(100),
-    title VARCHAR(100) NOT NULL,
+    title VARCHAR(100),
     title_alternative VARCHAR(100),
-    type VARCHAR(10) NOT NULL,
+    type VARCHAR(10),
     terms_abstract text,
     abstract_other_language text,
     description_other_language text,
@@ -24,14 +24,11 @@ CREATE TABLE public.title (
     imprint VARCHAR(100),
     pages VARCHAR(10),
     place_publication VARCHAR(100),
-    part_of_book UUID NOT NULL,
     is_published_by VARCHAR(25),
     series_number VARCHAR(100),
     PRIMARY KEY (id)
 );
 
-CREATE INDEX part_of_part_of_book ON public.title
-    (part_of_book);
 CREATE INDEX part_of_is_published_by ON public.title
     (is_published_by);
 
@@ -89,12 +86,15 @@ CREATE TABLE public.date_accessioned (
 
 
 CREATE TABLE public.contributor_role (
-    contributor VARCHAR(100) NOT NULL,
+    name_contributor VARCHAR(100) NOT NULL,
     id_title UUID NOT NULL,
-    type VARCHAR(10) NOT NULL,
+    type VARCHAR(10),
     id_institution UUID,
-    PRIMARY KEY (contributor, id_title)
+    PRIMARY KEY (name_contributor, id_title)
 );
+
+CREATE INDEX part_of_id_institution ON public.contributor_role
+    (id_institution);
 
 
 COMMENT ON COLUMN public.contributor_role.type
@@ -154,7 +154,8 @@ CREATE TABLE public.subject_classification (
 
 CREATE TABLE public.funder (
     handle VARCHAR(25) NOT NULL,
-    doi  NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    acronyms text NOT NULL,
     PRIMARY KEY (handle)
 );
 
@@ -162,9 +163,14 @@ CREATE TABLE public.funder (
 COMMENT ON COLUMN public.funder.handle
     IS 'A handle, e.g. 20.500.12657/14222
 (https://library.oapen.org/handle/20.500.12657/14222)';
+COMMENT ON COLUMN public.funder.name
+    IS 'Preferred funder name
+';
+COMMENT ON COLUMN public.funder.acronyms
+    IS 'Pipe separated list of funder acronyms (alternative names)';
 
 CREATE TABLE public.funding (
-    grant_number VARCHAR(100) NOT NULL,
+    grant_number VARCHAR(100),
     grant_program VARCHAR(255),
     grant_project VARCHAR(255),
     grant_acronym VARCHAR(100),
@@ -176,16 +182,6 @@ CREATE TABLE public.funding (
 
 COMMENT ON COLUMN public.funding.handle_funder
     IS 'A handle, e.g. 20.500.12657/14222';
-
-CREATE TABLE public.funder_name (
-    name VARCHAR(255) NOT NULL,
-    handle_funder VARCHAR(25) NOT NULL,
-    PRIMARY KEY (name, handle_funder)
-);
-
-
-COMMENT ON TABLE public.funder_name
-    IS 'Funder name and acronyms';
 
 CREATE TABLE public.publisher (
     id VARCHAR(25) NOT NULL,
@@ -201,7 +197,7 @@ COMMENT ON COLUMN public.publisher.id
 
 CREATE TABLE public.contributor (
     name VARCHAR(100) NOT NULL,
-    orcid char(19) NOT NULL,
+    orcid char(19),
     PRIMARY KEY (name)
 );
 
@@ -213,12 +209,11 @@ CREATE TABLE public.institution (
 );
 
 
-ALTER TABLE public.title ADD CONSTRAINT FK_title__part_of_book FOREIGN KEY (part_of_book) REFERENCES public.title(id);
 ALTER TABLE public.title ADD CONSTRAINT FK_title__is_published_by FOREIGN KEY (is_published_by) REFERENCES public.publisher(id);
 ALTER TABLE public.language ADD CONSTRAINT FK_language__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.export_chunk ADD CONSTRAINT FK_export_chunk__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.date_accessioned ADD CONSTRAINT FK_date_accessioned__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
-ALTER TABLE public.contributor_role ADD CONSTRAINT FK_contributor_role__contributor FOREIGN KEY (contributor) REFERENCES public.contributor(name);
+ALTER TABLE public.contributor_role ADD CONSTRAINT FK_contributor_role__name_contributor FOREIGN KEY (name_contributor) REFERENCES public.contributor(name);
 ALTER TABLE public.contributor_role ADD CONSTRAINT FK_contributor_role__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.contributor_role ADD CONSTRAINT FK_contributor_role__id_institution FOREIGN KEY (id_institution) REFERENCES public.institution(id);
 ALTER TABLE public.identifier ADD CONSTRAINT FK_identifier__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
@@ -227,4 +222,3 @@ ALTER TABLE public.subject_classification ADD CONSTRAINT FK_subject_classificati
 ALTER TABLE public.subject_classification ADD CONSTRAINT FK_subject_classification__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
 ALTER TABLE public.funding ADD CONSTRAINT FK_funding__handle_funder FOREIGN KEY (handle_funder) REFERENCES public.funder(handle);
 ALTER TABLE public.funding ADD CONSTRAINT FK_funding__id_title FOREIGN KEY (id_title) REFERENCES public.title(id);
-ALTER TABLE public.funder_name ADD CONSTRAINT FK_funder_name__handle_funder FOREIGN KEY (handle_funder) REFERENCES public.funder(handle);
