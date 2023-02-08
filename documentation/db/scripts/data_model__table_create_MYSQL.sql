@@ -26,6 +26,7 @@ CREATE TABLE oapen_memo.title (
     place_publication VARCHAR(100),
     is_published_by VARCHAR(25),
     series_number VARCHAR(100),
+    part_of_book VARCHAR(36),
     PRIMARY KEY (id)
 );
 
@@ -144,15 +145,15 @@ CREATE TABLE oapen_memo.institution (
 
 
 ALTER TABLE oapen_memo.title ADD CONSTRAINT FK_title__is_published_by FOREIGN KEY (is_published_by) REFERENCES oapen_memo.publisher(id);
-ALTER TABLE oapen_memo.language ADD CONSTRAINT FK_language__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id);
-ALTER TABLE oapen_memo.export_chunk ADD CONSTRAINT FK_export_chunk__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id);
-ALTER TABLE oapen_memo.date_accessioned ADD CONSTRAINT FK_date_accessioned__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id);
-ALTER TABLE oapen_memo.contributor_role ADD CONSTRAINT FK_contributor_role__name_contributor FOREIGN KEY (name_contributor) REFERENCES oapen_memo.contributor(name);
-ALTER TABLE oapen_memo.contributor_role ADD CONSTRAINT FK_contributor_role__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id);
-ALTER TABLE oapen_memo.contributor_role ADD CONSTRAINT FK_contributor_role__id_institution FOREIGN KEY (id_institution) REFERENCES oapen_memo.institution(id);
-ALTER TABLE oapen_memo.identifier ADD CONSTRAINT FK_identifier__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id);
-ALTER TABLE oapen_memo.subject_other ADD CONSTRAINT FK_subject_other__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id);
-ALTER TABLE oapen_memo.subject_classification ADD CONSTRAINT FK_subject_classification__code_classification FOREIGN KEY (code_classification) REFERENCES oapen_memo.classification(code);
-ALTER TABLE oapen_memo.subject_classification ADD CONSTRAINT FK_subject_classification__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id);
-ALTER TABLE oapen_memo.funding ADD CONSTRAINT FK_funding__handle_funder FOREIGN KEY (handle_funder) REFERENCES oapen_memo.funder(handle);
-ALTER TABLE oapen_memo.funding ADD CONSTRAINT FK_funding__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id);
+ALTER TABLE oapen_memo.language ADD CONSTRAINT FK_language__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id) ON DELETE CASCADE;
+ALTER TABLE oapen_memo.export_chunk ADD CONSTRAINT FK_export_chunk__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id) ON DELETE CASCADE;
+ALTER TABLE oapen_memo.date_accessioned ADD CONSTRAINT FK_date_accessioned__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id) ON DELETE CASCADE;
+ALTER TABLE oapen_memo.contributor_role ADD CONSTRAINT FK_contributor_role__name_contributor FOREIGN KEY (name_contributor) REFERENCES oapen_memo.contributor(name) ON DELETE RESTRICT;
+ALTER TABLE oapen_memo.contributor_role ADD CONSTRAINT FK_contributor_role__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id) ON DELETE CASCADE;
+ALTER TABLE oapen_memo.contributor_role ADD CONSTRAINT FK_contributor_role__id_institution FOREIGN KEY (id_institution) REFERENCES oapen_memo.institution(id) ON DELETE RESTRICT;
+ALTER TABLE oapen_memo.identifier ADD CONSTRAINT FK_identifier__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id) ON DELETE CASCADE;
+ALTER TABLE oapen_memo.subject_other ADD CONSTRAINT FK_subject_other__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id) ON DELETE CASCADE;
+ALTER TABLE oapen_memo.subject_classification ADD CONSTRAINT FK_subject_classification__code_classification FOREIGN KEY (code_classification) REFERENCES oapen_memo.classification(code) ON DELETE RESTRICT;
+ALTER TABLE oapen_memo.subject_classification ADD CONSTRAINT FK_subject_classification__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id) ON DELETE CASCADE;
+ALTER TABLE oapen_memo.funding ADD CONSTRAINT FK_funding__handle_funder FOREIGN KEY (handle_funder) REFERENCES oapen_memo.funder(handle) ON DELETE RESTRICT;
+ALTER TABLE oapen_memo.funding ADD CONSTRAINT FK_funding__id_title FOREIGN KEY (id_title) REFERENCES oapen_memo.title(id) ON DELETE CASCADE;

@@ -26,6 +26,7 @@ CREATE TABLE public.title (
     place_publication VARCHAR(100),
     is_published_by VARCHAR(25),
     series_number VARCHAR(100),
+    part_of_book UUID,
     PRIMARY KEY (id)
 );
 

@@ -486,6 +486,22 @@
 											"top": 571,
 											"width": 421.4130859375,
 											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGGMJ8/qvx1ZdA=",
+											"_parent": {
+												"$ref": "AAAAAAGFoP0Gei3RwLI="
+											},
+											"model": {
+												"$ref": "AAAAAAGGMJ8/jfxydnI="
+											},
+											"fillColor": "#ffffd8",
+											"font": "Arial;13;0",
+											"left": 333,
+											"top": 586,
+											"width": 421.4130859375,
+											"height": 13
 										}
 									],
 									"fillColor": "#ffffd8",
@@ -493,7 +509,7 @@
 									"left": 328,
 									"top": 191,
 									"width": 431.4130859375,
-									"height": 398
+									"height": 413
 								}
 							],
 							"fillColor": "#ffffd8",
@@ -1195,7 +1211,7 @@
 									"font": "Arial;13;1",
 									"left": 816,
 									"top": 485,
-									"width": 187.955078125,
+									"width": 208.89599609375,
 									"height": 13,
 									"text": "subject_other"
 								},
@@ -1222,7 +1238,7 @@
 											"font": "Arial;13;0",
 											"left": 821,
 											"top": 508,
-											"width": 177.955078125,
+											"width": 198.89599609375,
 											"height": 13
 										},
 										{
@@ -1238,7 +1254,7 @@
 											"font": "Arial;13;0",
 											"left": 821,
 											"top": 523,
-											"width": 177.955078125,
+											"width": 198.89599609375,
 											"height": 13
 										}
 									],
@@ -1246,7 +1262,7 @@
 									"font": "Arial;13;0",
 									"left": 816,
 									"top": 503,
-									"width": 187.955078125,
+									"width": 208.89599609375,
 									"height": 38
 								}
 							],
@@ -1254,7 +1270,7 @@
 							"font": "Arial;13;0",
 							"left": 816,
 							"top": 480,
-							"width": 187.955078125,
+							"width": 208.89599609375,
 							"height": 61,
 							"nameLabel": {
 								"$ref": "AAAAAAGFutxV4FTox4I="
@@ -3505,6 +3521,17 @@
 							"type": "VARCHAR",
 							"length": "100",
 							"nullable": true
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGGMJ8/jfxydnI=",
+							"_parent": {
+								"$ref": "AAAAAAGFoP0GeC3Nl1w="
+							},
+							"name": "part_of_book",
+							"type": "UUID",
+							"length": 0,
+							"nullable": true
 						}
 					]
 				},
@@ -3831,6 +3858,7 @@
 							"name": "id_title",
 							"type": "UUID",
 							"length": 0,
+							"primaryKey": true,
 							"foreignKey": true,
 							"referenceTo": {
 								"$ref": "AAAAAAGFoQ7faS5bTkQ="
