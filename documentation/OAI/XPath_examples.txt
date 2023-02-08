@@ -12,17 +12,13 @@ arrays of values:
 
 handle                  //element[@name="others"]/field[@name="handle"]/text()
 type                    //element[@name="dc"]/element[@name="type"]//field[@name="value"]/text()
-uuid                    NOT AVAILABLE
-collection_no           NOT AVAILABLE
+uuid                    //element[@name="others"]/field[@name="uuid"]/text()
+collection_no           //header/setSpec[starts-with(text(),'col')]/text()
 
 dc.date.accessioned     //element[@name="dc"]/element[@name="date"]/element[@name="accessioned"]//field[@name="value"]/text()
 dc.description.abstract //element[@name="dc"]/element[@name="description"]/element[@name="abstract"]//field[@name="value"]/text()
 dc.language             //element[@name="dc"]/element[@name="language"]//field[@name="value"]/text()    (or "originalValue" for spelled out language)
 oapen.pages             //element[@name="oapen"]/element[@name="pages"]//field[@name="value"]//text()
-oapen.identifier        NOT AVAILABLE
-                        partOfBook uses the UUID however, so where does it refer to?
-                        
-                        
 
 thumbnail - may return more values -> put them in a single pipe separated field
 //*[.='THUMBNAIL']/..//element[@name="bitstream"]/field[@name="name"]/text() 
