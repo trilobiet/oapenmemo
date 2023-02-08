@@ -139,11 +139,8 @@ bic Book Industry Communication::K Economics, finance, business & management::KN
 CREATE TABLE public.subject_other (
     subject VARCHAR(100) NOT NULL,
     id_title UUID NOT NULL,
-    PRIMARY KEY (subject)
+    PRIMARY KEY (subject, id_title)
 );
-
-CREATE INDEX part_of_id_title ON public.subject_other
-    (id_title);
 
 
 CREATE TABLE public.subject_classification (
