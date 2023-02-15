@@ -195,8 +195,8 @@
           </tr>
           
           <tr>
-            <td><a href="819cbef8dd469a655de72752664f7013.html">id</a></td>
-            <td>UUID</td>
+            <td><a href="3a7fd877c2afeb4dc0142ad5c3547076.html">handle</a></td>
+            <td>VARCHAR(25)</td>
             <td><span class='label label-info'>true</span></td>
             <td><span class='label label-info'>false</span></td>
             <td>
@@ -208,8 +208,8 @@
           </tr>
           
           <tr>
-            <td><a href="3a7fd877c2afeb4dc0142ad5c3547076.html">handle</a></td>
-            <td>VARCHAR(25)</td>
+            <td><a href="819cbef8dd469a655de72752664f7013.html">sysid</a></td>
+            <td>UUID</td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
             <td>
@@ -365,7 +365,7 @@
           
           <tr>
             <td><a href="0ff96bcaa5c03b8fe9e1527ca53bc0b7.html">title</a></td>
-            <td>VARCHAR(100)</td>
+            <td>VARCHAR(255)</td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
             <td>
@@ -378,7 +378,7 @@
           
           <tr>
             <td><a href="27d641a6287478bea0f62ec83a9c0838.html">title_alternative</a></td>
-            <td>VARCHAR(100)</td>
+            <td>VARCHAR(255)</td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
             <td>
@@ -520,7 +520,7 @@
           </tr>
           
           <tr>
-            <td><a href="6c885374f7fdeb6a3c94b13eff4450b6.html">is_published_by</a></td>
+            <td><a href="6c885374f7fdeb6a3c94b13eff4450b6.html">handle_publisher</a></td>
             <td>VARCHAR(25)</td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>true</span></td>
@@ -528,7 +528,7 @@
               
                 <a href='8a84474d9c7f4d8dee39ee9461c0fdbd.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>publisher</a> ::
               
-              <a href='2186e90d87a1f5d9442071e1dcaff307.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+              <a href='2186e90d87a1f5d9442071e1dcaff307.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>handle</a>
             </td>
             <td><span class='label label-info'>true</span></td>
             <td><span class='label label-info'>false</span></td>
@@ -596,10 +596,10 @@
           
           
           <tr>
-            <td><a href='2d4de28e300186890760bfbe27638f86.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>contributor_role</a></td>
+            <td><a href='2d4de28e300186890760bfbe27638f86.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>contribution</a></td>
             <td>0..*</td>
             <td></td>
-            <td><a href='6c2faf83ff7ecf462491ee0658d68521.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contributor_role)</a></td>
+            <td><a href='6c2faf83ff7ecf462491ee0658d68521.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contribution)</a></td>
           </tr>
           
           
@@ -636,10 +636,10 @@
           
           
           <tr>
-            <td><a href='2d4de28e300186890760bfbe27638f86.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>contributor_role</a></td>
+            <td><a href='2d4de28e300186890760bfbe27638f86.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>contribution</a></td>
             <td>0..*</td>
             <td></td>
-            <td><a href='3c2479fe9070ab9b38d6bf548d5f7929.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contributor_role)</a></td>
+            <td><a href='3c2479fe9070ab9b38d6bf548d5f7929.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contribution)</a></td>
           </tr>
           
           
@@ -726,7 +726,7 @@
         
         <li><a href='7f535db4711f5198dea54d26462cc049.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—identifier)</a></li>
         
-        <li><a href='6c2faf83ff7ecf462491ee0658d68521.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contributor_role)</a></li>
+        <li><a href='6c2faf83ff7ecf462491ee0658d68521.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contribution)</a></li>
         
         <li><a href='df59d635edf6021b3d4bd1091f12acbb.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—subject_classification)</a></li>
         
@@ -736,7 +736,7 @@
         
         <li><a href='08e6581e9e22f862f17aa3334304531c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—funding)</a></li>
         
-        <li><a href='3c2479fe9070ab9b38d6bf548d5f7929.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contributor_role)</a></li>
+        <li><a href='3c2479fe9070ab9b38d6bf548d5f7929.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contribution)</a></li>
         
         <li><a href='38d371f9ae0cc319e0da6aa679fe4556.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—language)</a></li>
         
@@ -759,7 +759,7 @@
         
         <li><a href='7f535db4711f5198dea54d26462cc049.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—identifier)</a></li>
         
-        <li><a href='6c2faf83ff7ecf462491ee0658d68521.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contributor_role)</a></li>
+        <li><a href='6c2faf83ff7ecf462491ee0658d68521.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contribution)</a></li>
         
         <li><a href='df59d635edf6021b3d4bd1091f12acbb.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—subject_classification)</a></li>
         
@@ -769,7 +769,7 @@
         
         <li><a href='08e6581e9e22f862f17aa3334304531c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—funding)</a></li>
         
-        <li><a href='3c2479fe9070ab9b38d6bf548d5f7929.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contributor_role)</a></li>
+        <li><a href='3c2479fe9070ab9b38d6bf548d5f7929.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—contribution)</a></li>
         
         <li><a href='38d371f9ae0cc319e0da6aa679fe4556.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—language)</a></li>
         
