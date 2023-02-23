@@ -223,7 +223,7 @@ ALTER TABLE public.affiliation
 COMMENT ON COLUMN public.affiliation.id
     IS 'Auto generated ID';
 
-CREATE TABLE public.grant (
+CREATE TABLE public.grant_data (
     property VARCHAR(10) NOT NULL,
     value VARCHAR(255) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
@@ -231,7 +231,7 @@ CREATE TABLE public.grant (
 );
 
 
-COMMENT ON COLUMN public.grant.property
+COMMENT ON COLUMN public.grant_data.property
     IS 'PROGRAM, PROJECT, NUMBER, ACRONYM';
 
 ALTER TABLE public.title ADD CONSTRAINT FK_title__handle_publisher FOREIGN KEY (handle_publisher) REFERENCES public.publisher(handle);
@@ -248,4 +248,4 @@ ALTER TABLE public.funding ADD CONSTRAINT FK_funding__handle_title FOREIGN KEY (
 ALTER TABLE public.funding ADD CONSTRAINT FK_funding__handle_funder FOREIGN KEY (handle_funder) REFERENCES public.funder(handle);
 ALTER TABLE public.affiliation ADD CONSTRAINT FK_affiliation__id_institution FOREIGN KEY (id_institution) REFERENCES public.institution(id);
 ALTER TABLE public.affiliation ADD CONSTRAINT FK_affiliation__orcid FOREIGN KEY (orcid) REFERENCES public.contributor(orcid);
-ALTER TABLE public.grant ADD CONSTRAINT FK_grant__handle_title FOREIGN KEY (handle_title) REFERENCES public.title(handle);
+ALTER TABLE public.grant_data ADD CONSTRAINT FK_grant_data__handle_title FOREIGN KEY (handle_title) REFERENCES public.title(handle);
