@@ -3153,7 +3153,7 @@
 									"top": 773,
 									"width": 235.61962890625,
 									"height": 13,
-									"text": "grant"
+									"text": "grant_data"
 								},
 								{
 									"_type": "ERDColumnCompartmentView",
@@ -4728,7 +4728,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGFoPzP8S3FZ8g="
 					},
-					"name": "grant",
+					"name": "grant_data",
 					"columns": [
 						{
 							"_type": "ERDColumn",
