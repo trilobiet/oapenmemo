@@ -100,20 +100,16 @@ CREATE TABLE oapen_memo.funder (
     handle VARCHAR(25) NOT NULL,
     name VARCHAR(255) NOT NULL,
     acronyms text,
+    number VARCHAR(100) NOT NULL,
     PRIMARY KEY (handle)
 );
 
 
 CREATE TABLE oapen_memo.funding (
-    grant_number VARCHAR(100),
-    grant_program VARCHAR(255),
-    grant_project VARCHAR(255),
-    grant_acronym VARCHAR(100),
     handle_title VARCHAR(25) NOT NULL,
     handle_funder VARCHAR(25) NOT NULL,
     PRIMARY KEY (handle_title, handle_funder)
 );
-
 
 CREATE TABLE oapen_memo.publisher (
     handle VARCHAR(25) NOT NULL,
@@ -131,7 +127,6 @@ CREATE TABLE oapen_memo.contributor (
 
 CREATE INDEX part_of_orcid ON oapen_memo.contributor
     (orcid);
-
 
 CREATE TABLE oapen_memo.institution (
     id INTEGER NOT NULL,
@@ -156,6 +151,17 @@ CREATE TABLE oapen_memo.affiliation (
 ALTER TABLE oapen_memo.affiliation
     ADD UNIQUE (id_institution, orcid, from_date, until_date);
 
+
+CREATE TABLE oapen_memo.grant (
+    property VARCHAR(10) NOT NULL,
+    value VARCHAR(255) NOT NULL,
+    handle_title VARCHAR(25) NOT NULL,
+    PRIMARY KEY (property, value, handle_title)
+);
+
+CREATE INDEX part_of_handle_title ON oapen_memo.grant
+    (handle_title);
+
     
 ALTER TABLE oapen_memo.title ADD CONSTRAINT FK_title__handle_publisher FOREIGN KEY (handle_publisher) REFERENCES oapen_memo.publisher(handle);
 ALTER TABLE oapen_memo.language ADD CONSTRAINT FK_language__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
@@ -171,3 +177,4 @@ ALTER TABLE oapen_memo.funding ADD CONSTRAINT FK_funding__handle_funder FOREIGN 
 ALTER TABLE oapen_memo.funding ADD CONSTRAINT FK_funding__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
 ALTER TABLE oapen_memo.affiliation ADD CONSTRAINT FK_affiliation__orcid FOREIGN KEY (orcid) REFERENCES oapen_memo.contributor(orcid);
 ALTER TABLE oapen_memo.affiliation ADD CONSTRAINT FK_affiliation__id_institution FOREIGN KEY (id_institution) REFERENCES oapen_memo.institution(id);
+ALTER TABLE oapen_memo.grant ADD CONSTRAINT FK_grant__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;

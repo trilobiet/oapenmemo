@@ -342,6 +342,13 @@
 					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.lyncode.com/xoai http://www.lyncode.com/xsd/xoai.xsd">
 					<element name="dc">
 						<element name="contributor">
+							<element name="author">
+								<element name="none">
+									<field name="value">Gerritsen, Gerrit</field>
+									<field name="authority">19380db3-36e6-41d5-a660-14ddb9cda0cc</field>
+									<field name="confidence">300</field>
+								</element>
+							</element>
 							<element name="editor">
 								<element name="none">
 									<field name="value">Bartz, Eva</field>
