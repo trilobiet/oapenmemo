@@ -13,3 +13,4 @@ DROP TABLE public.publisher CASCADE;
 DROP TABLE public.contributor CASCADE;
 DROP TABLE public.institution CASCADE;
 DROP TABLE public.affiliation CASCADE;
+DROP TABLE public.grant CASCADE;

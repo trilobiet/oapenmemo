@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>affiliation</title>
+    <title>grant</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -18,7 +18,7 @@
 
       <!-- Name Title -->
 
-      <h1>affiliation</h1>
+      <h1>grant</h1>
 
       <!-- Type and Stereotype -->
 
@@ -43,7 +43,7 @@
           <span class="label label-info"><a href='1445357fbec7a4dd22df8d46a95e4070.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Data Model </a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='79b7b7822928f3498d7411c7859e82d2.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>affiliation</a></span>
+          <span class="label label-info"><a href='b044cb2beb465c0c42338fc9c784bc39.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>grant</a></span>
         
       </section>
 
@@ -195,8 +195,8 @@
           </tr>
           
           <tr>
-            <td><a href="cd8e6a886e366995f1fd6f73da906dd0.html">id</a></td>
-            <td>INTEGER</td>
+            <td><a href="21b6f27970dec1b218ca46efa02bc9af.html">property</a></td>
+            <td>VARCHAR(10)</td>
             <td><span class='label label-info'>true</span></td>
             <td><span class='label label-info'>false</span></td>
             <td>
@@ -208,59 +208,31 @@
           </tr>
           
           <tr>
-            <td><a href="9a04e3752125481aed0220f18297b3a1.html">id_institution</a></td>
-            <td>INTEGER</td>
-            <td><span class='label label-info'>false</span></td>
+            <td><a href="dbe575a5971904d34fc90e410062fd6d.html">value</a></td>
+            <td>VARCHAR(255)</td>
             <td><span class='label label-info'>true</span></td>
-            <td>
-              
-                <a href='ec6ab13dc0421b0a508ffe649a1e5c32.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>institution</a> ::
-              
-              <a href='d8eab74252166aeeb0ccd7a92347fcd0.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
-            </td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>true</span></td>
-          </tr>
-          
-          <tr>
-            <td><a href="1cab4ca2643ab97849ce8e56a20c285b.html">orcid</a></td>
-            <td>CHAR(19)</td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>true</span></td>
-            <td>
-              
-                <a href='2bcee78ed1aa53c1dcf9b9d785cc5e29.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>contributor</a> ::
-              
-              <a href='264371358d90d4d2183ac3b9fc8ddd0a.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>orcid</a>
-            </td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>true</span></td>
-          </tr>
-          
-          <tr>
-            <td><a href="86d38f7881afe27ab7f8595f41bdef52.html">from_date</a></td>
-            <td>DATE</td>
-            <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
             <td>
               
               <span class='label label-info'>null</span>
             </td>
             <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
           </tr>
           
           <tr>
-            <td><a href="de38052b9f66afbd637069a51b4524e7.html">until_date</a></td>
-            <td>DATE</td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>false</span></td>
+            <td><a href="25a8fea348e205a9a360d57dcb63fc35.html">handle_title</a></td>
+            <td>VARCHAR(25)</td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>true</span></td>
             <td>
               
-              <span class='label label-info'>null</span>
+                <a href='679e5bdc1068b644664082d025bc4e43.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>title</a> ::
+              
+              <a href='3a7fd877c2afeb4dc0142ad5c3547076.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>handle</a>
             </td>
             <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
           </tr>
           
         </table>                
@@ -283,18 +255,10 @@
           
           
           <tr>
-            <td><a href='2bcee78ed1aa53c1dcf9b9d785cc5e29.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>contributor</a></td>
+            <td><a href='679e5bdc1068b644664082d025bc4e43.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>title</a></td>
             <td>1</td>
             <td></td>
-            <td><a href='6f6d2668d9c4b58f59a0d3960647ecb0.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(contributor—affiliation)</a></td>
-          </tr>
-          
-          
-          <tr>
-            <td><a href='ec6ab13dc0421b0a508ffe649a1e5c32.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>institution</a></td>
-            <td>1</td>
-            <td></td>
-            <td><a href='1daa5f656796ed2e6af84c85b11af1e4.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(institution—affiliation)</a></td>
+            <td><a href='3bae8f6a090740b1b83ad743af2d289b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—grant)</a></td>
           </tr>
           
         </table>                
@@ -328,7 +292,7 @@
     
     <tr>
         <td>name</td>
-        <td>affiliation</td>
+        <td>grant</td>
     </tr>
     
     
@@ -361,9 +325,7 @@
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
-        <li><a href='6f6d2668d9c4b58f59a0d3960647ecb0.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(contributor—affiliation)</a></li>
-        
-        <li><a href='1daa5f656796ed2e6af84c85b11af1e4.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(institution—affiliation)</a></li>
+        <li><a href='3bae8f6a090740b1b83ad743af2d289b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—grant)</a></li>
         
     </ul>
 </section>
