@@ -6,8 +6,7 @@ CREATE TABLE public.title (
     thumbnail VARCHAR(100),
     license VARCHAR(255),
     webshop_url VARCHAR(255),
-    date_available DATETIME,
-    date_issued date,
+    year_available INT(4),
     description text,
     description_abstract text,
     description_provenance text,
@@ -37,7 +36,7 @@ CREATE INDEX part_of_handle_publisher ON public.title
 COMMENT ON COLUMN public.title.handle
     IS 'Handle (without url part), e.g. 20.500.12657/53113';
 COMMENT ON COLUMN public.title.sysid
-    IS 'UUID as used in DSpace. Field part_of_book refers to this value.';
+    IS 'UUID as used in DSpace.';
 COMMENT ON COLUMN public.title.collection
     IS 'e.g. 20.500.12657/8 
 TODO: where can this be found in the API?';
@@ -49,8 +48,6 @@ COMMENT ON COLUMN public.title.thumbnail
 Json path: 
 (List) $.[{row}].bitstreams[?(@.bundleName == ''THUMBNAIL'')].name
 ';
-COMMENT ON COLUMN public.title.date_issued
-    IS 'Most of the time only a year, sometimes a full date.';
 COMMENT ON COLUMN public.title.type
     IS 'book OR chapter';
 COMMENT ON COLUMN public.title.oapen_identifier
@@ -65,6 +62,8 @@ COMMENT ON COLUMN public.title.handle_publisher
 (Object) $.[row].metadata[?(@.key == ''oapen.relation.isPublishedBy'')]
 
 (Object) $.[0].metadata[?(@.key == ''publisher.name'')]';
+COMMENT ON COLUMN public.title.part_of_book
+    IS 'UUID or handle';
 
 CREATE TABLE public.language (
     language VARCHAR(10) NOT NULL,
@@ -78,13 +77,6 @@ CREATE TABLE public.export_chunk (
     type VARCHAR(10) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
     PRIMARY KEY (type, handle_title)
-);
-
-
-CREATE TABLE public.date_accessioned (
-    date DATETIME NOT NULL,
-    handle_title VARCHAR(25) NOT NULL,
-    PRIMARY KEY (date, handle_title)
 );
 
 
@@ -192,6 +184,9 @@ CREATE TABLE public.contributor (
     PRIMARY KEY (name)
 );
 
+ALTER TABLE public.contributor
+    ADD UNIQUE (orcid);
+
 
 CREATE TABLE public.institution (
     id INTEGER NOT NULL,
@@ -237,7 +232,6 @@ COMMENT ON COLUMN public.grant_data.property
 ALTER TABLE public.title ADD CONSTRAINT FK_title__handle_publisher FOREIGN KEY (handle_publisher) REFERENCES public.publisher(handle);
 ALTER TABLE public.language ADD CONSTRAINT FK_language__handle_title FOREIGN KEY (handle_title) REFERENCES public.title(sysid);
 ALTER TABLE public.export_chunk ADD CONSTRAINT FK_export_chunk__handle_title FOREIGN KEY (handle_title) REFERENCES public.title(sysid);
-ALTER TABLE public.date_accessioned ADD CONSTRAINT FK_date_accessioned__handle_title FOREIGN KEY (handle_title) REFERENCES public.title(sysid);
 ALTER TABLE public.contribution ADD CONSTRAINT FK_contribution__name_contributor FOREIGN KEY (name_contributor) REFERENCES public.contributor(name);
 ALTER TABLE public.contribution ADD CONSTRAINT FK_contribution__handle_title FOREIGN KEY (handle_title) REFERENCES public.title(sysid);
 ALTER TABLE public.identifier ADD CONSTRAINT FK_identifier__handle_title FOREIGN KEY (handle_title) REFERENCES public.title(sysid);
