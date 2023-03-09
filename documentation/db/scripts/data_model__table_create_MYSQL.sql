@@ -1,6 +1,6 @@
 CREATE TABLE oapen_memo.title (
     handle VARCHAR(25) NOT NULL,
-    sysid VARCHAR(36) NOT NULL,
+    sysid VARCHAR(36),
     collection VARCHAR(25),
     download_url VARCHAR(255),
     thumbnail VARCHAR(100),

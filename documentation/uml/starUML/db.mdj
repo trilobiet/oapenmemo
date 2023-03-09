@@ -2944,7 +2944,7 @@
 							"top": 16,
 							"width": 672,
 							"height": 55,
-							"text": "OAPEN MEMO Project\nEntity Relation Diagram\nVersion 230309-1"
+							"text": "OAPEN MEMO Project\nEntity Relation Diagram\nVersion 230309-2"
 						},
 						{
 							"_type": "ERDEntityView",
@@ -3417,7 +3417,8 @@
 							"name": "sysid",
 							"documentation": "UUID as used in DSpace.",
 							"type": "VARCHAR",
-							"length": "36"
+							"length": "36",
+							"nullable": true
 						},
 						{
 							"_type": "ERDColumn",
