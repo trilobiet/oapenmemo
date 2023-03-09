@@ -1,7 +1,6 @@
 DROP TABLE public.title CASCADE;
 DROP TABLE public.language CASCADE;
 DROP TABLE public.export_chunk CASCADE;
-DROP TABLE public.date_accessioned CASCADE;
 DROP TABLE public.contribution CASCADE;
 DROP TABLE public.identifier CASCADE;
 DROP TABLE public.classification CASCADE;

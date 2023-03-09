@@ -6,8 +6,7 @@ CREATE TABLE oapen_memo.title (
     thumbnail VARCHAR(100),
     license VARCHAR(255),
     webshop_url VARCHAR(255),
-    date_available DATETIME,
-    date_issued date,
+    year_available INT,
     description text,
     description_abstract text,
     description_provenance text,
@@ -34,6 +33,7 @@ CREATE INDEX part_of_handle_publisher ON oapen_memo.title
     (handle_publisher);
 
 
+
 CREATE TABLE oapen_memo.language (
     language VARCHAR(10) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
@@ -46,13 +46,6 @@ CREATE TABLE oapen_memo.export_chunk (
     type VARCHAR(10) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
     PRIMARY KEY (type, handle_title)
-);
-
-
-CREATE TABLE oapen_memo.date_accessioned (
-    date DATETIME NOT NULL,
-    handle_title VARCHAR(25) NOT NULL,
-    PRIMARY KEY (date, handle_title)
 );
 
 
@@ -82,6 +75,7 @@ CREATE TABLE oapen_memo.classification (
 );
 
 
+
 CREATE TABLE oapen_memo.subject_other (
     subject VARCHAR(100) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
@@ -105,11 +99,13 @@ CREATE TABLE oapen_memo.funder (
 );
 
 
+
 CREATE TABLE oapen_memo.funding (
     handle_title VARCHAR(25) NOT NULL,
     handle_funder VARCHAR(25) NOT NULL,
     PRIMARY KEY (handle_title, handle_funder)
 );
+
 
 CREATE TABLE oapen_memo.publisher (
     handle VARCHAR(25) NOT NULL,
@@ -119,14 +115,16 @@ CREATE TABLE oapen_memo.publisher (
 );
 
 
+
 CREATE TABLE oapen_memo.contributor (
     name VARCHAR(100) NOT NULL,
     orcid char(19),
     PRIMARY KEY (name)
 );
 
-CREATE INDEX part_of_orcid ON oapen_memo.contributor
-    (orcid);
+ALTER TABLE oapen_memo.contributor
+    ADD UNIQUE (orcid);
+
 
 CREATE TABLE oapen_memo.institution (
     id INTEGER NOT NULL,
@@ -137,6 +135,7 @@ CREATE TABLE oapen_memo.institution (
 
 ALTER TABLE oapen_memo.institution
     ADD UNIQUE (name);
+
 
 
 CREATE TABLE oapen_memo.affiliation (
@@ -152,6 +151,7 @@ ALTER TABLE oapen_memo.affiliation
     ADD UNIQUE (id_institution, orcid, from_date, until_date);
 
 
+
 CREATE TABLE oapen_memo.grant_data (
     property VARCHAR(10) NOT NULL,
     value VARCHAR(255) NOT NULL,
@@ -159,14 +159,9 @@ CREATE TABLE oapen_memo.grant_data (
     PRIMARY KEY (property, value, handle_title)
 );
 
-CREATE INDEX part_of_handle_title ON oapen_memo.grant_data
-    (handle_title);
-
-    
 ALTER TABLE oapen_memo.title ADD CONSTRAINT FK_title__handle_publisher FOREIGN KEY (handle_publisher) REFERENCES oapen_memo.publisher(handle);
 ALTER TABLE oapen_memo.language ADD CONSTRAINT FK_language__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
 ALTER TABLE oapen_memo.export_chunk ADD CONSTRAINT FK_export_chunk__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
-ALTER TABLE oapen_memo.date_accessioned ADD CONSTRAINT FK_date_accessioned__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
 ALTER TABLE oapen_memo.contribution ADD CONSTRAINT FK_contribution__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle);
 ALTER TABLE oapen_memo.contribution ADD CONSTRAINT FK_contribution__name_contributor FOREIGN KEY (name_contributor) REFERENCES oapen_memo.contributor(name);
 ALTER TABLE oapen_memo.identifier ADD CONSTRAINT FK_identifier__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
