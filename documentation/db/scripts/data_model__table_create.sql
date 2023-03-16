@@ -2,30 +2,26 @@ CREATE TABLE public.title (
     handle VARCHAR(25) NOT NULL,
     sysid VARCHAR(36),
     collection VARCHAR(25),
-    download_url VARCHAR(255),
-    thumbnail VARCHAR(100),
-    license VARCHAR(255),
-    webshop_url VARCHAR(255),
-    year_available INT(4),
-    description text,
-    description_abstract text,
-    description_provenance text,
-    is_part_of_series VARCHAR(100),
-    title VARCHAR(255),
-    title_alternative VARCHAR(255),
+    handle_publisher VARCHAR(25),
+    part_of_book VARCHAR(36),
     type VARCHAR(10),
+    year_available INT(4),
+    download_url text,
+    thumbnail text,
+    license text,
+    webshop_url text,
+    description_abstract text,
+    is_part_of_series text,
+    title text,
+    title_alternative text,
     terms_abstract text,
     abstract_other_language text,
     description_other_language text,
-    chapter_number VARCHAR(25),
-    embargo VARCHAR(255),
-    oapen_identifier VARCHAR(255),
-    imprint VARCHAR(100),
-    pages VARCHAR(10),
-    place_publication VARCHAR(100),
-    handle_publisher VARCHAR(25),
-    series_number VARCHAR(100),
-    part_of_book VARCHAR(36),
+    chapter_number text,
+    imprint text,
+    pages text,
+    place_publication text,
+    series_number text,
     PRIMARY KEY (handle)
 );
 
@@ -40,22 +36,6 @@ COMMENT ON COLUMN public.title.sysid
 COMMENT ON COLUMN public.title.collection
     IS 'e.g. 20.500.12657/8 
 TODO: where can this be found in the API?';
-COMMENT ON COLUMN public.title.download_url
-    IS 'E.g. /rest/bitstreams/ea7d1f20-5fa6-4d43-8307-22f9b40e2fbb/retrieve';
-COMMENT ON COLUMN public.title.thumbnail
-    IS 'e.g. m.celama-eb.5.120678.cover.jpg
-
-Json path: 
-(List) $.[{row}].bitstreams[?(@.bundleName == ''THUMBNAIL'')].name
-';
-COMMENT ON COLUMN public.title.type
-    IS 'book OR chapter';
-COMMENT ON COLUMN public.title.oapen_identifier
-    IS 'A url. Very seldom multiple values. Since it is not likely to be part of complex queries, join the values together in a pipe separated field and search using ''LIKE''.
- 
-E.g. 
-https://openresearchlibrary.org/viewer/61ee7f71-18ae-4308-b882-78945f0e7492
-';
 COMMENT ON COLUMN public.title.handle_publisher
     IS 'Json Path:
 
@@ -64,25 +44,35 @@ COMMENT ON COLUMN public.title.handle_publisher
 (Object) $.[0].metadata[?(@.key == ''publisher.name'')]';
 COMMENT ON COLUMN public.title.part_of_book
     IS 'UUID or handle';
+COMMENT ON COLUMN public.title.type
+    IS 'book OR chapter';
+COMMENT ON COLUMN public.title.download_url
+    IS 'E.g. /rest/bitstreams/ea7d1f20-5fa6-4d43-8307-22f9b40e2fbb/retrieve';
+COMMENT ON COLUMN public.title.thumbnail
+    IS 'e.g. m.celama-eb.5.120678.cover.jpg
+
+Json path: 
+(List) $.[{row}].bitstreams[?(@.bundleName == ''THUMBNAIL'')].name
+';
 
 CREATE TABLE public.language (
-    language VARCHAR(10) NOT NULL,
+    language VARCHAR(100) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
     PRIMARY KEY (language, handle_title)
 );
 
 
 CREATE TABLE public.export_chunk (
-    content text NOT NULL,
     type VARCHAR(10) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
+    content text NOT NULL,
     PRIMARY KEY (type, handle_title)
 );
 
 
 CREATE TABLE public.contribution (
     role VARCHAR(10) NOT NULL,
-    name_contributor VARCHAR(100) NOT NULL,
+    name_contributor VARCHAR(255) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
     PRIMARY KEY (role, name_contributor, handle_title)
 );
@@ -93,8 +83,8 @@ COMMENT ON COLUMN public.contribution.role
 
 CREATE TABLE public.identifier (
     identifier VARCHAR(100) NOT NULL,
-    identifier_type VARCHAR(10) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
+    identifier_type VARCHAR(10) NOT NULL,
     PRIMARY KEY (identifier)
 );
 
@@ -108,8 +98,8 @@ COMMENT ON COLUMN public.identifier.identifier_type
     IS 'ISBN, ISSN, OCN, DOI';
 
 CREATE TABLE public.classification (
-    code VARCHAR(7) NOT NULL,
-    description VARCHAR(100) NOT NULL,
+    code VARCHAR(10) NOT NULL,
+    description text NOT NULL,
     PRIMARY KEY (code)
 );
 
@@ -131,8 +121,15 @@ CREATE TABLE public.subject_other (
 );
 
 
+COMMENT ON COLUMN public.subject_other.subject
+    IS 'When two equal subjects appear with differnt casing (''Nation'' and ''nation'') within a single handle_title this will cause an integrity violation.
+
+Therefore make this field case sensitive:
+CHARACTER SET utf8 COLLATE utf8_bin
+';
+
 CREATE TABLE public.subject_classification (
-    code_classification VARCHAR(5) NOT NULL,
+    code_classification VARCHAR(10) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
     PRIMARY KEY (code_classification, handle_title)
 );
@@ -140,9 +137,9 @@ CREATE TABLE public.subject_classification (
 
 CREATE TABLE public.funder (
     handle VARCHAR(25) NOT NULL,
-    name VARCHAR(255) NOT NULL,
+    name text NOT NULL,
     acronyms text,
-    number VARCHAR(100) NOT NULL,
+    number text,
     PRIMARY KEY (handle)
 );
 
@@ -168,8 +165,8 @@ COMMENT ON COLUMN public.funding.handle_funder
 
 CREATE TABLE public.publisher (
     handle VARCHAR(25) NOT NULL,
-    name VARCHAR(100) NOT NULL,
-    website VARCHAR(100),
+    name text NOT NULL,
+    website text,
     PRIMARY KEY (handle)
 );
 
@@ -179,7 +176,7 @@ COMMENT ON COLUMN public.publisher.handle
 (https://library.oapen.org/handle/20.500.12657/22403)';
 
 CREATE TABLE public.contributor (
-    name VARCHAR(100) NOT NULL,
+    name VARCHAR(255) NOT NULL,
     orcid char(19),
     PRIMARY KEY (name)
 );

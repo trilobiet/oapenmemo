@@ -61,7 +61,10 @@
         <h3>Description</h3>
         <div>
           
-            <span class="label label-info">none</span>
+            <p>When two equal subjects appear with differnt casing (&#39;Nation&#39; and &#39;nation&#39;) within a single handle_title this will cause an integrity violation.</p>
+
+<p>Therefore make this field case sensitive:
+CHARACTER SET utf8 COLLATE utf8_bin</p>
           
         </div>
       </section>
