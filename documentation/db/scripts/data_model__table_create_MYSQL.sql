@@ -157,7 +157,7 @@ CREATE TABLE oapen_memo.grant_data (
 ALTER TABLE oapen_memo.title ADD CONSTRAINT FK_title__handle_publisher FOREIGN KEY (handle_publisher) REFERENCES oapen_memo.publisher(handle);
 ALTER TABLE oapen_memo.language ADD CONSTRAINT FK_language__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
 ALTER TABLE oapen_memo.export_chunk ADD CONSTRAINT FK_export_chunk__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
-ALTER TABLE oapen_memo.contribution ADD CONSTRAINT FK_contribution__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle);
+ALTER TABLE oapen_memo.contribution ADD CONSTRAINT FK_contribution__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
 ALTER TABLE oapen_memo.contribution ADD CONSTRAINT FK_contribution__name_contributor FOREIGN KEY (name_contributor) REFERENCES oapen_memo.contributor(name);
 ALTER TABLE oapen_memo.identifier ADD CONSTRAINT FK_identifier__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
 ALTER TABLE oapen_memo.subject_other ADD CONSTRAINT FK_subject_other__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
@@ -168,3 +168,5 @@ ALTER TABLE oapen_memo.funding ADD CONSTRAINT FK_funding__handle_title FOREIGN K
 ALTER TABLE oapen_memo.affiliation ADD CONSTRAINT FK_affiliation__orcid FOREIGN KEY (orcid) REFERENCES oapen_memo.contributor(orcid);
 ALTER TABLE oapen_memo.affiliation ADD CONSTRAINT FK_affiliation__id_institution FOREIGN KEY (id_institution) REFERENCES oapen_memo.institution(id);
 ALTER TABLE oapen_memo.grant_data ADD CONSTRAINT FK_grant_data__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
+
+
