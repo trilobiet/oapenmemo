@@ -240,3 +240,9 @@ ALTER TABLE public.funding ADD CONSTRAINT FK_funding__handle_funder FOREIGN KEY 
 ALTER TABLE public.affiliation ADD CONSTRAINT FK_affiliation__id_institution FOREIGN KEY (id_institution) REFERENCES public.institution(id);
 ALTER TABLE public.affiliation ADD CONSTRAINT FK_affiliation__orcid FOREIGN KEY (orcid) REFERENCES public.contributor(orcid);
 ALTER TABLE public.grant_data ADD CONSTRAINT FK_grant_data__handle_title FOREIGN KEY (handle_title) REFERENCES public.title(handle);
+
+ALTER TABLE `oapen_memo`.`title` 
+ADD COLUMN `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+
+ALTER TABLE `oapen_memo`.`export_chunk` 
+ADD COLUMN `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
