@@ -421,6 +421,22 @@
 											"top": 526,
 											"width": 421.4130859375,
 											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGHkNlp2vl/Zsw=",
+											"_parent": {
+												"$ref": "AAAAAAGFoP0Gei3RwLI="
+											},
+											"model": {
+												"$ref": "AAAAAAGHkNlpu/l890A="
+											},
+											"fillColor": "#ffffd8",
+											"font": "Arial;13;0",
+											"left": 333,
+											"top": 541,
+											"width": 421.4130859375,
+											"height": 13
 										}
 									],
 									"fillColor": "#ffffd8",
@@ -428,7 +444,7 @@
 									"left": 328,
 									"top": 191,
 									"width": 431.4130859375,
-									"height": 353
+									"height": 368
 								}
 							],
 							"fillColor": "#ffffd8",
@@ -525,6 +541,22 @@
 											"top": 450,
 											"width": 225.61962890625,
 											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGHkNptOPmJT04=",
+											"_parent": {
+												"$ref": "AAAAAAGFoSPN5C9bapE="
+											},
+											"model": {
+												"$ref": "AAAAAAGHkNptJvmGb3o="
+											},
+											"fillColor": "#ffffd8",
+											"font": "Arial;13;0",
+											"left": 37,
+											"top": 465,
+											"width": 225.61962890625,
+											"height": 13
 										}
 									],
 									"fillColor": "#ffffd8",
@@ -532,7 +564,7 @@
 									"left": 32,
 									"top": 415,
 									"width": 235.61962890625,
-									"height": 53
+									"height": 68
 								}
 							],
 							"fillColor": "#ffffd8",
@@ -540,7 +572,7 @@
 							"left": 32,
 							"top": 392,
 							"width": 235.61962890625,
-							"height": 76,
+							"height": 91,
 							"nameLabel": {
 								"$ref": "AAAAAAGFoSPN4y9a3o4="
 							},
@@ -2878,7 +2910,7 @@
 							"top": 16,
 							"width": 672,
 							"height": 55,
-							"text": "OAPEN MEMO Project\nEntity Relation Diagram\nVersion 230316-1"
+							"text": "OAPEN MEMO Project\nEntity Relation Diagram\nVersion 230417-1"
 						},
 						{
 							"_type": "ERDEntityView",
@@ -3603,6 +3635,18 @@
 							"type": "TEXT",
 							"length": 0,
 							"nullable": true
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGHkNlpu/l890A=",
+							"_parent": {
+								"$ref": "AAAAAAGFoP0GeC3Nl1w="
+							},
+							"name": "timestamp",
+							"documentation": "DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+							"type": "TIMESTAMP",
+							"length": 0,
+							"nullable": true
 						}
 					]
 				},
@@ -3683,8 +3727,20 @@
 								"$ref": "AAAAAAGFoSPN4y9XOX4="
 							},
 							"name": "content",
-							"type": "TEXT",
+							"type": "MEDIUMTEXT",
 							"length": 0
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGHkNptJvmGb3o=",
+							"_parent": {
+								"$ref": "AAAAAAGFoSPN4y9XOX4="
+							},
+							"name": "timestamp",
+							"documentation": "DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+							"type": "TIMESTAMP",
+							"length": 0,
+							"nullable": true
 						}
 					]
 				},

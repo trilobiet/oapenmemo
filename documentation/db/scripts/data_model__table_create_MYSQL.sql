@@ -26,6 +26,7 @@ CREATE TABLE oapen_memo.title (
     pages text,
     place_publication text,
     series_number text,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (handle)
 );
 
@@ -44,7 +45,8 @@ CREATE TABLE oapen_memo.language (
 CREATE TABLE oapen_memo.export_chunk (
     type VARCHAR(10) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
-    content text NOT NULL,
+    content mediumtext NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (type, handle_title)
 );
 
@@ -169,8 +171,3 @@ ALTER TABLE oapen_memo.affiliation ADD CONSTRAINT FK_affiliation__orcid FOREIGN 
 ALTER TABLE oapen_memo.affiliation ADD CONSTRAINT FK_affiliation__id_institution FOREIGN KEY (id_institution) REFERENCES oapen_memo.institution(id);
 ALTER TABLE oapen_memo.grant_data ADD CONSTRAINT FK_grant_data__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
 
-ALTER TABLE `oapen_memo`.`title` 
-ADD COLUMN `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
-
-ALTER TABLE `oapen_memo`.`export_chunk` 
-ADD COLUMN `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
