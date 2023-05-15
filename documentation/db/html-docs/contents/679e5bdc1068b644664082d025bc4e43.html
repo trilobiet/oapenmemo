@@ -221,19 +221,6 @@
           </tr>
           
           <tr>
-            <td><a href="bdec735240c6ac8480034afc1a9ba9f6.html">collection</a></td>
-            <td>VARCHAR(25)</td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>false</span></td>
-            <td>
-              
-              <span class='label label-info'>null</span>
-            </td>
-            <td><span class='label label-info'>true</span></td>
-            <td><span class='label label-info'>false</span></td>
-          </tr>
-          
-          <tr>
             <td><a href="6c885374f7fdeb6a3c94b13eff4450b6.html">handle_publisher</a></td>
             <td>VARCHAR(25)</td>
             <td><span class='label label-info'>false</span></td>
@@ -495,6 +482,19 @@
             <td><span class='label label-info'>false</span></td>
           </tr>
           
+          <tr>
+            <td><a href="6742bb483f8b58bccbad9dec4d662a26.html">timestamp</a></td>
+            <td>TIMESTAMP</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
         </table>                
       </section>
       
@@ -593,6 +593,14 @@
             <td><a href='5f8531b02b6507a0570505225fbc824b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(publisher—title)</a></td>
           </tr>
           
+          
+          <tr>
+            <td><a href='e09f6f6594b2712e25bb0ee6f4e52deb.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>collection</a></td>
+            <td>0..*</td>
+            <td></td>
+            <td><a href='531c0baeead8cf0aa4dd4529c33597cf.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—collection)</a></td>
+          </tr>
+          
         </table>                
       </section>
       
@@ -677,6 +685,8 @@
         
         <li><a href='5f8531b02b6507a0570505225fbc824b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(publisher—title)</a></li>
         
+        <li><a href='531c0baeead8cf0aa4dd4529c33597cf.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—collection)</a></li>
+        
     </ul>
 </section>
 
@@ -707,6 +717,8 @@
         <li><a href='38d371f9ae0cc319e0da6aa679fe4556.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—language)</a></li>
         
         <li><a href='3bae8f6a090740b1b83ad743af2d289b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—grant_data)</a></li>
+        
+        <li><a href='531c0baeead8cf0aa4dd4529c33597cf.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(title—collection)</a></li>
         
     </ul>
 </section>

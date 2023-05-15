@@ -5,7 +5,6 @@ CREATE DATABASE `oapen_memo` CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
 CREATE TABLE oapen_memo.title (
     handle VARCHAR(25) NOT NULL,
     sysid VARCHAR(36),
-    collection VARCHAR(25),
     handle_publisher VARCHAR(25),
     part_of_book VARCHAR(36),
     type VARCHAR(10),
@@ -36,7 +35,7 @@ CREATE INDEX part_of_handle_publisher ON oapen_memo.title
 
 
 CREATE TABLE oapen_memo.language (
-    language VARCHAR(100) NOT NULL,
+    language VARCHAR(25) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
     PRIMARY KEY (language, handle_title)
 );
@@ -45,7 +44,8 @@ CREATE TABLE oapen_memo.language (
 CREATE TABLE oapen_memo.export_chunk (
     type VARCHAR(10) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
-    content mediumtext NOT NULL,
+    content mediumtext NULL,
+    url text NULL,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (type, handle_title)
 );
@@ -156,6 +156,12 @@ CREATE TABLE oapen_memo.grant_data (
 );
 
 
+CREATE TABLE public.collection (
+    collection VARCHAR(255) NOT NULL,
+    handle_title VARCHAR(25) NOT NULL,
+    PRIMARY KEY (collection, handle_title)
+);
+
 ALTER TABLE oapen_memo.title ADD CONSTRAINT FK_title__handle_publisher FOREIGN KEY (handle_publisher) REFERENCES oapen_memo.publisher(handle);
 ALTER TABLE oapen_memo.language ADD CONSTRAINT FK_language__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
 ALTER TABLE oapen_memo.export_chunk ADD CONSTRAINT FK_export_chunk__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
@@ -170,4 +176,4 @@ ALTER TABLE oapen_memo.funding ADD CONSTRAINT FK_funding__handle_title FOREIGN K
 ALTER TABLE oapen_memo.affiliation ADD CONSTRAINT FK_affiliation__orcid FOREIGN KEY (orcid) REFERENCES oapen_memo.contributor(orcid);
 ALTER TABLE oapen_memo.affiliation ADD CONSTRAINT FK_affiliation__id_institution FOREIGN KEY (id_institution) REFERENCES oapen_memo.institution(id);
 ALTER TABLE oapen_memo.grant_data ADD CONSTRAINT FK_grant_data__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
-
+ALTER TABLE oapen_memo.collection ADD CONSTRAINT FK_collection__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_memo.title(handle) ON DELETE CASCADE;
