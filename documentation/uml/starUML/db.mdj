@@ -2623,8 +2623,8 @@
 							"left": 824,
 							"top": 888,
 							"width": 233,
-							"height": 193,
-							"text": "Table title cascades: \n\n- identifier\n- language\n- contribution\n- subject_classification\n- subject_other\n- export_chunk\n- funding\n- grant_data"
+							"height": 171,
+							"text": "Table title cascades: \n\n- identifier\n- language \n- collection\n- contribution\n- subject_classification\n- subject_other\n- export_chunk\n- funding\n- grant_data"
 						},
 						{
 							"_type": "UMLNoteLinkView",

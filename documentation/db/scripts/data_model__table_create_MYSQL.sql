@@ -156,7 +156,7 @@ CREATE TABLE oapen_memo.grant_data (
 );
 
 
-CREATE TABLE public.collection (
+CREATE TABLE oapen_memo.collection (
     collection VARCHAR(255) NOT NULL,
     handle_title VARCHAR(25) NOT NULL,
     PRIMARY KEY (collection, handle_title)
