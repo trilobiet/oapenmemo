@@ -44,7 +44,7 @@ def run_a_query():
     connection = mysql.connector.connect(
         host="localhost",
         user="trilobiet",
-        password="***REMOVED***",
+        password="******",
         database="oapen_memo"
     )
 
