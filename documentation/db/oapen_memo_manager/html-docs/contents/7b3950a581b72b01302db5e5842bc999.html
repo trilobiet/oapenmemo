@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>client</title>
+    <title>runlog</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -18,7 +18,7 @@
 
       <!-- Name Title -->
 
-      <h1>client</h1>
+      <h1>runlog</h1>
 
       <!-- Type and Stereotype -->
 
@@ -43,7 +43,7 @@
           <span class="label label-info"><a href='e88f2a2472e5d632355a049e1f007447.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Data Model1</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='2c4a44db59f286ead061ef169661cd00.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>client</a></span>
+          <span class="label label-info"><a href='7b3950a581b72b01302db5e5842bc999.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>runlog</a></span>
         
       </section>
 
@@ -195,8 +195,8 @@
           </tr>
           
           <tr>
-            <td><a href="9be62a6742743bc8f8f3570b2a992ced.html">id</a></td>
-            <td>VARCHAR(32)</td>
+            <td><a href="6341330ab5db5ce6051f3268d88345e9.html">id</a></td>
+            <td>INTEGER</td>
             <td><span class='label label-info'>true</span></td>
             <td><span class='label label-info'>false</span></td>
             <td>
@@ -208,8 +208,8 @@
           </tr>
           
           <tr>
-            <td><a href="9bdc26696f6f922698ab2da453686e3f.html">fullname</a></td>
-            <td>VARCHAR(255)</td>
+            <td><a href="975608431d7c85a24c11f4e0228561af.html">date</a></td>
+            <td>DATE</td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
             <td>
@@ -221,46 +221,7 @@
           </tr>
           
           <tr>
-            <td><a href="30cccb686233c9eff88c5549c182616a.html">username</a></td>
-            <td>VARCHAR(45)</td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>false</span></td>
-            <td>
-              
-              <span class='label label-info'>null</span>
-            </td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>true</span></td>
-          </tr>
-          
-          <tr>
-            <td><a href="6dd48c7b4acd69aac1261ccadc06db5c.html">oapen_id</a></td>
-            <td>VARCHAR(255)</td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>false</span></td>
-            <td>
-              
-              <span class='label label-info'>null</span>
-            </td>
-            <td><span class='label label-info'>true</span></td>
-            <td><span class='label label-info'>false</span></td>
-          </tr>
-          
-          <tr>
-            <td><a href="7e46529d6e918381e934f27fb8613139.html">password</a></td>
-            <td>VARCHAR(255)</td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>false</span></td>
-            <td>
-              
-              <span class='label label-info'>null</span>
-            </td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>false</span></td>
-          </tr>
-          
-          <tr>
-            <td><a href="a0b3a9725a8e27b5a1b4bc44ebd91e0f.html">is_editable</a></td>
+            <td><a href="98e28ec2917416041789205b6bf28d21.html">is_success</a></td>
             <td>BOOLEAN</td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
@@ -273,7 +234,7 @@
           </tr>
           
           <tr>
-            <td><a href="399e83e27d64a8f6c860aa7cf0902bfa.html">notes</a></td>
+            <td><a href="d0524f940f9158298197bbf3abd698b1.html">message</a></td>
             <td>TEXT</td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
@@ -282,6 +243,21 @@
               <span class='label label-info'>null</span>
             </td>
             <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="3a899ee91f74e17f4b8635ef1755652d.html">id_task</a></td>
+            <td>VARCHAR(32)</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+            <td>
+              
+                <a href='b783f9f6ee48424c43d45a559db7a358.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>task</a> ::
+              
+              <a href='cf9512d8755c0852a6df3768125fbf36.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+            </td>
+            <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
           </tr>
           
@@ -306,9 +282,9 @@
           
           <tr>
             <td><a href='b783f9f6ee48424c43d45a559db7a358.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>task</a></td>
-            <td>0..*</td>
+            <td>1</td>
             <td></td>
-            <td><a href='cfcbf66d37ee33fccbf12baa8adfee2d.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(client—task)</a></td>
+            <td><a href='44336cd813d1faeca0e3df15aa89f570.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(task—runlog)</a></td>
           </tr>
           
         </table>                
@@ -342,7 +318,7 @@
     
     <tr>
         <td>name</td>
-        <td>client</td>
+        <td>runlog</td>
     </tr>
     
     
@@ -375,7 +351,7 @@
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
-        <li><a href='cfcbf66d37ee33fccbf12baa8adfee2d.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(client—task)</a></li>
+        <li><a href='44336cd813d1faeca0e3df15aa89f570.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(task—runlog)</a></li>
         
     </ul>
 </section>
@@ -386,15 +362,6 @@
 
       
       
-<section class="element-list">
-    <h3>Owned Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='cfcbf66d37ee33fccbf12baa8adfee2d.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(client—task)</a></li>
-        
-    </ul>
-</section>
-
 
 
     </div>

@@ -247,6 +247,58 @@
           </tr>
           
           <tr>
+            <td><a href="27e713c36ba82ddd7cc922b092c89eb4.html">is_active</a></td>
+            <td>BOOLEAN</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="7295d7d0064e1fbd322791c529aca3c0.html">last_run_date</a></td>
+            <td>DATE</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="206b774969d9db433f2a9cf20ce1d73e.html">is_last_run_success</a></td>
+            <td>BOOLEAN</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="2430193f096a320c082d3fbfa4a515ae.html">last_run_message</a></td>
+            <td>TEXT</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
             <td><a href="5c4facb4bc6b810da2dcda806ead2059.html">id_client</a></td>
             <td>VARCHAR(32)</td>
             <td><span class='label label-info'>false</span></td>
@@ -256,19 +308,6 @@
                 <a href='2c4a44db59f286ead061ef169661cd00.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>client</a> ::
               
               <a href='9be62a6742743bc8f8f3570b2a992ced.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
-            </td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>false</span></td>
-          </tr>
-          
-          <tr>
-            <td><a href="27e713c36ba82ddd7cc922b092c89eb4.html">is_active</a></td>
-            <td>BOOLEAN</td>
-            <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>false</span></td>
-            <td>
-              
-              <span class='label label-info'>null</span>
             </td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
@@ -321,6 +360,14 @@
             <td>1</td>
             <td></td>
             <td><a href='964e82c34fda63ae6e12f0a7a7ae1e9b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(task—script)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='7b3950a581b72b01302db5e5842bc999.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>runlog</a></td>
+            <td>0..*</td>
+            <td></td>
+            <td><a href='44336cd813d1faeca0e3df15aa89f570.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(task—runlog)</a></td>
           </tr>
           
         </table>                
@@ -391,6 +438,8 @@
         
         <li><a href='964e82c34fda63ae6e12f0a7a7ae1e9b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(task—script)</a></li>
         
+        <li><a href='44336cd813d1faeca0e3df15aa89f570.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(task—runlog)</a></li>
+        
     </ul>
 </section>
 
@@ -405,6 +454,8 @@
     <ul class="nav nav-list">
         
         <li><a href='964e82c34fda63ae6e12f0a7a7ae1e9b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(task—script)</a></li>
+        
+        <li><a href='44336cd813d1faeca0e3df15aa89f570.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(task—runlog)</a></li>
         
     </ul>
 </section>
