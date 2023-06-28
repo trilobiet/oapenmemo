@@ -44,8 +44,8 @@ def run_a_query():
     connection = mysql.connector.connect(
         host="localhost",
         user="trilobiet",
-        password="******",
-        database="oapen_memo"
+        password="***REMOVED***",
+        database="oapen_library"
     )
 
     # connect and query
@@ -68,6 +68,8 @@ def run_a_query():
 
     cursor.close()
     connection.close()
+    
+    print('OK')
 
 
 # Press the green button in the gutter to run the script.
