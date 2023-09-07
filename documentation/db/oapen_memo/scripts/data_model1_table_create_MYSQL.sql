@@ -2,7 +2,7 @@
 CREATE DATABASE `oapen_memo` CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
 
 CREATE TABLE oapen_memo.homedir (
-    id VARCHAR(32) NOT NULL,
+    id VARCHAR(36) NOT NULL,
     name VARCHAR(255) NOT NULL,
     username VARCHAR(45) NOT NULL,
     password VARCHAR(255),
@@ -16,8 +16,8 @@ ALTER TABLE oapen_memo.homedir
 
 
 CREATE TABLE oapen_memo.query (
-    id VARCHAR(32) NOT NULL,
-    id_script VARCHAR(32) NOT NULL,
+    id VARCHAR(36) NOT NULL,
+    id_script VARCHAR(36) NOT NULL,
     name VARCHAR(255) NOT NULL,
     body text,
     params text,
@@ -30,8 +30,8 @@ CREATE INDEX part_of_id_script ON oapen_memo.query
 
 
 CREATE TABLE oapen_memo.script (
-    id VARCHAR(32) NOT NULL,
-    id_task VARCHAR(32),
+    id VARCHAR(36) NOT NULL,
+    id_task VARCHAR(36),
     name VARCHAR(255) NOT NULL,
     type ENUM('MAIN','SNIP') NOT NULL,
     body text,
@@ -46,8 +46,8 @@ ALTER TABLE oapen_memo.script
 
 
 CREATE TABLE oapen_memo.task (
-    id VARCHAR(32) NOT NULL,
-    id_homedir VARCHAR(32) NOT NULL,
+    id VARCHAR(36) NOT NULL,
+    id_homedir VARCHAR(36) NOT NULL,
     file_name VARCHAR(100) NOT NULL,
     extension VARCHAR(32) NOT NULL,
     start_date date NOT NULL,
@@ -64,7 +64,7 @@ ALTER TABLE oapen_memo.task
 
 CREATE TABLE oapen_memo.runlog (
     id INTEGER NOT NULL,
-    id_task VARCHAR(32) NOT NULL,
+    id_task VARCHAR(36) NOT NULL,
     date date NOT NULL,
     is_success boolean NOT NULL,
     message text,

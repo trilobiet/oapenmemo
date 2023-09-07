@@ -809,7 +809,7 @@
 							"top": 21,
 							"width": 660,
 							"height": 55,
-							"text": "OAPEN MEMO Project - Manager database\nEntity Relation Diagram Database 'oapen_memo'\nVersion 230627-1"
+							"text": "OAPEN MEMO Project - Manager database\nEntity Relation Diagram Database 'oapen_memo'\nVersion 230907-1"
 						},
 						{
 							"_type": "ERDEntityView",
@@ -1286,7 +1286,7 @@
 							},
 							"name": "id",
 							"type": "VARCHAR",
-							"length": "32",
+							"length": "36",
 							"primaryKey": true
 						},
 						{
@@ -1361,7 +1361,7 @@
 							},
 							"name": "id",
 							"type": "VARCHAR",
-							"length": "32",
+							"length": "36",
 							"primaryKey": true
 						},
 						{
@@ -1372,7 +1372,7 @@
 							},
 							"name": "id_script",
 							"type": "VARCHAR",
-							"length": "32",
+							"length": "36",
 							"foreignKey": true,
 							"referenceTo": {
 								"$ref": "AAAAAAGIr9kAmFXXDAw="
@@ -1496,7 +1496,7 @@
 							},
 							"name": "id",
 							"type": "VARCHAR",
-							"length": "32",
+							"length": "36",
 							"primaryKey": true
 						},
 						{
@@ -1507,7 +1507,7 @@
 							},
 							"name": "id_task",
 							"type": "VARCHAR",
-							"length": "32",
+							"length": "36",
 							"referenceTo": {
 								"$ref": "AAAAAAGIrvqUyWciQv8="
 							},
@@ -1643,7 +1643,7 @@
 							},
 							"name": "id",
 							"type": "VARCHAR",
-							"length": "32",
+							"length": "36",
 							"primaryKey": true
 						},
 						{
@@ -1654,7 +1654,7 @@
 							},
 							"name": "id_homedir",
 							"type": "VARCHAR",
-							"length": "32",
+							"length": "36",
 							"foreignKey": true,
 							"referenceTo": {
 								"$ref": "AAAAAAGIruw01WYQcD8="
@@ -1753,7 +1753,7 @@
 							},
 							"name": "id_task",
 							"type": "VARCHAR",
-							"length": "32",
+							"length": "36",
 							"foreignKey": true,
 							"referenceTo": {
 								"$ref": "AAAAAAGIrvqUyWciQv8="
