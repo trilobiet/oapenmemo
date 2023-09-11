@@ -63,7 +63,7 @@ ALTER TABLE oapen_memo.task
 
 
 CREATE TABLE oapen_memo.runlog (
-    id INTEGER NOT NULL,
+    id INTEGER NOT NULL AUTO_INCREMENT,
     id_task VARCHAR(36) NOT NULL,
     date date NOT NULL,
     is_success boolean NOT NULL,
