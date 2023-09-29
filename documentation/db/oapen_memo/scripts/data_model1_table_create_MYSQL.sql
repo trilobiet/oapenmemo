@@ -6,6 +6,7 @@ CREATE TABLE oapen_memo.homedir (
     name VARCHAR(255) NOT NULL,
     username VARCHAR(45) NOT NULL,
     password VARCHAR(255),
+    access_key VARCHAR(32),
     is_editable boolean NOT NULL,
     notes text,
     PRIMARY KEY (id)
@@ -13,6 +14,8 @@ CREATE TABLE oapen_memo.homedir (
 
 ALTER TABLE oapen_memo.homedir
     ADD UNIQUE (username);
+ALTER TABLE oapen_memo.homedir
+    ADD UNIQUE (access_key);
 
 
 CREATE TABLE oapen_memo.query (
@@ -52,14 +55,14 @@ CREATE TABLE oapen_memo.task (
     extension VARCHAR(32) NOT NULL,
     start_date date NOT NULL,
     frequency ENUM('D','W','M','Y') NOT NULL,
-    is_active boolean NOT NULL,
+    is_active boolean NOT NULL DEFAULT true,
+    is_public boolean NOT NULL DEFAULT false,
     notes text,
     PRIMARY KEY (id)
 );
 
 ALTER TABLE oapen_memo.task
-    ADD UNIQUE (id_homedir, file_name, extension);
-
+    ADD UNIQUE (id_homedir, file_name);
 
 
 CREATE TABLE oapen_memo.runlog (

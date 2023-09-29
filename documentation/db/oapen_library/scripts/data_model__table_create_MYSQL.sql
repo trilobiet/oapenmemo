@@ -177,3 +177,17 @@ ALTER TABLE oapen_library.affiliation ADD CONSTRAINT FK_affiliation__orcid FOREI
 ALTER TABLE oapen_library.affiliation ADD CONSTRAINT FK_affiliation__id_institution FOREIGN KEY (id_institution) REFERENCES oapen_library.institution(id);
 ALTER TABLE oapen_library.grant_data ADD CONSTRAINT FK_grant_data__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_library.title(handle) ON DELETE CASCADE;
 ALTER TABLE oapen_library.collection ADD CONSTRAINT FK_collection__handle_title FOREIGN KEY (handle_title) REFERENCES oapen_library.title(handle) ON DELETE CASCADE;
+
+
+CREATE FULLTEXT INDEX idx_fulltext_title
+ON title(title, title_alternative);
+
+CREATE FULLTEXT INDEX idx_fulltext_description
+ON title(description_abstract);
+
+CREATE FULLTEXT INDEX idx_fulltext_partofseries
+ON title(`is_part_of_series`);
+
+CREATE FULLTEXT INDEX idx_fulltext_subject
+ON subject_other(`subject`);
+
