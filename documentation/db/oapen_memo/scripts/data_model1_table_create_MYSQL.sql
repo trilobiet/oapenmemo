@@ -40,7 +40,8 @@ CREATE TABLE oapen_memo.script (
     body TEXT,
     params TEXT,
     notes TEXT,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
+    UNIQUE (name)
 );
 
 CREATE TABLE oapen_memo.task (
@@ -68,9 +69,9 @@ CREATE TABLE oapen_memo.runlog (
     PRIMARY KEY (id)
 );
 
-CREATE TABLE oapen_memo.settings (
+CREATE TABLE oapen_memo.setting (
     `key` VARCHAR(32) NOT NULL,
-    value TEXT NOT NULL,
+    `value` TEXT NOT NULL,
     PRIMARY KEY (`key`)
 );
 
