@@ -78,4 +78,5 @@ CREATE TABLE oapen_memo.setting (
 ALTER TABLE oapen_memo.task ADD FOREIGN KEY (id_homedir) REFERENCES oapen_memo.homedir(id) ON DELETE CASCADE;
 ALTER TABLE oapen_memo.runlog ADD FOREIGN KEY (id_task) REFERENCES oapen_memo.task(id) ON DELETE CASCADE;
 ALTER TABLE oapen_memo.task ADD FOREIGN KEY (id_script) REFERENCES oapen_memo.script(id) ON DELETE SET NULL;
+ALTER TABLE oapen_memo.script ADD FOREIGN KEY (id_query) REFERENCES oapen_memo.query(id) ON DELETE SET NULL;
 
