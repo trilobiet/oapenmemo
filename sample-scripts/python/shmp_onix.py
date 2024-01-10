@@ -27,7 +27,7 @@ def onix_wrap(s):
 def run_a_query():
     query = '''
     SELECT
-        content, "hallo"
+        content
     FROM
         title t
         JOIN collection col on col.handle_title = t.handle
