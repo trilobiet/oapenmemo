@@ -45,7 +45,8 @@ def run_a_query():
         host="localhost",
         user="trilobiet",
         password="******",
-        database="oapen_library"
+        database="oapen_library",
+        charset="utf8"
     )
 
     # connect and query
@@ -56,7 +57,7 @@ def run_a_query():
 
     # concatenate
     for (row) in records:
-        output += row[0].decode('utf-8')
+        output += row[0] #.decode('utf-8')
 
     # add header + footer
     output = onix_wrap(output)
