@@ -57,13 +57,13 @@ def run_a_query():
 
     # concatenate
     for (row) in records:
-        output += row[0] #.decode('utf-8')
+        output += row[0]
 
     # add header + footer
     output = onix_wrap(output)
 
     # save
-    text_file = open(f"onix-{today}.xml", "w")
+    text_file = open(f"onix-{today}.xml", "w", encoding="utf-8")
     text_file.write(output)
     text_file.close()
 
