@@ -4,6 +4,8 @@
 from datetime import datetime
 today: str = datetime.today().strftime('%Y%m%d')
 
+from queries import shmp_onix
+from sniplets import mysql_connect
 
 def onix_wrap(s):
     from textwrap import dedent
@@ -25,33 +27,12 @@ def onix_wrap(s):
 
 
 def run_a_query():
-    query = '''
-    SELECT
-        content
-    FROM
-        title t
-        JOIN collection col on col.handle_title = t.handle
-        JOIN export_chunk onix on onix.handle_title = t.handle AND onix.type = 'ONIX'
-    WHERE
-        NOT (download_url is null OR trim(download_url = ''))
-        AND col.collection = 'Sustainable History Monograph Pilot (SHMP)'
-    GROUP BY     
-        t.handle
-    ORDER by
-        t.year_available desc, t.handle
-    '''
-    import mysql.connector
-    connection = mysql.connector.connect(
-        host="localhost",
-        user="trilobiet",
-        password="******",
-        database="oapen_library",
-        charset="utf8"
-    )
+
+    connection = mysql_connect.connection
 
     # connect and query
-    cursor = connection.cursor()
-    cursor.execute(query)
+    cursor = mysql_connect.connection.cursor()
+    cursor.execute(shmp_onix.query)
     records = cursor.fetchall()
     output = ''
 

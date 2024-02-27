@@ -1,10 +1,10 @@
 CREATE DATABASE  IF NOT EXISTS `oapen_memo` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `oapen_memo`;
--- MySQL dump 10.13  Distrib 8.0.35, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.36, for Linux (x86_64)
 --
 -- Host: 104.248.34.253    Database: oapen_memo
 -- ------------------------------------------------------
--- Server version	8.0.35-0ubuntu0.20.04.1
+-- Server version	8.0.36-0ubuntu0.20.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -60,6 +60,25 @@ CREATE TABLE `query` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Table structure for table `export`
+--
+
+DROP TABLE IF EXISTS `export`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `export` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `id_task` varchar(45) COLLATE utf8mb4_bin NOT NULL,
+  `mimetype` varchar(100) COLLATE utf8mb4_bin DEFAULT NULL,
+  `content` longtext COLLATE utf8mb4_bin,
+  `timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `fk_export_task` (`id_task`),
+  CONSTRAINT `fk_export_task` FOREIGN KEY (`id_task`) REFERENCES `task` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Table structure for table `runlog`
 --
 
@@ -75,7 +94,7 @@ CREATE TABLE `runlog` (
   PRIMARY KEY (`id`),
   KEY `part_of_id_task` (`id_task`),
   CONSTRAINT `FK_runlog__id_task` FOREIGN KEY (`id_task`) REFERENCES `task` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -153,4 +172,4 @@ CREATE TABLE `task` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-16 21:41:57
+-- Dump completed on 2024-02-26 14:28:56
