@@ -2,7 +2,7 @@
 
 OAPEN Library data is stored locally in a MySQL database that is a relational mapping of data retrieved from OAPEN DSpace, harvested through the OAI protocol and synchronized daily with the OAI provider at `library.oapen.org/oai`. 
 
-To initialy populate the local datastore and synchronize afterwards, an OAI harvester application is run as a daily job, keeping track of harvesting status.
+To initially populate the local datastore and synchronize afterwards, an OAI harvester application is run as a daily job, keeping track of harvesting status.
 
 The resulting database can be used as a datasource for MEMO export file generation, but its use is not restricted to that, since it contains quite a complete description of the collection of OAPEN titles (books and chapters) and associated data.
 

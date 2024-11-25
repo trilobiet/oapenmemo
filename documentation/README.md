@@ -8,9 +8,9 @@ MEMO periodically runs mapping tasks written in SQL and Python, in an isolated e
 
 MEMO consists of 3 parts:
 
-* MEMO Manager, an application only accessible to MEMO administrator/editor. Here clients and their tasks are created, stored and edited;
-* MEMO Task Runner, a deamon that selects the tasks that must be run;
-* MEMO Clients web, the client web directory showing resulting files. 
+* [MEMO Manager](./MEMO/MEMO-Clientweb/README.md), an application only accessible to MEMO administrator/editor. Here clients and their tasks are created, stored and edited;
+* [MEMO Task Runner](./MEMO/MEMO-Manager/README.md), a deamon that selects the tasks that must be run;
+* [MEMO Clients web](./MEMO/MEMO-Taskrunner/README.md), the client web directory showing resulting files. 
 
 These parts are all described in detail in the respective subdirectories.
 
@@ -21,7 +21,7 @@ Tasks, consisting of SQL and Python scripts, are data themselves and MEMO is ign
 * ### OAPEN Library data  
 For OAPEN, data is harvested from OAPEN's OAI provider and stored in a local relational database. This database replicates the entire OAPEN Library collection of books and titles, in a derived relational model. This data model guarantees high availablity and enables usage of complex SQL queries with short response times.
 
-The harvester(s) taking care of populating and synchronizing the database are described in detail in the corresponding subdirectories.
+The harvester(s) taking care of populating and synchronizing the database are described in detail in the [corresponding subdirectory](./OAPEN-Data/README.md).
 
 ## System Diagram
 
