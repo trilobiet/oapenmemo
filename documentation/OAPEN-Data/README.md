@@ -10,19 +10,19 @@ For a more precise description of the Harvester application, including instructi
 
 ## Database 
 
-A script to create the empty OAPEN Library database is included in directory [/Storage/MySQL-scripts](./Storage/MySQL-scripts/). 
+A script to create the empty OAPEN Library database is included in directory [./Supplements/MySQL-scripts](./Supplements/MySQL-scripts/). 
 
 The view definition `vw_title_combined_fields.sql` in the same directory serves to abstract away some frequently used SQL joins, allowing for more compact query SQL where desired, but it can be ignored if there is no such wish.
 
 
 ### Database ERD
 
-![Database ERD](./Storage/ERD-OAPEN-Library.jpg)
+![Database ERD](./Supplements/Diagrams/ERD-OAPEN-Library.jpg)
 
 
 
 ## XOAI Harvesting process
 
-![Data Harvester](./Data-Harvester/harvester.jpg)
+![Data Harvester](./Supplements/Diagrams/harvester.jpg)
 
 *Diagrams and HTML Database documentation are created with StarUML Professional 6.0.0*
