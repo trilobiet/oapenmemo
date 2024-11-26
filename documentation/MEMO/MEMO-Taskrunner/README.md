@@ -10,4 +10,4 @@ MEMO Task Runner runs on schedule, but since it also should be able to generate 
 
 For a more precise description of the MEMO Task Runner application, including instructions on how to install, configure and run, go to https://github.com/trilobiet/oapenmemotaskrunner.
 
-![Task Runner](../Supplements/Diagrams/MEMO-Taskrunner.jpg)
+![Task Runner](./Supplements/Diagrams/SysContext-MEMO-Taskrunner.jpg)

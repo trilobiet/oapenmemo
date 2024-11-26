@@ -6,4 +6,6 @@ MEMO clients (customers) can download these files. The client web is a restricte
 
 For a more precise description of the MEMO Client Web application, including instructions on how to install, configure and run, go to https://github.com/trilobiet/oapenmemoclientweb.
 
-![Task Runner](../Supplements/Diagrams/MEMO-Clientweb.jpg)
+![Task Runner](./Supplements/Diagrams/SysContext-MEMO-Clientweb.jpg)
+
+![Task Runner](./Supplements/Images/MEMO-Clientweb-1.png)
