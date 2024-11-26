@@ -1,5 +1,5 @@
 # MEMO suite
 
-* [MEMO Manager](./MEMO/MEMO-Manager/README.md)
-* [MEMO Task Runner](./MEMO/MEMO-Taskrunner/README.md)
-* [MEMO Client web](./MEMO/MEMO-Clientweb/README.md)
+* [MEMO Manager](./MEMO-Manager/README.md)
+* [MEMO Task Runner](./MEMO-Taskrunner/README.md)
+* [MEMO Client web](./MEMO-Clientweb/README.md)
