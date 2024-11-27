@@ -1,4 +1,4 @@
-#  OAPEN Data
+#  OAPEN Library Data
 
 OAPEN Library data is stored locally in a MySQL database that is a relational mapping of data retrieved from OAPEN DSpace, harvested through the OAI protocol and synchronized daily with the OAI provider at `library.oapen.org/oai`. 
 
@@ -14,6 +14,33 @@ A script to create the empty OAPEN Library database is included in directory [./
 
 The view definition `vw_title_combined_fields.sql` in the same directory serves to abstract away some frequently used SQL joins, allowing for more compact query SQL where desired, but it can be ignored if there is no such wish.
 
+### Full Text indexes
+
+Table `title` and `subject_other` feature a number of FULL TEXT indexes on `text` or `varchar` fields:
+
+    FULLTEXT KEY `idx_fulltext_title` (`title`,`title_alternative`)
+
+These indexes allow for queries using full text searches: 
+
+    SELECT 
+    	   title.*, group_concat(subject) as subjects 
+    FROM 
+    	   title 
+    	   RIGHT JOIN subject_other ON handle = handle_title
+    WHERE 
+    	   MATCH(title, title_alternative) 
+    	   AGAINST('comic* OR cartoon*' in boolean mode)
+    	OR	
+    	   MATCH(description_abstract) 
+    	   AGAINST('comic* OR cartoon*' in boolean mode)
+    	OR
+    	   MATCH(subject_other.subject) 
+    	   AGAINST('comic* OR cartoon*' in boolean mode) 
+    GROUP BY
+    	   handle	
+    ORDER BY 
+    	   handle
+    
 
 ### Database ERD
 

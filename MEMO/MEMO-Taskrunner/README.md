@@ -6,7 +6,7 @@ Tasks are always tied to exactly 1 client. Each task has a name and an extension
 
 MEMO Task runner must have read access to the MEMO database and write access to any system path to store export files.
 
-MEMO Task Runner runs on schedule, but since it also should be able to generate exports instantly on request - for instance to perform (dry) runs from MEMO Manager, it must listen continuously to HTTP requests and therefore be installed as a service.
+MEMO Task Runner runs on a schedule, but since it also should be able to generate exports instantly on request - for instance to perform (dry) runs from MEMO Manager, it must listen continuously to HTTP requests and therefore be installed as a service.
 
 For a more precise description of the MEMO Task Runner application, including instructions on how to install, configure and run, go to https://github.com/trilobiet/oapenmemotaskrunner.
 
