@@ -9,7 +9,7 @@ MEMO periodically runs mapping tasks written in SQL and Python, in an isolated e
 MEMO consists of 3 parts:
 
 * [MEMO Manager](./MEMO/MEMO-Manager/README.md), an application only accessible to MEMO administrator/editor. Here clients and their tasks are created, stored and edited;
-* [MEMO Task Runner](./MEMO/MEMO-Taskrunner/README.md), a deamon that selects the tasks that must be run;
+* [MEMO Task Runner](./MEMO/MEMO-Taskrunner/README.md), a deamon that periodically selects and runs tasks;
 * [MEMO Client web](./MEMO/MEMO-Clientweb/README.md), the client web directory showing resulting files. 
 
 These parts are all described in detail in the respective subdirectories.
