@@ -11,5 +11,6 @@ MEMO Manager is only available to a central administrator account that provides 
 
 MEMO Manager stores all data - clients, tasks, scripts and queries - in the [MEMO database](../Supplements/Diagrams/ERD-MEMO.jpg).  
 
+For a more precise description of the MEMO Manager application, including instructions on how to install, configure and run, go to https://github.com/trilobiet/oapenmemomanager.
 
 ![Task Runner](./Supplements/Diagrams/SysContext-MEMO-Manager.jpg)
