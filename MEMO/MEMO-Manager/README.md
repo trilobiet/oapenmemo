@@ -7,7 +7,7 @@ Tasks consist of scripts written in Python and SQL that are run periodically by 
 On each run an output file is generated that is stored in the clients web space. Clients have access 
 to the generated files via the [MEMO Client Web](../MEMO-Clientweb/README.md). 
 
-MEMO Manager is only available to a central administrator account that provides access to all clients and their tasks.
+MEMO Manager is only available to administrator accounts that provide access to all clients and their tasks.
 
 MEMO Manager stores all data - clients, tasks, scripts and queries - in the [MEMO database](../Supplements/Diagrams/ERD-MEMO.jpg).  
 
