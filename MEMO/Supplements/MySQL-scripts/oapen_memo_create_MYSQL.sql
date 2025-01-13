@@ -1,10 +1,10 @@
 CREATE DATABASE  IF NOT EXISTS `oapen_memo` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `oapen_memo`;
--- MySQL dump 10.13  Distrib 8.0.36, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.40, for Linux (x86_64)
 --
 -- Host: 104.248.34.253    Database: oapen_memo
 -- ------------------------------------------------------
--- Server version	8.0.36-0ubuntu0.20.04.1
+-- Server version	8.0.40-0ubuntu0.20.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -33,7 +33,7 @@ CREATE TABLE `homedir` (
   `notes` text COLLATE utf8mb4_bin,
   `access_key` varchar(32) COLLATE utf8mb4_bin DEFAULT NULL,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_by` VARCHAR(45) DEFAULT NULL,
+  `updated_by` varchar(45) COLLATE utf8mb4_bin DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`),
   UNIQUE KEY `access_key` (`access_key`)
@@ -55,12 +55,11 @@ CREATE TABLE `query` (
   `notes` text COLLATE utf8mb4_bin,
   `is_library` tinyint NOT NULL DEFAULT '0',
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_by` VARCHAR(45) DEFAULT NULL,
+  `updated_by` varchar(45) COLLATE utf8mb4_bin DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name_UNIQUE` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
 
 --
 -- Table structure for table `runlog`
@@ -78,7 +77,7 @@ CREATE TABLE `runlog` (
   PRIMARY KEY (`id`),
   KEY `part_of_id_task` (`id_task`),
   CONSTRAINT `FK_runlog__id_task` FOREIGN KEY (`id_task`) REFERENCES `task` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=2622 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,7 +96,7 @@ CREATE TABLE `script` (
   `params` text COLLATE utf8mb4_bin,
   `notes` text COLLATE utf8mb4_bin,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_by` VARCHAR(45) DEFAULT NULL,
+  `updated_by` varchar(45) COLLATE utf8mb4_bin DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name_UNIQUE` (`name`),
   KEY `fk_query_1` (`id_query`),
@@ -116,7 +115,7 @@ CREATE TABLE `setting` (
   `key` varchar(32) COLLATE utf8mb4_bin NOT NULL,
   `value` text COLLATE utf8mb4_bin NOT NULL,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_by` VARCHAR(45) DEFAULT NULL,
+  `updated_by` varchar(45) COLLATE utf8mb4_bin DEFAULT NULL,
   PRIMARY KEY (`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -141,7 +140,7 @@ CREATE TABLE `task` (
   `is_public` tinyint NOT NULL DEFAULT '0',
   `notes` text COLLATE utf8mb4_bin,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_by` VARCHAR(45) DEFAULT NULL,
+  `updated_by` varchar(45) COLLATE utf8mb4_bin DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_homedir` (`id_homedir`,`file_name`),
   KEY `fk_script_1` (`id_script`),
@@ -149,30 +148,37 @@ CREATE TABLE `task` (
   CONSTRAINT `FK_task__id_homedir` FOREIGN KEY (`id_homedir`) REFERENCES `homedir` (`id`) ON DELETE RESTRICT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 --
 -- Table structure for table `user`
 --
+
 DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `oapen_memo`.`user` (
-  `id` VARCHAR(36) NOT NULL,
-  `username` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(255) NOT NULL DEFAULT '',
-  `editable` TINYINT NOT NULL DEFAULT 1,
-  `admin` TINYINT NOT NULL DEFAULT 0,
-  `fullname` VARCHAR(255) NOT NULL,
+CREATE TABLE `user` (
+  `id` varchar(36) COLLATE utf8mb4_bin NOT NULL,
+  `username` varchar(45) COLLATE utf8mb4_bin NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_bin NOT NULL DEFAULT '',
+  `editable` tinyint NOT NULL DEFAULT '1',
+  `fullname` varchar(255) COLLATE utf8mb4_bin NOT NULL,
+  `admin` tinyint NOT NULL DEFAULT '0',
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_by` VARCHAR(45) DEFAULT NULL,
-  PRIMARY KEY (`id`));
+  `updated_by` varchar(45) COLLATE utf8mb4_bin DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 /* Default password is 'secret' -> change this after installation! */
 INSERT INTO `oapen_memo`.`user` (`id`, `username`, `password`, `editable`, `fullname`, `admin`) VALUES ('d67f5ae5-15d3-4fa7-96a5-b1b209ef284f', 'administrator', '$2a$12$58tDPaTKlyKkY.A.NXzcce6i1nbBH1JmbFZu2V.fs54hdRfyA42LS', '0', 'System Administrator', '1');
 
+--
+-- Dumping events for database 'oapen_memo'
+--
 
+--
+-- Dumping routines for database 'oapen_memo'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -183,3 +189,4 @@ INSERT INTO `oapen_memo`.`user` (`id`, `username`, `password`, `editable`, `full
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+-- Dump completed on 2025-01-13 16:25:50

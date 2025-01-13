@@ -14,7 +14,12 @@ MEMO consists of 3 parts:
 
 These parts are all described in detail in the respective subdirectories.
 
-## Data source
+### MEMO Data source
+
+MEMO stores its data (clients, tasks, users) in a MySQL database. Instructions on database installation are included 
+with [MEMO Manager documentation](./MEMO/MEMO-Manager/README.md).
+
+## Content Data source
 
 Tasks, consisting of SQL and Python scripts, are data themselves and MEMO is ignorant of the contents of these scripts. Scripts are run periodically in an isolated environment. Only their output is grabbed by MEMO and written to the associated client directory. To provide these scripts with data to generate files from, we need a data input source. This can be any data source, local or on the internet. 
 
