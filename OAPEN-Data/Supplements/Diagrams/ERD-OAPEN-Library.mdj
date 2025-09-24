@@ -2893,7 +2893,7 @@
 							"top": 16,
 							"width": 672,
 							"height": 55,
-							"text": "OAPEN MEMO Project\nEntity Relation Diagram Database oapen_library / doab_library\nVersion 250828-2"
+							"text": "OAPEN MEMO Project\nEntity Relation Diagram Database oapen_library / doab_library\nVersion 250924-1"
 						},
 						{
 							"_type": "ERDEntityView",
@@ -3609,38 +3609,6 @@
 							"headNameLabel": {
 								"$ref": "AAAAAAGY5pe/C0owQIE="
 							}
-						},
-						{
-							"_type": "UMLNoteView",
-							"_id": "AAAAAAGZe3hsztn1798=",
-							"_parent": {
-								"$ref": "AAAAAAGFoPzP8i3GWCk="
-							},
-							"fillColor": "#FFD8FF",
-							"font": "Arial;13;0",
-							"parentStyle": false,
-							"left": 104,
-							"top": 634,
-							"width": 105,
-							"height": 25,
-							"text": "DOAB only"
-						},
-						{
-							"_type": "UMLNoteLinkView",
-							"_id": "AAAAAAGZe3lyg9oBmuY=",
-							"_parent": {
-								"$ref": "AAAAAAGFoPzP8i3GWCk="
-							},
-							"font": "Arial;13;0",
-							"parentStyle": false,
-							"head": {
-								"$ref": "AAAAAAGY5pEdv0mr/2Y="
-							},
-							"tail": {
-								"$ref": "AAAAAAGZe3hsztn1798="
-							},
-							"lineStyle": 1,
-							"points": "156:660;156:687"
 						}
 					]
 				},
