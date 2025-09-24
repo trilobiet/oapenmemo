@@ -23,8 +23,8 @@ with [MEMO Manager documentation](./MEMO/MEMO-Manager/README.md).
 
 Tasks, consisting of SQL and Python scripts, are data themselves and MEMO is ignorant of the contents of these scripts. Scripts are run periodically in an isolated environment. Only their output is grabbed by MEMO and written to the associated client directory. To provide these scripts with data to generate files from, we need a data input source. This can be any data source, local or on the internet. 
 
-* [OAPEN Library data](./OAPEN-Data/README.md)   
-For OAPEN, data is harvested from OAPEN's OAI provider and stored in a local relational database. This database replicates the entire OAPEN Library collection of books and titles, in a derived relational model. This data model guarantees high availablity and enables usage of complex SQL queries with short response times.
+* [OAPEN/DOAB Library data](./OAPEN-Data/README.md)   
+For OAPEN and DOAB, data is harvested from an OAI provider and stored in a local relational database. This database replicates the entire OAPEN or DOAB Library collection of titles, in a derived relational model. This data model guarantees high availablity and enables usage of complex SQL queries with short response times.
 
 The harvester(s) taking care of populating and synchronizing the database are described in detail in the corresponding subdirectory.
 
