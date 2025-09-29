@@ -3,7 +3,7 @@
 MEMO Manager provides the environment to create and manage clients and their tasks.
 
 Clients consist of a user account (login credentials) and some additional info describing the client. 
-Tasks consist of scripts written in Python and SQL that are run periodically by [MEMO Task Manager](../MEMO-Taskrunner/README.md). 
+Tasks consist of scripts written in Python and SQL that are run periodically by [MEMO Task Runner](../MEMO-Taskrunner/README.md). 
 On each run an output file is generated that is stored in the clients web space. Clients have access 
 to the generated files via the [MEMO Client Web](../MEMO-Clientweb/README.md). 
 
